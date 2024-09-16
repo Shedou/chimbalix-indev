@@ -1,0 +1,495 @@
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.3 Alphachi =-
+
+-= ===== =-
+2024-07-22:
+- Установлена 32 битная версия Mangohud, а так же соответствующие элементы в контекстное меню.
+	libfmt9_9.1.0+ds1-2_i386.deb
+	libspdlog1.10_1.10.0+ds-0.4_i386.deb
+	libxnvctrl0_525.85.05-3~deb12u1_i386.deb
+	mangohud_0.6.8-2_i386.deb
+
+- Выполнен откат версии Krita с 5.2.3 до 5.2.1:
+	Krita 5.2.3 не выделяет ни одного слоя при открытии файлов из проводника, что приводит к двум проблемам:
+		1) Ожидается, что будет выделен слой изображения при открытии файла, но ничего не выделено, что заставляет тратить время на выделение слоя вручную.
+		2) При использовании инструмента трансформирования слоя может произойти "crash" приложения.
+
+- Обновлено ядро Linux до версии 6.9.10:
+	linux-headers-6.9.10-1-liquorix-amd64_6.9-9.1~bookworm_amd64.deb
+	linux-image-6.9.10-1-liquorix-amd64_6.9-9.1~bookworm_amd64.deb
+
+-= ===== =-
+2024-07-21:
+- Запуск приложений с оверлеем Mangohud из контекстного меню.
+	Нативные приложения: Tools -> Launch with Mangohud overlay
+	Windows приложения: Wine -> Run with Mangohud overlay
+
+- Wine: В контекстном меню появился пункт "Run with Custom Locale (LC ALL)" для выбора локализации (некоторые приложения зависят от "правильной" настройки локали).
+
+- Доработан скрипт "/portsoft/other/chimbalix-wine-prefix/install.sh":
+	Добавлена возможность пересоздать стандартный префикс Wine.
+	Создан ярлык в меню "Пуск".
+
+- Добавлены ссылки в меню "Пуск" на каталог префикса Wine и каталог пользователя внутри префикса.
+
+-= ===== =-
+2024-07-19:
+- Оптимизированы MIME ассоциации:
+	/etc/xdg/xfce-mimeapps.list
+
+- Установлен Mangohud и Goverlay (добавлена команда в контекстное меню для запуска через Wine с Mangohud):
+	goverlay_0.9.1-1_amd64.deb
+	mangohud_0.6.8-2_amd64.deb
+	mangohudctl_0.6.8-2_amd64.deb
+	vkbasalt_0.3.2.8-1_amd64.deb
+	libfmt9_9.1.0+ds1-2_amd64.deb
+	libqt5pas1_2.6+2.2.0+dfsg1-3_amd64.deb
+	libspdlog1.10_1.10.0+ds-0.4_amd64.deb
+
+- Добавлены новые шаблоны для создания файлов через контекстное меню проводника.
+- Работа над структурой меню "Пуск".
+- Установлен Winetricks:
+	winetricks_20230212-2_all.deb
+
+-= ===== =-
+2024-07-14:
+- Добавлена возможность конвертации изображений в формат "WebP" и обработка изображений нейронными сетями (Waifu2X):
+	/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh
+	/etc/skel/.config/Thunar/uca.xml
+- Установлено приложение "waifu2x-ncnn-vulkan":
+	/portsoft/x86_64/waifu2x-ncnn/
+- Wine - Обновлён DXVK до версии 2.4
+	Удалён d8vk (встроен в DXVK)
+
+-= ===== =-
+2024-07-11:
+- Wine - Обновлён dxvk-nvapi до версии 0.7.1:
+	/portsoft/other/chimbalix-wine-prefix/
+	
+
+-= ===== =-
+2024-07-08:
+- Обновлено ядро Linux до "6.9.8-1-liquorix-amd64":
+	linux-headers-6.9.8-1-liquorix-amd64_6.9-7.1~bookworm_amd64.deb
+	linux-image-6.9.8-1-liquorix-amd64_6.9-7.1~bookworm_amd64.deb
+
+-= ===== =-
+2024-07-07:
+- Установлен Markdown редактор GhostWriter:
+	ghostwriter_2.1.6+ds-2_amd64.deb
+	libcmark-gfm0.29.0.gfm.6_0.29.0.gfm.6-6_amd64.deb
+	libcmark-gfm-extensions0.29.0.gfm.6_0.29.0.gfm.6-6_amd64.deb
+
+-= ===== =-
+2024-07-05:
+- Обновлено приложение Krita до версии 5.2.3:
+
+- Удалён ONLYOFFICE Desktop Editors:
+	1) Сочетания клавиш "прибиты гвоздями" (невозможно изменить в настройках).
+	2) При нажатии на "alt" всплывают подсказки по интерфейсу, они конфликтуют с последующими действиями пользователя через клавиатуру.
+	3) Неудобное сочетание переноса строки в таблице (alt+enter), проблема усугубляется предыдущими пунктами.
+	URL: www.onlyoffice.com
+
+- Установлено приложение CPU-X:
+	URL: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X
+	/portsoft/x86_64/cpu-x/
+
+- Обновлёна программа установки:
+	chimbalix-installer_1.1_amd64.deb
+
+-= ===== =-
+2024-06-29:
+- Отключен вывод отладочной информации Wine, что приводит в некоторых случаях к проблеме жирного ".xsession-errors":
+	/etc/environment
+		> export WINEDEBUG=-all
+	Проблема: https://overclockers.ru/blog/Hard-Workshop/show/163194/Korotko-o-probleme-zhirnogo-xsession-errors-ili-kak-Linux-mozhet-unichtozhit-resurs-SSD
+
+- Обновлено ядро Linux до "6.9.6-1-liquorix-amd64":
+	linux-headers-6.9.6-1-liquorix-amd64_6.9-5.1~bookworm_amd64.deb
+	linux-image-6.9.6-1-liquorix-amd64_6.9-5.1~bookworm_amd64.deb
+
+- Wine Staging заменён на Wine Proton LG 9.5.1:
+	URL: https://github.com/Castro-Fidel/wine_builds
+
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.2 Alphachi =-
+
+-= ===== =-
+2024-06-10:
+- Отключены горячие клавиши F3 и F1 в проводнике Thunar запущенном от имени пользователя.
+
+-= ===== =-
+2024-06-08:
+- Установлен офисный пакет OnlyOffice в качестве альтернативы для LibreOffice:
+	URL: www.onlyoffice.com
+	onlyoffice-desktopeditors_amd64.deb (v8.0.1-31)
+
+- Разработан пример приложения (Example-Shared-App) использующий общий исполняемый файл "/usr/bin/godot353_shared".
+- По умолчанию отключены репозитории MX-Linux (при необходимости можно включить через пакетный менеджер Synaptic).
+- Обновлено приложение Krita до версии 5.2.3-beta1.
+- Проведена оптимизация встроенных AppImage приложений.
+	Распакованы архивы приложений:
+		+ Улучшено время запуска.
+		+ Распакованные файлы лучше сжимаются в ISO образе дистрибутива.
+		- Приложения занимают больше места на системном диске после установки дистрибутива.
+- Добавлен AppImageKit (i686 / x86_64):
+	/portsoft/other/AppImageKit_2023/
+
+-= ===== =-
+2024-06-07:
+- Работа над структурой меню "Пуск".
+	Старый "пример" был удалён, создан новый "пример" вложенного меню.
+
+-= ===== =-
+2024-06-06:
+- Работа над структурой меню "Пуск".
+
+-= ===== =-
+2024-06-05:
+- Удалены приложения "Blender" и "Kdenlive", позде будут перенесены в Chimbalix Software Catalog:
+	https://github.com/Shedou/Chimbalix-Software-Catalog
+
+-= ===== =-
+2024-06-02:
+- Работа над структурой меню "Пуск".
+	Создана категория "XDG / Linux" для совместимости с софтом что использует XDG спецификации.
+
+-= ===== =-
+2024-06-01:
+- Работа над структурой меню "Пуск".
+- Установлен набор карточных игр "Kpatience":
+	kdegames-card-data-kf5 (version 4:22.12.3-1)
+	kpackagetool5 (version 5.103.0-1)
+	kpat (version 4:22.12.3-1)
+	libfreecell-solver0 (version 5.0.0-2+b1)
+	libkf5attica5 (version 5.103.0-1)
+	libkf5kdegames7 (version 4:22.12.3-1)
+	libkf5newstuff-data (version 5.103.0-1)
+	libkf5newstuff5 (version 5.103.0-1)
+	libkf5newstuffcore5 (version 5.103.0-1)
+	libkf5newstuffwidgets5 (version 5.103.0-1)
+	libkf5package-data (version 5.103.0-1)
+	libkf5package5 (version 5.103.0-1)
+	libkf5syndication5abi1 (version 1:5.103.0-1)
+
+-= ===== =-
+2024-05-30:
+- Изменены настройки терминала.
+- В систему встроен общий исполняемый файл Godot Engine выступающий в качестве "базы" для приложений и игр, распространяемых в минимальном наборе из .pck файла и скриптов для запуска:
+	/usr/bin/godot353_shared
+
+-= ===== =-
+2024-05-29:
+- Установлена утилита "archivemount", позволяющая монтировать архивы как папки (необходима для работы с некоторыми видами установочных пакетов):
+	archivemount_0.8.7-1+b1_amd64.deb
+- Отключены горячие клавиши F3 и F1 в проводнике Thunar запущенном от имени root.
+
+-= ===== =-
+2024-05-25:
+- Работа над структурой и ошибками системного меню.
+- Изменена версия дистрибутива.
+- Обновлён "/usr/lib/iso-template/iso-template.tar.gz".
+
+-= ===== =-
+2024-05-23:
+- Добавлена команда распаковки AppImage приложений, добавлена возможность запускать в терминале любые файлы кроме мультимедийных:
+	/etc/skel/.config/Thunar/uca.xml
+	/portsoft/script/chimbalix-scripts/context-menu/tools/appimage-extract.sh
+
+- Установлен X Terminal и пакет "xbitmaps" (необходимы для установки Steam Client):
+	xbitmaps_1.1.1-2.2_all.deb
+	xterm_379-1_amd64.deb
+- Обновлены libc библиотеки:
+	libc-bin libc-dev-bin libc-l10n libc6 libc6:i386 libc6-dev libc6-dev-i386 libc6-dev-x32 libc6-i386 libc6-x32 locales
+	
+	libc6_2.36-9+deb12u7_amd64.deb			libc6_2.36-9+deb12u7_i386.deb			libc6-dev_2.36-9+deb12u7_amd64.deb
+	libc6-dev-i386_2.36-9+deb12u7_amd64.deb	libc6-dev-x32_2.36-9+deb12u7_amd64.deb	libc6-i386_2.36-9+deb12u7_amd64.deb
+	libc6-x32_2.36-9+deb12u7_amd64.deb		libc-bin_2.36-9+deb12u7_amd64.deb		libc-dev-bin_2.36-9+deb12u7_amd64.deb
+	libc-l10n_2.36-9+deb12u7_all.deb		locales_2.36-9+deb12u7_all.deb
+
+-= ===== =-
+2024-05-22:
+
+- Удалены старые пакеты Wine:
+	wine-gecko2.47.4	wine-gecko2.47.4:i386	wine-mono8.0.0
+	wine-staging		wine-staging-amd64		wine-staging-i386:i386
+	winehq-staging		winetricks
+
+- Установлен Wine Staging v9.2
+	wine-staging-i386_9.2~bookworm-1_i386.deb		wine-staging_9.2~bookworm-1_amd64.deb
+	wine-staging-amd64_9.2~bookworm-1_amd64.deb		winehq-staging_9.2~bookworm-1_amd64.deb
+	libpcsclite1_1.9.9-2_i386.deb					libxkbregistry0_1.5.0-1_amd64.deb
+	libxkbregistry0_1.5.0-1_i386.deb
+	/usr/share/wine/mono/wine-mono-9.0.0-x86.msi
+
+- Обновлёны файлы стандартного префикса Wine:
+	/portsoft/other/chimbalix-wine-prefix/
+	Обновлён DXVK до версии 2.3.1.
+	Обновлён DXVK-nvapi до версии 0.7.
+	Обновлён VKD3D-proton до версии 2.12.
+
+- Настройки меню Пуск:
+	Установлен первым раздел "Recently Used".
+
+- Удалены пакеты Conky:
+	conky-all		conky-manager		conky-toggle-mx
+
+- Удалены неиспользуемые пакеты:
+	libaudclient2 libclutter-1.0-0	libclutter-gtk-1.0-0			libcogl-pango20		libcogl-path20 libcogl20
+	libgnome-games-support-1-3		libgnome-games-support-common	libircclient1		libmikmod3 libsdl-mixer1.2
+
+-= ===== =-
+2024-05-21:
+
+- Удалён пакет "neofetch".
+- Оптимизированы каталоги стандартных категорий:
+	/usr/share/applications/
+
+
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.1 Alphachi-Pre7 =-
+
+2024-05-12:
+- Thunar (Explorer): Отключены сочетания F1 ("справка") и F3 (разрушительное действие, разделение окна на два) для исключения случайных нажатий, т.к. клавиша F2 (переименовать файл) часто используется.
+- Thunar (Explorer): Изменены настройки интерфейса.
+
+2024-05-11:
+- Удалены игры: swell-foop, peg-e, lbreakout2.
+- Удалено из дистрибутива Arduino IDE v2.2.1, автономный установочный архив приложения перенесен в Chimbalix Software Catalog:
+	URL: https://github.com/Shedou/Chimbalix-Software-Catalog
+- Обновлён образ: /usr/lib/iso-template/template-initrd.gz
+- Для вызова меню Пуск "Whisker Menu" используется левая клавиша "Win/Super", для вызова старого XFCE меню используется правая "Win/Super".
+
+2024-05-08:
+- Доработан скрипт "disable-nouveau"
+	/portsoft/script/chimbalix-scripts/disable-nouveau-driver/
+
+2024-05-07:
+- Настроен терминал для более комфортной работы.
+- Возвращено и настроено меню "Пуск" (Whisker Menu).
+- Ядро Zabbly 6.8.7 удалено из-за проблем совместимости с существующими приложениями и драйверами для Linux, установлено ядро Liquorix 6.7.12:
+	URL: https://overclockers.ru/blog/Hard-Workshop/show/156332/Pochemu-razrabotka-softa-dlya-Linux-eto-vybroshennye-resursy-ili-kak-ya-podbiral-yadro-dlya-Chimbalix
+	linux-headers-6.7.12-1-liquorix-amd64_6.7-18.1~bookworm_amd64.deb
+	linux-image-6.7.12-1-liquorix-amd64_6.7-18.1~bookworm_amd64.deb
+
+2024-05-02:
+- Обновлены шаблоны iso-template:
+	/usr/lib/iso-template/iso-template.tar.gz
+	/usr/lib/iso-template/template-initrd.gz
+- Добавлена команда jar-load для удобства запуска jar файлов:
+	/bin/jar-load
+- Обновлён "Костыль для Linux":
+	/opt/crutch-for-linux.sh
+- По умолчанию включен композитор рабочего стола Compton:
+	/etc/skel/.config/autostart/zcompton.desktop
+	/etc/skel/.config/compton.conf
+
+2024-04-29:
+- Обновлён скрипт создания скриншотов (необходим для обхода проблем возникающих при длительном и интенсивном использовании xfce4-screenshooter):
+	/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh
+- "Книга заклинаний Chimbalix"
+	/etc/skel/Desktop/Pre7/Книга заклинаний Chimbalix/
+
+2024-04-27:
+- Переработана программа установки и исправлена программа создания ISO образа дистрибутива:
+	chimbalix-installer_1.0_amd64.deb
+	chimbalix-snapshot_1.0_amd64.deb
+	URL: https://github.com/Shedou/chimbalix-installer
+	URL: https://github.com/Shedou/chimbalix-snapshot
+
+- Модифицирован Disk Usage Analyzer Baobab (удалена токсичная боковая панель):
+	baobab_43.0-1_chimbalix_amd64.deb
+	URL: https://github.com/Shedou/chimbalix-baobab
+
+2024-04-26:
+- Обновлено ядро Linux с Liquorix 6.6.13-1 до Zabbly 6.8.7:
+	linux-headers-6.8.7-zabbly+_6.8.7-amd64-202404181922-debian12_amd64.deb
+	linux-image-6.8.7-zabbly+_6.8.7-amd64-202404181922-debian12_amd64.deb
+	linux-libc-dev_6.8.7-amd64-202404181922-debian12_amd64.deb
+	URL: https://pkgs.zabbly.com/kernel/stable
+	URL: https://github.com/zabbly/linux
+
+
+-= ================================== =-
+-= ================================== =-
+-= ================================== =-
+2024: -= Chimbalix 24.1 Alphachi-pre6 =-
+
+-= =============== =-
+-= Несортированное =-
+- Обновлён скрипт скриншотера, а так же сочетания клавиш.
+ /portsoft/script/chimbalix-scripts/utils/printscreen/
+ /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+- Добавлена команда "blender" (/usr/bin)
+- Исправлен "crutch-for-linux" (пост-инсталляционный скрипт).
+- Добавлен каталог "/etc/chimbalix" для информации об установленных пакетах обновлений и прочей информации.
+- Исправлена устаневшая информация о дистрибутиве в "/etc/initrd_release", "/etc/issue" и "/etc/live/version/".
+- Исправлены "CLI" элементы в меню "Пуск".
+- Обновлены MIME-типы и ассоциации
+ /usr/share/mime/packages/
+ /home/chh/.config/mimeapps.list
+- Добавлена генерация превью для webp изображений
+ /usr/share/thumbnailers/webp.thumbnailer
+- Отключено автоматическое монтирование накопителей.
+- Создан и добавлен логотип дистрибутива Chimbalix
+ /etc/chimbalix/logo/Chimbalix-Logo*
+- Настроен браузер Mozilla Firefox
+ /opt/firefox/distribution/distribution.ini
+- Изменена тема GRUB:
+ /var/lib/ucf/cache/:etc:default:grub
+ /var/lib/grub/ucf/grub.previous
+ /usr/share/grub/default/grub
+ /usr/local/share/live-files/general-files/etc/default/grub
+ /etc/default/grub
+ /boot/grub/themes/chimbalix/
+- Настройка ядра:
+ /etc/sysctl.d/chimbalix-sysctl-vm-settings.conf
+- Установлена поддержка файловых систем: HFS/HFS+, nilfs2, reiser4/reiserfs.
+ hfsprogs_540.1.linux3-5+b1_amd64.deb
+ hfsutils_3.2.6-15_amd64.deb
+ hfsutils-tcltk_3.2.6-15_amd64.deb
+ libtk8.6_8.6.13-2_amd64.deb
+ nilfs-tools_2.2.9-1_amd64.deb
+ reiser4progs_1.2.2-1+b1_amd64.deb
+ reiserfsprogs_1%3a3.6.27-4_amd64.deb
+ tk8.6_8.6.13-2_amd64.deb
+- Добавлен архиватор PeaZip
+ /portsoft/x86_64/peazip_portable/
+- Добавлены Шаблоны:
+ /etc/skel/Templates/
+- Удалён пакет mx-docs (~185 MiB)
+- Удалён пакет unattended-upgrades
+- Установлен Godot Engine 3.5.3:
+ /portsoft/x86_64/godot353/
+ /etc/skel/.local/share/godot/templates/3.5.3.stable/ (only Linux templates)
+- Убран мусор из Автозапуска
+- Добавлена проверка на ссылку вместо файла "resolv.conf":
+ /etc/init.d/network-manager
+ /usr/lib/systemd/system/systemd-networkd.service
+ /lib/systemd/systemd-networkd.sh
+- Удалены пакеты "mx-tour", "mx-welcome", "mx-welcome-data"
+- Прочие незначительные исправления/доработки
+
+
+-= ==== =-
+-= Ядро =-
+- Обновлено ядро до версии "6.6.13-1-liquorix-amd64"
+ linux-headers-6.6.13-1-liquorix-amd64_6.6-17.1~bookworm_amd64
+ linux-image-6.6.13-1-liquorix-amd64_6.6-17.1~bookworm_amd64
+ libbabeltrace1_1.5.11-1+b2_amd64
+ libpfm4_4.13.0-1_amd64
+ libtraceevent1_1%3a1.7.1-1_amd64
+Удалено старое ядро:
+ linux-headers-6.5.0-1mx-ahs-amd64
+ linux-headers-6.5.0-1mx-ahs-common
+ linux-image-6.5.0-1mx-ahs-amd64-unsigned
+ linux-kbuild-6.5.0-1mx-ahs
+
+
+-= ====================== =-
+- Контекстное меню Thunar =-
+Обновлены/Созданы:
+ /etc/skel/.config/Thunar/uca.xml
+ /portsoft/script/chimbalix-scripts/context-menu/
+Добавлено меню "Tools"
+Добавлено меню "Wine"
+Добавлено меню "Video Encode"
+Добавлено меню "Image Convert"
+Обновлено меню "Archive Manager"
+
+
+-= ===================== =-
+-= Темы и внешний вид =-
+- Добавлены GTK/Xfwm4 темы "Chimbalix-Orange-Greybird-mx" и "Chimbalix-Orange-Greybird-mx-dark".
+- Удалена устаревшая Xfwm4 тема "Chimbalix-orange".
+
+-= ========================== =-
+-= Меню "Пуск" =-
+- Добавлен раздел "Record & Stream" (chi-rec-stream).
+- Добавлен раздел "AI" (chi-ai).
+- Задано меню по умолчанию "Xfce4 Applications Menu" вместо "Whisker Menu"
+- Переход к вложенной структуре меню, добавлен раздел для сторонних приложений (Applications)
+
+
+-= ===================== =-
+-= Установлено / Удалено =-
+
+- Установлен файловый менеджер Double Commander (doublecmd-1.0.11.gtk2.x86_64)
+ /portsoft/x86_64/doublecmd/
+
+- Установлено приложение IMSProg для работы с CH341 программаторами
+ imsprog_1.1.11-2_amd64.deb
+
+- Установлена среда разработки Arduino IDE  v2.2.1
+ Отключена телеметрия и автоматическая проверка обновлений.
+ /portsoft/x86_64/arduino-ide_2.2.1_Linux_64bit
+ /etc/skel/.arduino15
+
+- Установлены шрифты Noto:
+ fonts-noto_20201225-1_all
+ fonts-noto-color-emoji_2.042-0+deb12u1_all
+ fonts-noto-core_20201225-1_all
+ fonts-noto-mono_20201225-1_all
+ fonts-noto-ui-core_20201225-1_all
+ fonts-noto-ui-extra_20201225-1_all
+ fonts-noto-hinted_20201225-1_all.deb
+ fonts-noto-unhinted_20201225-1_all.deb
+ 
+
+- Установлен пакет GTK3 Examples
+gtk-3-examples_3.24.38-2~deb12u1_amd64.deb
+Добавлены элементы в меню "Пуск, категория "Development":
+ GTK3 - GTK+ Demo
+ GTK3 - Widget Factory
+ Icon Browser - GTK3
+
+- Удалён пакет "apt-notifier"
+
+- Удалён торрент-клиент "Transmission"
+ transmission-common
+ transmission-qt
+ Removed dependencies: libminiupnpc17, libnatpmp1.
+
+- Установлен торрент-клиент "qBittorrent"
+ AppImage: /portsoft/x86_64/qBittorrent
+
+- Установлен пакет python3-venv
+ python3.11-venv_3.11.2-6_amd64.deb
+ python3-pip-whl_23.0.1+dfsg-1_all.deb
+ python3-setuptools-whl_66.1.1-1_all.deb
+ python3-venv_3.11.2-1+b1_amd64.deb
+
+- Установлен OBS Studio v30.0.1
+ obs-studio_30.0.1-0obsproject1.lunar_amd64
+Зависимости:
+ libfdk-aac2_2.0.2-1_amd64
+ libluajit-5.1-2_2.1.0~beta3+git20220320+dfsg-4.1_amd64
+ libluajit-5.1-common_2.1.0~beta3+git20220320+dfsg-4.1_all
+ libmbedtls14_2.28.3-1_amd64
+ libmbedx509-1_2.28.3-1_amd64
+ libqrcodegencpp1_1.8.0-1.1_amd64
+ libqt6network6_6.4.2+dfsg-10_amd64
+ libqt6opengl6_6.4.2+dfsg-10_amd64
+ libqt6qml6_6.4.2+dfsg-1_amd64
+ libqt6qmlmodels6_6.4.2+dfsg-1_amd64
+ libqt6quick6_6.4.2+dfsg-1_amd64
+ libqt6svg6_6.4.2-2_amd64
+ libqt6waylandclient6_6.4.2-1_amd64
+ libqt6waylandcompositor6_6.4.2-1_amd64
+ libqt6waylandeglclienthwintegration6_6.4.2-1_amd64
+ libqt6waylandeglcompositorhwintegration6_6.4.2-1_amd64
+ libqt6widgets6_6.4.2+dfsg-10_amd64
+ libqt6wlshellintegration6_6.4.2-1_amd64
+ libqt6xml6_6.4.2+dfsg-10_amd64
+ libsrt1.5-openssl_1.5.1-1_amd64
+ libvpl2_2023.1.1-1_amd64
+ libxcb-composite0_1.15-1_amd64
+ qt6-qpa-plugins_6.4.2+dfsg-10_amd64
+ qt6-wayland_6.4.2-1_amd64
+

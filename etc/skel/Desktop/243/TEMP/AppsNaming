@@ -1,0 +1,174 @@
+# Applications Naming Pattern
+# Version 1.0
+
+# - ----------------------- - #
+# - For Normal Applications - #
+
+# Normal:
+CATEGORY - APP_NAME
+
+# Command Line Interface:
+CATEGORY - APP_NAME (CLI)
+
+# Command Line Interface with other info:
+CATEGORY - APP_NAME (other info if exists, CLI)
+
+
+# - ------------------------ - #
+# - For System Control Panel - #
+
+# Normal:
+- NAME (other info if exists)
+
+# With Category:
+- CATEGORY - NAME (other info if exists)
+
+
+# - ------------------- - #
+# - EXAMPLE APPLICATION - #
+[Desktop Entry]
+Name=CATEGORY - APP_NAME (other info if exists)
+Comment=Application Description
+GenericName=APP_NAME or Generic Name
+
+
+# - ---------------------------- - #
+# - EXAMPLE SYSTEM CONTROL PANEL - #
+[Desktop Entry]
+Name=- NAME (other info if exists)
+Comment=Description
+GenericName=_Not Used_
+
+# - -------------- - #
+# - -------------- - #
+# - CATEGORY RULES - #
+
+ General Purpose Application:
+Name=CATEGORY - APPMANE
+ Example:
+Name[en]=Image Editor - APPNAME
+Name[ru]=Редактор Изображений - APPNAME
+
+ Application for Specialized Purposes:
+Name=TARGET PURPOSE - APPMANE
+ Example:
+Name[en]=GIF Editor - APPNAME
+Name[ru]=GIF Редактор - APPNAME
+
+
+# - -------------------------- - #
+# - -------------------------- - #
+# - BASE CATEGORIES LIST EN/RU - #
+# Anything that has no specific purpose
+
+Accessories
+Аксессуары
+
+Administration
+Администрирование
+
+Benchmark
+Бенчмарк
+
+Development
+Разработка
+
+# - EDITORS - #
+Editor
+Редактор
+
+Audio Editor
+Редактор Звука
+
+Image Editor
+Редактор Изображений
+
+RAW Image Editor
+Редактор RAW-Изображений
+
+Text Editor
+Редактор Текста
+
+Video Editor
+Редактор Видео
+
+# - VIEWERS - #
+View
+Просмотр
+
+Image Viewer
+Просмотр Изображений
+
+eBook Reader
+Чтение Электронных Книг
+
+
+Education
+Образование
+
+Games
+Игры
+
+Help
+Помощь
+
+Network
+Сеть
+
+Info
+Информация
+
+Monitoring
+Мониторинг
+
+Multimedia
+Мультимедиа
+
+Office
+Офис
+
+Other
+Прочее
+
+Tools
+Инструменты
+
+Unsorted
+Несортированное
+
+# - --------------------- - #
+# - --------------------- - #
+# - CATEGORIES LIST EN/RU - #
+
+
+HEX Editor
+HEX Редактор
+
+PDF Editor
+PDF Редактор
+
+PDF Viewer
+PDF Просмотрщик
+
+
+Checksum Calculator
+Калькулятор Контрольной Суммы
+
+Interpreter
+Интерпретатор
+
+Icon Catalog
+Каталог Значков
+
+Terminal
+Терминал
+
+Web Browser
+Веб Браузер
+
+System Info
+Системная Информация
+
+HDD/SSD Benchmark
+HDD/SSD Бенчмарк
+

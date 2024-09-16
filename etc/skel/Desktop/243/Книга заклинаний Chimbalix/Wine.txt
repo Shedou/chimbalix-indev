@@ -1,0 +1,7 @@
+
+for genshin impact and other games with bad locale:
+env LC_ALL=ru_RU.UTF-8 wine 'executable.exe'
+
+info from DXVK and use other wine prefix
+DXVK_HUD=fps,frametimes,gpuload,devinfo,drawcalls,api wine
+WINEPREFIX='path to prefix' wine 'executable.exe'

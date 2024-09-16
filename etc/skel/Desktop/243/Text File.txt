@@ -1,0 +1,132 @@
+env WINEDEBUG=-all LC_ALL=ru_RU.UTF-8 wine '/media/USERNAME/PNY/games/HoYoPlay/launcher.exe'
+
+objdump -T /usr/sbin/nordvpnd | grep GLIBC | sed 's/.*GLIBC_\([.0-9]*\).*/\1/g' | sort -Vu
+
+sudo apt install gnome-builder
+sudo apt install glade
+sudo apt install dpkg-dev devscripts equivs wget
+
+sudo apt install qt5-default
+sudo apt install libpcap-dev libncurses5-dev libprocps-dev libxtst-dev libxcb-util0-dev qttools5-dev-tools libdtkwidget-dev libdtkwm-dev pkg-config libzxcvbn-dev qtbase5-dev
+
+sudo apt-get install config-package-dev
+apt-get build-dep konsole
+fakeroot ./debian/rules binary
+
+Error for mount: system call failed: File exists.
+btrfstune -m
+
+sudo gtk-update-icon-cache -f /usr/share/icons/hicolor
+xfce4-panel -r
+
+for i in "$(ls /home)"; do
+	file="/home/$i/Desktop/file.desktop"
+done
+
+
+pkg-query -L
+dpkg-deb -c
+dpkg --info
+apt show
+apt-cache depends
+
+f2fs-tools hfsprogs hfsutils jfsutils nilfs-tools reiserfsprogs reiser4progs
+install hfsprogs
+
+${string/substring/replacement}
+Замещает первое вхождение $substring строкой $replacement.
+
+${string//substring/replacement}
+Замещает все вхождения $substring строкой $replacement.
+
+# APT
+list the contents of a package
+apt-file list PKG
+apt-get update --allow-unauthenticated
+
+# DPKG
+Also if you need to remove them forcefully
+sudo dpkg -r --force-all pkg_name
+
+# Linux Kerner Install
+sudo apt search linux-headers
+sudo apt install linux-headers-4.13 linux-image-4.13
+sudo apt purge linux-headers-4.13 linux-image-4.13
+
+
+# XDG and MIME
+sudo update-mime-database /usr/share/mime
+sudo update-desktop-database
+
+update-mime-database ~/.local/share/mime
+
+~/.local/share/mime/packages/
+/usr/share/mime/packages/
+
+xdg-mime query default x-scheme-handler/magnet
+gio mime x-scheme-handler/magnet
+xdg-mime default org.qbittorrent.qBittorrent.desktop x-scheme-handler/magnet
+
+xdg-mime default chi-network-qbittorrent.desktop x-scheme-handler/magnet
+
+
+# Thumbnails
+~/.local/share/thumbnailers/
+/usr/share/thumbnailers/
+/etc/xdg/tumbler/
+
+
+
+/etc/xdg/xfce-mimeapps.list
+/home/chimba/.config/mimeapps.list
+
+
+
+## RESTART Thunar
+kill -9 $(pgrep -i thunar)
+thunar --daemon &
+
+
+# limit outpput speed
+sudo tc qdisc add dev wlan0 root tbf rate 10mbit burst 16kbit latency 50ms
+
+sudo tc qdisc show dev wlan0
+sudo tc qdisc del dev wlan0 root
+
+# compare dirs
+diff -r <directory1> <directory2>
+
+# compile whisker menu
+sudo apt-get install libgtk-3-dev
+sudo apt-get install libexo-2-dev
+sudo apt-get install libgarcon-1-dev
+sudo apt-get install libxfce4panel-2.0
+sudo apt-get install libxfce4ui-2-dev
+sudo apt-get install accountsservice
+sudo apt-get install libaccountsservice-dev
+sudo apt-get install libgtk-layer-shell-dev
+
+
+/usr/share/desktop-directories/apps/
+/usr/share/applications/apps/submenu/
+/etc/xdg/menus/applications-merged/
+/usr/share/applications/
+
+/usr/local/share/live-files/
+
+
+
+# GRUB
+/var/lib/ucf/cache/:etc:default:grub
+/var/lib/grub/ucf/grub.previous
+/usr/share/grub/default/grub
+/usr/local/share/live-files/general-files/etc/default/grub
+/etc/default/grub
+
+
+https://www.kernel.org/doc/Documentation/sysctl/vm.txt
+https://www.kernel.org/doc/Documentation/sysctl/
+
+sudo sysctl --system
+
+dd if=/dev/urandom of=output bs=4G count=1 iflag=fullblock

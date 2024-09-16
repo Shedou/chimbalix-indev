@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Program Files Folder (portsoft)
+Comment=
+Exec=thunar "/portsoft/"
+Icon=folder-deeporange-applications
+Path=
+Terminal=false
+StartupNotify=false

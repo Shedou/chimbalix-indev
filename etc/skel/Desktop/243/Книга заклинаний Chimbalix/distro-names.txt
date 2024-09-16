@@ -1,0 +1,17 @@
+
+/etc/initrd_release
+/etc/issue
+
+/etc/os-release
+/usr/lib/os-release
+
+/usr/share/antiX/issue
+
+/etc/live/version/
+
+
+
+/usr/local/share/live-files/general-files/etc/hostname
+
+/usr/local/share/live-files/files/etc/lsb-release
+/usr/local/share/live-files/files/etc/mx-version

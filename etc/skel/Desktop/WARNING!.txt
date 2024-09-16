@@ -1,0 +1,49 @@
+This is the "Alpha" version of the Linux distribution, it contains a lot of unfinished things! Use at your own risk!
+Это "Alpha" версия дистрибутива Linux, она содержит множество незавершённых деталей! Используйте на свой страх и риск!
+
+Chimbalix ( github.com/Shedou/Chimbalix ) is based on MX Linux 23.1 x64 AHS "Libretto" ( mxlinux.org )
+Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибутиве MX Linux 23.1 x64 AHS "Libretto" ( mxlinux.org ).
+
+Useful links:
+Полезные ссылки:
+- Chimbalix Software Catalog: https://github.com/Shedou/Chimbalix-Software-Catalog
+- Stable Diffusion Web UI Neuro Linux: https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux
+
+-= ============================================ =-
+-= ============================================ =-
+-= Recommendations for developers and repackers =-
+
+--------------------------------------------------
+1) Applications and installation packages
+- Build the application as completely as possible with all dependencies included.
+- Create standalone application installation packages, don't rely on a package manager to wipe your ass.
+- Do not spread the application in pieces throughout the system - use the "portsoft" directory, specially created for installing various applications.
+--------------------------------------------------
+2) Menu "Start"
+- Use the stable "Applications" (apps) category to place applications in the menu:
+    > Applications -> Programs section -> shortcuts...
+
+- The "XDG / Linux" (xdg) category was created only for compatibility with existing Linux software.
+
+- The remaining main categories (chi-CatName) are for software built into the system, use with caution and only when necessary.
+--------------------------------------------------
+
+
+-= ========================================== =-
+-= ========================================== =-
+-= Рекомендации для разработчиков и репакеров =-
+
+--------------------------------------------------
+1) Приложения и установочные пакеты
+- Полноценно собирайте приложение со всеми зависимостями в комплекте насколько это возможно.
+- Формируйте автономные установочные пакеты приложений, не полагайтесь на то, что пакетный менеджер подотрёт вам задницу.
+- Не размазывайте приложение кусками по всей системе - используйте каталог "portsoft" специально созданный для установки разнообразных приложений.
+------------------------------------------------
+2) Меню "Пуск"
+- Используйте стабильную категорию "Приложения" (apps) для размещения приложений в меню:
+    > Приложения -> Раздел Программы -> ярлыки...
+
+- Категория "XDG / Linux" (xdg) создана только для совместимости с уже существуемым софтом для Linux.
+
+- Остальные основные категории (chi-CatName) предназначены для встроенного в систему ПО, используйте с осторожностю и только при необходимости.
+------------------------------------------------

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Skel Folder
+Comment=
+Exec=pkexec thunar "/etc/skel"
+Icon=folder-brown-dropbox
+Path=
+Terminal=false
+StartupNotify=false

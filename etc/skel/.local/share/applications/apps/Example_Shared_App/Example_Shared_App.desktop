@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Example Shared Application
+Comment=
+GenericName=
+
+Icon=godot
+Exec=.local/portsoft/other/Example_Shared_App/Example-Shared-App.run
+TryExec=
+Path=~
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=Example_Shared_App
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+#Name[ru]=
+#Comment[ru]=
+#GenericName[ru]=

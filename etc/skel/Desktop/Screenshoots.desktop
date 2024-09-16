@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Screenshoots Folder
+Comment=
+Exec=thunar "Pictures/Screenshoots/"
+Icon=applets-screenshooter
+Path=~/
+Terminal=false
+StartupNotify=false

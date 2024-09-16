@@ -1,0 +1,19 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu><!-- Level 0 -->
+	<Name>Applications</Name>
+	<Menu><!-- apps category -->
+		<Name>apps</Name>
+		<Menu><!-- SubMenu -->
+			<Name>Example</Name>
+			<Directory>apps/Example/Example.directory</Directory>
+			<Include>
+				<Category>Example_Category</Category>
+				<Filename>apps-Example-example_app_folder.desktop</Filename>
+				<Filename>apps-Example-example_apps.desktop</Filename>
+				<Filename>apps-Example-example_dirs.desktop</Filename>
+				<Filename>apps-Example-example_menu.desktop</Filename>
+				<Filename>apps-Example-example_uninstall.desktop</Filename>
+			</Include>
+		</Menu>
+	</Menu>
+</Menu>

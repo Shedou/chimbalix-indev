@@ -1,0 +1,10 @@
+[General Settings]
+Cardname=svg-gm-paris
+
+[KgTheme]
+Theme=themes/ancientegypt.desktop
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAABJgAAAJmAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Virtual1=Virtual1

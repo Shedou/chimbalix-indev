@@ -1,0 +1,35 @@
+
+-= --------------- =-
+-= Шаблоны Live-CD =-
+-= --------------- =-
+
+ Путь к шаблонам:
+/usr/lib/iso-template/
+
+-= ------ =-
+-= InitRD =-
+-= ------ =-
+
+ Распаковать initrd.gz:
+gunzip -c ../initrd.gz | cpio -idum
+
+ Упаковать initrd.gz:
+find . | cpio -o -H newc | gzip -9 > ../initrd.gz
+
+ Перепаковать initrd файл:
+cpio -id < ../initrd
+find . | cpio --create --format='newc' > ../newinitrd
+
+ Перепаковать gfx-cpio файл (isolinux/syslinux):
+cpio -id < ../gfx-cpio
+find . | cpio --create > ../gfx-cpio
+
+
+unpack:
+mkdir initrd
+cd initrd
+gunzip -c ../initrd.gz | cpio -idum
+
+# GenIso
+
+xorriso -as mkisofs -l -V MXLIVE -R -J -pad -iso-level 3 -no-emul-boot -boot-load-size 4 -boot-info-table -b boot/isolinux/isolinux.bin -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -c boot/isolinux/isolinux.cat -o "../Chimbalix-24.1-Alphachi-pre6-new.iso" .

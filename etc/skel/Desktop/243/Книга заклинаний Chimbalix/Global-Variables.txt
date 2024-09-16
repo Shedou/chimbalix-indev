@@ -1,0 +1,8 @@
+
+-= Примеры использования =-
+
+ Терминал:
+LC_ALL=C.utf8 /portsoft/x86_64/App/App.exec
+
+ Ярлык (Desktop Entry):
+env LC_ALL=en_EN.utf8 /portsoft/x86_64/App/App.exec

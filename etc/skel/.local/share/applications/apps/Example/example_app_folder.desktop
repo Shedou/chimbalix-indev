@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Example Application Folder
+Comment=
+GenericName=
+
+Icon=folder-yaru
+Exec=thunar ".local/portsoft/other/Example/"
+TryExec=
+Path=~/
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+#Categories=
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+#Name[ru]=
+#Comment[ru]=
+#GenericName[ru]=

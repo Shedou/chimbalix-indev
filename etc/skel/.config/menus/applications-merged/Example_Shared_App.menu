@@ -1,0 +1,14 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu><!-- Level 0 -->
+	<Name>Applications</Name>
+	<Menu><!-- apps category -->
+		<Name>apps</Name>
+		<Menu><!-- SubMenu -->
+			<Name>Example_Shared_App</Name>
+			<Directory>apps/Example_Shared_App/Example_Shared_App.directory</Directory>
+			<Include>
+				<Category>Example_Shared_App</Category>
+			</Include>
+		</Menu>
+	</Menu>
+</Menu>

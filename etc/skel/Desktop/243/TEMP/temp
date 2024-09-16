@@ -1,0 +1,7 @@
+sudo update-desktop-database
+sudo xdg-desktop-menu forceupdate --mode system
+
+https://linux.die.net/man/1/xdg-desktop-menu
+
+
+sudo touch /etc/xdg/menus/*.menu
