@@ -12,7 +12,7 @@ Name=Administration
 Comment=System administration utilities.
 #GenericName=
 
-Icon=SysMonTask
+Icon=/usr/share/desktop-directories/icons/admin.png
 
 # - Translations:
 Name[ru]=Администрирование
