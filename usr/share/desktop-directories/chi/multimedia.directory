@@ -12,7 +12,7 @@ Name=Multimedia
 Comment=Audio and video players
 #GenericName=
 
-Icon=simplescreenrecorder
+Icon=/usr/share/desktop-directories/icons/multimedia.png
 
 # - Translations:
 Name[ru]=Мультимедиа
