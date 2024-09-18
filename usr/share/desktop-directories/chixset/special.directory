@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Special features
+Comment=Special features settings
+#GenericName=
+
+Icon=preferences-desktop-personal
+
+# - Translations:
+Name[ru]=Специальные возможности
+Comment[ru]=Настройки специальных возможностей

@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=HDD / SSD and other storage drives
+Comment=Storage drive tools and information
+#GenericName=
+
+Icon=preferences-desktop-peripherals
+
+# - Translations:
+Name[ru]=HDD / SSD и другие накопители
+Comment[ru]=Инструменты и информация о накопителях

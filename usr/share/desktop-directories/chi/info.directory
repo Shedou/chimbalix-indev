@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Info & Tests
+Comment=System information and performance testing
+#GenericName=
+
+Icon=hwinfo
+
+# - Translations:
+Name[ru]=Информация и Тесты
+Comment[ru]=Информация о системе и тестирование производительности

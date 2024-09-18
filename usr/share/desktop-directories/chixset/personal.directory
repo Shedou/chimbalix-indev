@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Personal tools and settings
+Comment=Personal tools and settings
+#GenericName=
+
+Icon=preferences-desktop-personal
+
+# - Translations:
+Name[ru]=Персональные инструменты и настройки
+Comment[ru]=Персональные инструменты и настройки

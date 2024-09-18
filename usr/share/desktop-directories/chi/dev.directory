@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Development
+Comment=Software development tools
+#GenericName=
+
+Icon=brackets
+
+# - Translations:
+Name[ru]=Разработка
+Comment[ru]=Средства разработки ПО

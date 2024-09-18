@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Accessories
+Comment=Common desktop applications
+#GenericName=
+
+Icon=/usr/share/desktop-directories/chi/accessories.png
+
+# - Translations:
+Name[ru]=Аксессуары
+Comment[ru]=Подручные приложения

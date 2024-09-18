@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Benchmarks
+Comment=Performance testing
+#GenericName=
+
+Icon=blackmagicraw-speedtest
+
+# - Translations:
+Name[ru]=Бенчмарки
+Comment[ru]=Тестирование производительности

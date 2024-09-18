@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Other
+Comment=Applications that don't fit into other categories
+#GenericName=
+
+Icon=applications-other
+
+# - Translations:
+Name[ru]=Прочее
+Comment[ru]=Приложения, не попавшие в остальные категории

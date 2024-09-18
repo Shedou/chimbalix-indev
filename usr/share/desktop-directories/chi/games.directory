@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Games
+Comment=Games and amusements
+#GenericName=
+
+Icon=worms-armageddon
+
+# - Translations:
+Name[ru]=Игры
+Comment[ru]=Игры и развлечения

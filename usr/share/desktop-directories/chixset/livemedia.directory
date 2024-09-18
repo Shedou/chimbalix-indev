@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Only for work from Live Media
+Comment=Only for work from Live Media
+#GenericName=
+
+Icon=applications-system
+
+# - Translations:
+Name[ru]=Только для работы в загрузочном режиме
+Comment[ru]=Только для работы в загрузочном режиме

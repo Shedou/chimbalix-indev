@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Internet & Network
+Comment=Applications for Internet access
+#GenericName=
+
+Icon=emblem-web
+
+# - Translations:
+Name[ru]=Интернет и сеть
+Comment[ru]=Приложения для работы в интернете

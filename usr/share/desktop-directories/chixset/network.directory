@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Network
+Comment=Network tools and utilities
+#GenericName=
+
+Icon=applications-system
+
+# - Translations:
+Name[ru]=Сеть
+Comment[ru]=Утилиты и средства настройки сети

@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Display and power
+Comment=Display and power settings
+#GenericName=
+
+Icon=preferences-desktop-personal
+
+# - Translations:
+Name[ru]=Монитор и питание
+Comment[ru]=Настройки монитора и питания

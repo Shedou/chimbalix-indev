@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Help
+Comment=Help and documentation
+#GenericName=
+
+Icon=help-browser
+
+# - Translations:
+Name[ru]=Помощь
+Comment[ru]=Помощь и документация

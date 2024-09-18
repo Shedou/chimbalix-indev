@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Other
+Comment=
+#GenericName=
+
+Icon=pane-hide
+
+# - Translations:
+Name[ru]=Прочее
+Comment[ru]=

@@ -1,0 +1,20 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+# v1.1: https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html
+Name=System
+Comment=System applications, "System Tools", such as, for example, Log Viewer or Network Monitor.
+#GenericName=
+
+Icon=tux
+
+# - Translations:
+#Name[ru]=
+#Comment[ru]=

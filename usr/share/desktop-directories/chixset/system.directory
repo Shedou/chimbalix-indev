@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=System
+Comment=System tools and utilities
+#GenericName=
+
+Icon=applications-system
+
+# - Translations:
+Name[ru]=Системное
+Comment[ru]=Системные инструменты и утилиты

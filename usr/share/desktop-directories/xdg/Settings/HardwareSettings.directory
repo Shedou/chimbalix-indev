@@ -1,0 +1,20 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+# v1.1: https://specifications.freedesktop.org/menu-spec/menu-spec-latest.html
+Name=HardwareSettings
+Comment=A tool to manage hardware components, like sound cards, video cards or printers
+#GenericName=
+
+Icon=kdenlive-align-right
+
+# - Translations:
+#Name[ru]=
+#Comment[ru]=
