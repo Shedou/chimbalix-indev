@@ -12,7 +12,7 @@ Name=Games
 Comment=Games and amusements
 #GenericName=
 
-Icon=worms-armageddon
+Icon=/usr/share/desktop-directories/icons/games.png
 
 # - Translations:
 Name[ru]=Игры
