@@ -12,7 +12,7 @@ Name=Accessories
 Comment=Common desktop applications
 #GenericName=
 
-Icon=/usr/share/desktop-directories/chi/accessories.png
+Icon=/usr/share/desktop-directories/icons/accessories.png
 
 # - Translations:
 Name[ru]=Аксессуары

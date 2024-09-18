@@ -12,7 +12,7 @@ Name=AI
 Comment=Artificial Intelligence and Neural Networks
 #GenericName=
 
-Icon=/usr/share/desktop-directories/chi/ai.png
+Icon=/usr/share/desktop-directories/icons/ai.png
 
 # - Translations:
 Name[ru]=ИИ
