@@ -12,7 +12,7 @@ Name=Internet & Network
 Comment=Applications for Internet access
 #GenericName=
 
-Icon=emblem-web
+Icon=/usr/share/desktop-directories/icons/network.png
 
 # - Translations:
 Name[ru]=Интернет и сеть
