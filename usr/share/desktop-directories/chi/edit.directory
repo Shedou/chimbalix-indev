@@ -12,7 +12,7 @@ Name=Editors
 Comment=Editors
 #GenericName=
 
-Icon=krita
+Icon=/usr/share/desktop-directories/icons/edit.png
 
 # - Translations:
 Name[ru]=Редакторы
