@@ -12,7 +12,7 @@ Name=Office
 Comment=Office and productivity applications
 #GenericName=
 
-Icon=libreoffice-calc
+Icon=/usr/share/desktop-directories/icons/office.png
 
 # - Translations:
 Name[ru]=Офис
