@@ -12,7 +12,7 @@ Name=File Managers
 Comment=
 #GenericName=
 
-Icon=folder-adwaita
+Icon=/usr/share/desktop-directories/icons/accessories-fm.png
 
 # - Translations:
 Name[ru]=Файловые Менеджеры

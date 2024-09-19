@@ -12,7 +12,7 @@ Name=Other
 Comment=Applications that don't fit into other categories
 #GenericName=
 
-Icon=applications-other
+Icon=/usr/share/desktop-directories/icons/other.png
 
 # - Translations:
 Name[ru]=Прочее

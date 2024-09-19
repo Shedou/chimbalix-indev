@@ -12,7 +12,7 @@ Name=View
 Comment=
 #GenericName=
 
-Icon=multimedia-photo-viewer
+Icon=/usr/share/desktop-directories/icons/view.png
 
 # - Translations:
 Name[ru]=Просмотр
