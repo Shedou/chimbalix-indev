@@ -12,7 +12,7 @@ Name=Text Editors
 Comment=
 #GenericName=
 
-Icon=text-x-generic
+Icon=/usr/share/desktop-directories/icons/edit-text.png
 
 # - Translations:
 Name[ru]=Редакторы Текста

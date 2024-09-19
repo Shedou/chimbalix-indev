@@ -12,7 +12,7 @@ Name=IDE
 Comment=Integrated Development Environment
 #GenericName=
 
-Icon=netbeans
+Icon=/usr/share/desktop-directories/icons/ide.png
 
 # - Translations:
 Name[ru]=IDE

@@ -12,7 +12,7 @@ Name=Audio & Video Editors
 Comment=
 #GenericName=
 
-Icon=applications-multimedia
+Icon=/usr/share/desktop-directories/icons/edit-audiovideo.png
 
 # - Translations:
 Name[ru]=Редакторы Аудио & Видео

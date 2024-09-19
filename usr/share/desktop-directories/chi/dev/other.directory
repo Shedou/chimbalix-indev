@@ -12,7 +12,7 @@ Name=Other
 Comment=
 #GenericName=
 
-Icon=pane-hide
+Icon=/usr/share/desktop-directories/icons/dev-other.png
 
 # - Translations:
 Name[ru]=Прочее
