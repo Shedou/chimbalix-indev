@@ -12,7 +12,7 @@ Name=Tools
 Comment=Configuration tools
 #GenericName=
 
-Icon=preferences-system-services
+Icon=/usr/share/desktop-directories/icons/tools.png
 
 # - Translations:
 Name[ru]=Инструменты

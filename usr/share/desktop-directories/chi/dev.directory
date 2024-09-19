@@ -12,7 +12,7 @@ Name=Development
 Comment=Software development tools
 #GenericName=
 
-Icon=brackets
+Icon=/usr/share/desktop-directories/icons/dev.png
 
 # - Translations:
 Name[ru]=Разработка
