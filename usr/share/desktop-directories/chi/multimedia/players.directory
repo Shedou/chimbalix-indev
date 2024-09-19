@@ -12,7 +12,7 @@ Name=Players
 Comment=
 #GenericName=
 
-Icon=vlc
+Icon=/usr/share/desktop-directories/icons/players.png
 
 # - Translations:
 Name[ru]=Проигрыватели

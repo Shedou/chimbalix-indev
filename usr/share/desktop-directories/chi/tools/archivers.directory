@@ -12,7 +12,7 @@ Name=Archivers
 Comment=
 #GenericName=
 
-Icon=engrampa
+Icon=/usr/share/desktop-directories/icons/archivers.png
 
 # - Translations:
 Name[ru]=Архиваторы
