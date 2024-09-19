@@ -12,7 +12,7 @@ Name=Wine
 Comment=Wine
 #GenericName=
 
-Icon=wine
+Icon=/usr/share/desktop-directories/icons/wine.png
 
 # - Translations:
 Name[ru]=Wine

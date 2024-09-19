@@ -12,7 +12,7 @@ Name=Applications
 Comment=Other third-party applications
 #GenericName=
 
-Icon=pop-cosmic-applications
+Icon=/usr/share/desktop-directories/icons/apps.png
 
 # - Translations:
 Name[ru]=Приложения

@@ -13,7 +13,7 @@ Name=XDG / Linux
 Comment=Standard XDG categories
 #GenericName=
 
-Icon=tux
+Icon=/usr/share/desktop-directories/icons/xdg.png
 
 # - Translations:
 Name[ru]=XDG / Linux

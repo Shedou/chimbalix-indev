@@ -12,7 +12,7 @@ Name=Info & Tests
 Comment=System information and performance testing
 #GenericName=
 
-Icon=hwinfo
+Icon=/usr/share/desktop-directories/icons/info.png
 
 # - Translations:
 Name[ru]=Информация и Тесты
