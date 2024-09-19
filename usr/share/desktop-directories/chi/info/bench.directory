@@ -12,7 +12,7 @@ Name=Benchmarks
 Comment=Performance testing
 #GenericName=
 
-Icon=blackmagicraw-speedtest
+Icon=/usr/share/desktop-directories/icons/bench.png
 
 # - Translations:
 Name[ru]=Бенчмарки

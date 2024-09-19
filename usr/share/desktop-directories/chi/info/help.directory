@@ -12,7 +12,7 @@ Name=Help
 Comment=Help and documentation
 #GenericName=
 
-Icon=help-browser
+Icon=/usr/share/desktop-directories/icons/help.png
 
 # - Translations:
 Name[ru]=Помощь
