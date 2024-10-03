@@ -1,39 +1,33 @@
-Chimbalix "portsoft" directory v0.1
+Chimbalix "portsoft" directory v0.2
 
 -= BASIC RULES =-
 
-1) -= Portable independent software (statically compiled) is preferred.
-1.1) -= The preferred extension for Linux x86/x86_64 executables is ".exec".
+1) Portable independent software is preferred.
 
-2) -= Directory Structure:
+2) Directory Structure:
 /PORTSOFT_FOLDER / ARCHI_FOLDERS / program_folder
 
 PORTSOFT_FOLDER - Main folder.
-ARCHI_FOLDERS - Software "categories", for example x86/x86_64/sctipt/other.
+ARCHI_FOLDERS - Software "categories", for example x86/x86_64/script/other.
 program_folder - Folder with a specific program, for example ChimbaBench.
 
-3) -= System side PORTSOFT_FOLDER:
+-= SYSTEM =-
+
+- System side PORTSOFT_FOLDER and ARCHI_FOLDER:
 Path: /portsoft
+Path: /portsoft/ARCHI_FOLDER
 Rights: 755 (root read/write, others read-only)
 Owner-group: root:root
-> sudo chown root:root /portsoft
-> sudo chmod 755 /portsoft
 
-3.1) -= System side ARCHI_FOLDERS:
-Path: /portsoft/ARCHI_FOLDERS
-Rights: 777 (read/write for all)
-Owner-group: root:root
-> sudo chown root:root /portsoft/*
-> sudo chmod 777 /portsoft/*
-
-3.2) -= System side program_folder:
+- System side program_folder:
 Path: /portsoft/ARCHI_FOLDER/program_folder
-Rights: 777 (read/write for all, recursive "-R")
-Attention! The use of special access parameters is allowed if this does not prevent the use of the program by different users of the system.
-Owner-group: Not specified
-> chmod -R 777 /portsoft/ARCHI_FOLDER/program_folder
+Rights: 755
+Owner-group: root:root
+!!! At the discretion of the software developer/packer, it is possible to set other access rights to the application directory, or internal directories if necessary.
 
-4) -= User side PORTSOFT_FOLDER and ARCHI_FOLDERS:
+-= USER =-
+
+- User side PORTSOFT_FOLDER and ARCHI_FOLDERS:
 Path: /home/USERNAME/.local/portsoft
 Path: /home/USERNAME/.local/portsoft/ARCHI_FOLDERS
 Owner and rights: Not specified
