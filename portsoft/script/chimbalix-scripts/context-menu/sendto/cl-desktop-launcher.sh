@@ -14,13 +14,13 @@ Path_To_EXE="$1"
 Mode_Terminal="false"
 Session_Number="$RANDOM"
 
-Template_Desktop_File="/portsoft/script/chimbalix-scripts/context-menu/sendto/template.desktop"
+Template_Desktop_File="/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template.desktop"
 Input_EXE_File="$(basename "$Path_To_EXE")"
 Input_EXE_File_Without_Ext="${Input_EXE_File%.*}"
 
 Output_Desktop_Dir="$XDG_DESKTOP_DIR"
 Output_Desktop_File="$Output_Desktop_Dir/$Input_EXE_File_Without_Ext.desktop"
-Output_Icon="/portsoft/script/chimbalix-scripts/context-menu/sendto/template-icon.png"
+Output_Icon="/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template-icon.png"
 
 echo " $Session_Number"
 
@@ -33,17 +33,12 @@ fi
 
 echo " $Output_Desktop_File"
 
-
-read pause
-read pause
 read pause
 
 cp "$Template_Desktop_File" "$Output_Desktop_File"
 
 echo " $Output_Desktop_File"
 
-read pause
-read pause
 read pause
 
 sed -i -e "s~TEMPLATE_PATH_TO_EXE~$Path_To_EXE~g" "$Output_Desktop_File"
