@@ -15,7 +15,7 @@ GenericName=
 Icon=TEMPLATE_ICON
 Exec="TEMPLATE_PATH_TO_EXE"
 TryExec=
-Path=
+Path=TEMPLATE_WORK_DIR
 #StartupWMClass=
 
 Terminal=TEMPLATE_MODE_TERMINAL
