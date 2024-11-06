@@ -18,18 +18,19 @@ Session_Number="$RANDOM"
 
 Files=("$@")
 
+Template_Desktop_File="$Path_To_Script/cl-desktop-launcher-template.desktop"
+
 function LAUNCHER_CREATE() {
 	Path_To_EXE="$1"
 	Mode_Terminal="false"
 	
-	Template_Desktop_File="/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template.desktop"
 	Input_EXE_Folder="$(dirname "$Path_To_EXE")"
 	Input_EXE_File="$(basename "$Path_To_EXE")"
 	Input_EXE_File_Without_Ext="${Input_EXE_File%.*}"
 	
 	Output_Desktop_Dir="$XDG_DESKTOP_DIR"
 	Output_Desktop_File="$Output_Desktop_Dir/$Input_EXE_File_Without_Ext.desktop"
-	Output_Icon="/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template-icon.png"
+	Output_Icon="$Path_To_Script/cl-desktop-launcher-template-icon.png"
 	
 	Icon_Check_EXE_PNG="$Input_EXE_Folder/$Input_EXE_File_Without_Ext.png"
 	Icon_Check_EXE_SVG="$Input_EXE_Folder/$Input_EXE_File_Without_Ext.svg"
