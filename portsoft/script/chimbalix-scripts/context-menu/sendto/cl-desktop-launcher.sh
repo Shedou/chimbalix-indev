@@ -10,11 +10,14 @@
 # 
 # /usr/share/Thunar/sendto/cl-desktop-launcher.desktop
 
-source "$HOME/.config/user-dirs.dirs"
-
-All_ok=true
 Path_To_Script="$( dirname "$(readlink -f "$0")")"
 Session_Number="$RANDOM"
+
+All_ok=true
+
+if [ -e "$HOME/.config/user-dirs.dirs" ]; then source "$HOME/.config/user-dirs.dirs"
+else All_ok=false; exit; fi
+
 
 Files=("$@")
 
@@ -63,11 +66,13 @@ function LAUNCHER_CREATE() {
 	fi
 }
 
-for i in "${!Files[@]}"; do
-	CurrentFile="${Files[$i]}"
-	Current_Array_Number="$i"
-	LAUNCHER_CREATE "$CurrentFile"
-done
+if [ $All_ok == true ]; then
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		Current_Array_Number="$i"
+		LAUNCHER_CREATE "$CurrentFile"
+	done
+fi
 
 # MIT License
 #
