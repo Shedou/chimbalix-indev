@@ -13,6 +13,8 @@
 # Remove 2 first and 1 last char from String: "${String:2:-1}"
 #
 # sed -i -e "s~TEXT_TO_REPLACE~TEXT~g" "File.txt"
+# sed -i "s~ADD_TEXT_BEFORE_CURRENT_LINE~&\nADDED_TEXT~" "File.txt"
+# grep -rl "FIND_AND_REPLACE_THIS_TEXT" "Path_To_Dir_With_Files" | xargs sed -i "s~FIND_AND_REPLACE_THIS_TEXT~NEW_TEXT~g" &> /dev/null
 
 # Add all arguments to variable: Files="$@"
 # Remove the first argument from the queue: shift
