@@ -2,8 +2,8 @@
 Type=Application
 Version=1.0
 Encoding=UTF-8
-TryExec=/portsoft/script/chimbalix-scripts/context-menu/sendto/menu-test.sh
-Exec=/portsoft/script/chimbalix-scripts/context-menu/sendto/menu-test.sh %F
+TryExec=/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher.sh
+Exec=/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher.sh %F
 Icon=/portsoft/script/chimbalix-scripts/context-menu/sendto/template-icon.png
 Name=Desktop (Create Launcher)
 MimeType=application/x-executable;application/x-shellscript
