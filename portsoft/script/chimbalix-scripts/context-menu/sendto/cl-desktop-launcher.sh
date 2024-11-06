@@ -15,6 +15,7 @@ Mode_Terminal="false"
 Session_Number="$RANDOM"
 
 Template_Desktop_File="/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template.desktop"
+Input_EXE_Folder="$(dirname "$Path_To_EXE")"
 Input_EXE_File="$(basename "$Path_To_EXE")"
 Input_EXE_File_Without_Ext="${Input_EXE_File%.*}"
 
@@ -22,32 +23,28 @@ Output_Desktop_Dir="$XDG_DESKTOP_DIR"
 Output_Desktop_File="$Output_Desktop_Dir/$Input_EXE_File_Without_Ext.desktop"
 Output_Icon="/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template-icon.png"
 
-echo " $Session_Number"
-
-echo " $Input_EXE_File"
-echo " $Input_EXE_File_Without_Ext"
-
 if [ -e "$Output_Desktop_File" ]; then
-	Output_Desktop_File="$Output_Desktop_Dir/$Input_EXE_File_Without_Ext""_$Session_Number"".desktop"
+	Output_Desktop_File="$Output_Desktop_Dir/$Input_EXE_File_Without_Ext""_$Session_Number"".desktop"; fi
+
+Icon_Check_EXE_PNG="$Input_EXE_Folder/$Input_EXE_File_Without_Ext.png"
+Icon_Check_EXE_SVG="$Input_EXE_Folder/$Input_EXE_File_Without_Ext.svg"
+Icon_Check_File_PNG="$Input_EXE_Folder/icon.png"
+Icon_Check_File_SVG="$Input_EXE_Folder/icon.svg"
+
+if [ -e "$Icon_Check_EXE_PNG" ]; then Output_Icon="$Icon_Check_EXE_PNG"; else
+	if [ -e "$Icon_Check_EXE_SVG" ]; then Output_Icon="$Icon_Check_EXE_SVG"; else
+		if [ -e "$Icon_Check_File_PNG" ]; then Output_Icon="$Icon_Check_File_PNG"; else
+			if [ -e "$Icon_Check_File_SVG" ]; then Output_Icon="$Icon_Check_File_SVG"; fi
+		fi
+	fi
 fi
 
-echo " $Output_Desktop_File"
-
-read pause
-
 cp "$Template_Desktop_File" "$Output_Desktop_File"
-
-echo " $Output_Desktop_File"
-
-read pause
 
 sed -i -e "s~TEMPLATE_PATH_TO_EXE~$Path_To_EXE~g" "$Output_Desktop_File"
 sed -i -e "s~TEMPLATE_MODE_TERMINAL~$Mode_Terminal~g" "$Output_Desktop_File"
 sed -i -e "s~TEMPLATE_NAME~$Input_EXE_File (Launcher)~g" "$Output_Desktop_File"
 sed -i -e "s~TEMPLATE_ICON~$Output_Icon~g" "$Output_Desktop_File"
-
-echo " complete"
-read pause
 
 
 # MIT License
