@@ -7,3 +7,5 @@ Exec=/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher.
 Icon=/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher-template-icon.png
 Name=Desktop (Create Launcher)
 MimeType=application/x-executable;application/x-shellscript
+
+Name[ru]=Рабочий Стол (Создать Лаунчер)
