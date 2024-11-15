@@ -50,7 +50,6 @@
       <property name="Print" type="string" value="/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh Screen"/>
       <property name="&lt;Shift&gt;Print" type="string" value="/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh Window"/>
       <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
-      <property name="Super_R" type="string" value="xfce4-popup-applicationsmenu"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

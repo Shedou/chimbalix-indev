@@ -1,0 +1,6 @@
+
+/var/lib/ucf/cache/:etc:default:grub
+/var/lib/grub/ucf/grub.previous
+/usr/share/grub/default/grub
+/usr/local/share/live-files/general-files/etc/default/grub
+/etc/default/grub

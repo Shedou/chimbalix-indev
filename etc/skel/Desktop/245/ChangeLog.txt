@@ -1,0 +1,966 @@
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.5 Alphachi =-
+
+
+-= ===== =-
+2024-11-05 - 2024-11-07:
+
+- Удалено приложение ChimbaBench v2.6:
+	Позже будет перепаковано в формат автономного установочного пакета Installer-SH.
+	https://github.com/Shedou/Chimbalix-Software-Catalog
+
+- Добавлены ярлыки в раздел Wine для переключения версии DXVK между 1.10.3 (Vulkan 1.2) и 2.4.1 (Vulkan 1.3).
+
+- Чистка от хлама.
+
+- Добавлена возможность создания лаунчеров (полноценных ярлыков) на рабочем столе через контекстное меню "Send To" для исполняемых файлов и скриптов:
+	/portsoft/script/chimbalix-scripts/context-menu/sendto/cl-desktop-launcher.sh
+	/usr/share/Thunar/sendto/cl-desktop-launcher.desktop
+
+- Проведена чистка остатков удалённых пакетов.
+
+- Обновлены / установлены пакеты "mesa" до версии 24.2.2-1~mx23ahs:
+	libegl-mesa0 libegl-mesa0:i386 libegl1-mesa-dev libgbm-dev libgbm1 libgbm1:i386
+	libgl1-mesa-dri libgl1-mesa-dri:i386 libglapi-mesa libglapi-mesa:i386 libglx-mesa0
+	libglx-mesa0:i386 libxatracker2 mesa-va-drivers mesa-vdpau-drivers
+	mesa-vulkan-drivers mesa-vulkan-drivers:i386 mesa-libgallium mesa-libgallium:i386
+
+- Обновлены пакеты "libdrm*" до версии 2.4.123-1~mx23ahs:
+	libdrm-amdgpu1 libdrm-amdgpu1:i386 libdrm-common libdrm-dev libdrm-intel1 libdrm-intel1:i386 
+	libdrm-nouveau2 libdrm-nouveau2:i386 libdrm-radeon1 libdrm-radeon1:i386 libdrm2 libdrm2:i386 
+
+- Обновлены / установлены пакеты "firmware-*" до версий 20240709-1~mx23ahs / 20240610-1~mx23ahs / 2024.06-1~mx23ahs+1:
+	firmware-amd-graphics firmware-atheros firmware-bnx2 firmware-bnx2x firmware-brcm80211 firmware-intel-sound 
+	firmware-ipw2x00 firmware-iwlwifi firmware-libertas firmware-linux firmware-linux-free firmware-linux-nonfree 
+	firmware-misc-nonfree firmware-myricom firmware-netxen firmware-qlogic firmware-realtek firmware-sof-signed
+	firmware-intel-graphics firmware-intel-misc firmware-marvell-prestera firmware-mediatek firmware-nvidia-graphics
+
+- Обновлены пакеты:
+	mx-debian-firmware (24.08.10mx23) broadcom-sta-dkms (6.30.223.271-24~mx23+1)
+	rtl8812au-dkms (5.13.6+git20240329-1~mx23) rtl8821ce-dkms (5.5.2.1+git20240526-0~mx23)
+	linux-libc-dev (6.11.5-1~mx23ahs) wayland-protocols (1.37-1~mx23ahs)
+
+- Отключен автозапуск "vboxclient":
+	/etc/xdg/autostart/vboxclient.desktop
+
+-= ===== =-
+2024-10-30:
+
+- Добавлены переводы для некоторых элементов контекстного меню Thunar:
+	/etc/skel/.config/Thunar/uca.xml
+
+- Установлена тема курсора мыши по умолчанию (DMZ White).
+
+-= ===== =-
+2024-10-16 - 2024-10-18:
+
+- Установлены библиотеки libxcb:
+	libxcb-cursor0_0.1.4-1_amd64.deb
+	libxcb-cursor0_0.1.4-1_i386.deb
+	libxcb-image0_0.4.0-2_i386.deb
+	libxcb-render-util0_0.3.9-1+b1_i386.deb
+	libxcb-util1_0.4.0-1+b1_i386.deb
+
+- Добавлен ярлык в разделе меню "Other" позволяющий принудительно обновить кэш иконок:
+	/usr/share/applications/chi/other/update_icon_cache.desktop
+	
+- Добавлены иконки логотипа Chimbalix:
+	/usr/share/icons/hicolor/
+
+- Установлено приложение Mozilla Firefox 131.0.3.
+	/etc/skel/.config/xfce4/helpers.rc
+	/usr/share/xfce4/helpers/firefox13103.desktop
+	/portsoft/x86_64/firefox13103
+	
+- Удалён APT пакет firefox (Mozilla Firefox 118.0.2).
+
+-= ===== =-
+2024-10-05:
+
+- отключено отображение значка установки дистрибутива в системе через меню "открыть с помощью":
+	/usr/share/applications/cinstall.desktop
+
+-= ===== =-
+2024-10-04:
+
+- Установлен пакет irqbalance_1.9.2-1_amd64.deb
+
+- Обновлён файл:
+	/etc/skel/Desktop/245/DRIVERS-FOR-NVIDIA/ReadMe! EN.txt
+
+- Переработан стандартный префикс Wine:
+	/portsoft/other/chimbalix-wine-prefix/prefix/
+	Обновлён основной DXVK до версии 2.4.1
+	Добавлен DXVK версии 1.10.3 для видеокарт с поддержкой Vulkan 1.2
+	Добавлен d8vk-v1.0 для dxvk-1.10.3
+	Добавлена возможность переключить версию DXVK (CHANGE_DVXK-1.10.3.sh и CHANGE_DVXK-2.4.1.sh)
+
+- Обновлена спецификация каталога PortSoft:
+	Исправлены права доступа к системному каталогу PortSoft в соответствии с новой спецификацией.
+	/portsoft/ReadMe!.txt
+	/etc/skel/.local/portsoft/ReadMe!.txt
+
+-= ===== =-
+2024-10-03:
+
+- Установлены VBoxGuestAdditions:
+	/opt/VBoxGuestAdditions-7.0.20
+- Удалены VBoxGuestAdditions:
+	/opt/VBoxGuestAdditions-7.0.18
+
+- Удалён проблемный шрифт WineTahomaBold:
+	/portsoft/other/chimbalix-wine-prefix/prefix/drive_c/windows/Fonts/tahomabd.ttf
+
+- Начало работы над Chimbalix 24.5 Alphachi
+
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.4 Alphachi =-
+
+-= ===== =-
+2024-09-20:
+
+- Удалено приложение Krita.
+	Перепаковано в автономный установочный пакет (Installer-SH):
+	URL: https://github.com/Shedou/Chimbalix-Software-Catalog
+
+- Удалено приложение RawTherapee.
+	Перепаковано в автономный установочный пакет (Installer-SH):
+	URL: https://github.com/Shedou/Chimbalix-Software-Catalog
+
+- Чистка (удалено):
+	/etc/java-17-openjdk/
+	fonts-noto-ui-extra
+
+- Обновлены системные компоненты:
+	xserver-common (2:21.1.7-3) -> 2:21.1.7-3+deb12u7
+	xserver-xorg-core (2:21.1.7-3) -> 2:21.1.7-3+deb12u7
+	xserver-xorg-legacy (vers
+	amd64-microcode (3.20230808.1.1~deb12u1) -> 3.20240820.1~deb12u1
+	intel-microcode (3.20230808.1~deb12u1) -> 3.20240813.1~deb12u1
+	base-files (12.4+deb12u2) -> 12.4+deb12u7 - bash (5.2.15-2+b2) -> 5.2.15-2+b7
+	bind9-dnsutils (1:9.18.19-1~deb12u1) -> 1:9.18.28-1~deb12u2 - bind9-host (1:9.18.19-1~deb12u1) -> 1:9.18.28-1~deb12u2
+	bind9-libs (1:9.18.19-1~deb12u1) -> 1:9.18.28-1~deb12u2 - bluetooth (5.66-1) -> 5.66-1+deb12u2
+	bluez (5.66-1) -> 5.66-1+deb12u2 - bluez-cups (5.66-1) -> 5.66-1+deb12u2
+	bluez-obexd (5.66-1) -> 5.66-1+deb12u2 - bsdextrautils (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	bsdutils (1:2.38.1-5+b1) -> 1:2.38.1-5+deb12u1 - bubblewrap (0.8.0-2) -> 0.8.0-2+deb12u1
+	compton (1-1) -> 1-1+deb12u1 - cryptsetup (2:2.6.1-4~deb12u1) -> 2:2.6.1-4~deb12u2
+	cryptsetup-bin (2:2.6.1-4~deb12u1) -> 2:2.6.1-4~deb12u2 - cryptsetup-initramfs (2:2.6.1-4~deb12u1) -> 2:2.6.1-4~deb12u2
+	cups (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - cups-bsd (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7
+	cups-client (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - cups-common (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7
+	cups-core-drivers (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - cups-daemon (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7
+	cups-ipp-utils (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - cups-ppdc (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7
+	cups-server-common (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - curl (7.88.1-10+deb12u4) -> 7.88.1-10+deb12u7
+	distro-info-data (0.58) -> 0.58+deb12u2 - dns-root-data (2023010101) -> 2024041801~deb12u1
+	dnsutils (1:9.18.19-1~deb12u1) -> 1:9.18.28-1~deb12u2 - eject (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	engrampa (1.26.0-1) -> 1.26.0-1+deb12u2 - engrampa-common (1.26.0-1) -> 1.26.0-1+deb12u2
+	espeak-ng (1.51+dfsg-10) -> 1.51+dfsg-10+deb12u1 - espeak-ng-data (1.51+dfsg-10) -> 1.51+dfsg-10+deb12u1
+	exfatprogs (1.2.0-1) -> 1.2.0-1+deb12u1 - fdisk (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	ffmpeg (7:5.1.3-1) -> 7:5.1.6-0+deb12u1 - flatpak (1.14.4-1) -> 1.14.10-1~deb12u1
+	fonts-opensymbol (4:102.12+LibO7.4.7-1) -> 4:102.12+LibO7.4.7-1+deb12u5 - ghostscript (10.0.0~dfsg-11+deb12u2) -> 10.0.0~dfsg-11+deb12u5
+	ghostscript-x (10.0.0~dfsg-11+deb12u2) -> 10.0.0~dfsg-11+deb12u5 - gir1.2-gdkpixbuf-2.0 (2.42.10+dfsg-1+b1) -> 2.42.10+dfsg-1+deb12u1
+	gir1.2-gst-plugins-base-1.0 (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2 - gir1.2-gtk-3.0 (3.24.38-2~deb12u1) -> 3.24.38-2~deb12u2
+	gir1.2-javascriptcoregtk-4.0 (2.42.1-1~deb12u1) -> 2.44.3-1~deb12u1 - gir1.2-webkit2-4.0 (2.42.1-1~deb12u1) -> 2.44.3-1~deb12u1
+	git (1:2.39.2-1.1) -> 1:2.39.5-0+deb12u1 - git-man (1:2.39.2-1.1) -> 1:2.39.5-0+deb12u1
+	gstreamer1.0-alsa (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2 - gstreamer1.0-pipewire (0.3.65-3) -> 0.3.65-3+deb12u1
+	gstreamer1.0-plugins-bad (1.22.0-4+deb12u1) -> 1.22.0-4+deb12u5 - gstreamer1.0-plugins-bad:i386 (1.22.0-4+deb12u1) -> 1.22.0-4+deb12u5
+	gstreamer1.0-plugins-base (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2 - gstreamer1.0-plugins-base:i386 (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2
+	gtk-3-examples (3.24.38-2~deb12u1) -> 3.24.38-2~deb12u2 - gtk-update-icon-cache (3.24.38-2~deb12u1) -> 3.24.38-2~deb12u2
+	gtk2-engines-pixbuf (2.24.33-2) -> 2.24.33-2+deb12u1 - imagemagick (8:6.9.11.60+dfsg-1.6) -> 8:6.9.11.60+dfsg-1.6+deb12u2
+	imagemagick-6-common (8:6.9.11.60+dfsg-1.6) -> 8:6.9.11.60+dfsg-1.6+deb12u2
+	imagemagick-6.q16 (8:6.9.11.60+dfsg-1.6) -> 8:6.9.11.60+dfsg-1.6+deb12u2
+	initramfs-tools (0.142) -> 0.142+deb12u1 - initramfs-tools-core (0.142) -> 0.142+deb12u1
+	kio (5.103.0-1) -> 5.103.0-1+deb12u1 - krb5-locales (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2
+	less (590-2) -> 590-2.1~deb12u2 - libaom3 (3.6.0-1) -> 3.6.0-1+deb12u1
+	libaom3:i386 (3.6.0-1) -> 3.6.0-1+deb12u1 - libarchive13 (3.6.2-1) -> 3.6.2-1+deb12u1
+	libavcodec59 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1 - libavcodec59:i386 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1
+	libavdevice59 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1 - libavfilter8 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1
+	libavformat59 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1 - libavutil57 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1
+	libavutil57:i386 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1 - libblkid-dev (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	libblkid1 (2.38.1-5+b1) -> 2.38.1-5+deb12u1 - libblkid1:i386 (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	libbluetooth3 (5.66-1) -> 5.66-1+deb12u2 - libc-bin (2.36-9+deb12u7) -> 2.36-9+deb12u8
+	libc-dev-bin (2.36-9+deb12u7) -> 2.36-9+deb12u8 - libc-l10n (2.36-9+deb12u7) -> 2.36-9+deb12u8
+	libc6 (2.36-9+deb12u7) -> 2.36-9+deb12u8 - libc6-dev (2.36-9+deb12u7) -> 2.36-9+deb12u8
+	libc6-dev-i386 (2.36-9+deb12u7) -> 2.36-9+deb12u8 - libc6-dev-x32 (2.36-9+deb12u7) -> 2.36-9+deb12u8
+	libc6-i386 (2.36-9+deb12u7) -> 2.36-9+deb12u8 - libc6-x32 (2.36-9+deb12u7) -> 2.36-9+deb12u8
+	libc6:i386 (2.36-9+deb12u7) -> 2.36-9+deb12u8 - libcaja-extension1 (1.26.1-1) -> 1.26.1-1+deb12u1
+	libcjson1 (1.7.15-1) -> 1.7.15-1+deb12u1 - libcryptsetup12 (2:2.6.1-4~deb12u1) -> 2:2.6.1-4~deb12u2
+	libcups2 (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - libcups2:i386 (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7
+	libcupsimage2 (2.4.2-3+deb12u4) -> 2.4.2-3+deb12u7 - libcurl3-gnutls (7.88.1-10+deb12u4) -> 7.88.1-10+deb12u7
+	libcurl3-gnutls:i386 (7.88.1-10+deb12u4) -> 7.88.1-10+deb12u7 - libcurl4 (7.88.1-10+deb12u4) -> 7.88.1-10+deb12u7
+	libcurl4:i386 (7.88.1-10+deb12u4) -> 7.88.1-10+deb12u7 - libdav1d6 (1.0.0-2) -> 1.0.0-2+deb12u1
+	libdav1d6:i386 (1.0.0-2) -> 1.0.0-2+deb12u1 - libde265-0 (1.0.11-1) -> 1.0.11-1+deb12u2
+	libde265-0:i386 (1.0.11-1) -> 1.0.11-1+deb12u2 - libespeak-ng1 (1.51+dfsg-10) -> 1.51+dfsg-10+deb12u1
+	libexpat1 (2.5.0-1) -> 2.5.0-1+deb12u1 - libexpat1-dev (2.5.0-1) -> 2.5.0-1+deb12u1
+	libexpat1:i386 (2.5.0-1) -> 2.5.0-1+deb12u1 - libfdisk1 (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	libfreetype-dev (2.12.1+dfsg-5) -> 2.12.1+dfsg-5+deb12u3 - libfreetype6 (2.12.1+dfsg-5) -> 2.12.1+dfsg-5+deb12u3
+	libfreetype6:i386 (2.12.1+dfsg-5) -> 2.12.1+dfsg-5+deb12u3
+	libgail-common (2.24.33-2) -> 2.24.33-2+deb12u1 - libgail18 (2.24.33-2) -> 2.24.33-2+deb12u1
+	libgdk-pixbuf-2.0-0 (2.42.10+dfsg-1+b1) -> 2.42.10+dfsg-1+deb12u1
+	libgdk-pixbuf-2.0-0:i386 (2.42.10+dfsg-1+b1) -> 2.42.10+dfsg-1+deb12u1 - libgdk-pixbuf-2.0-dev (2.42.10+dfsg-1+b1) -> 2.42.10+dfsg-1+deb12u1
+	libgdk-pixbuf2.0-bin (2.42.10+dfsg-1+b1) -> 2.42.10+dfsg-1+deb12u1 - libgdk-pixbuf2.0-common (2.42.10+dfsg-1) -> 2.42.10+dfsg-1+deb12u1
+	libglib2.0-0 (2.74.6-2) -> 2.74.6-2+deb12u3 - libglib2.0-0:i386 (2.74.6-2) -> 2.74.6-2+deb12u3
+	libglib2.0-bin (2.74.6-2) -> 2.74.6-2+deb12u3 - libglib2.0-data (2.74.6-2) -> 2.74.6-2+deb12u3
+	libglib2.0-dev (2.74.6-2) -> 2.74.6-2+deb12u3 - libglib2.0-dev-bin (2.74.6-2) -> 2.74.6-2+deb12u3
+	libgnutls30 (3.7.9-2) -> 3.7.9-2+deb12u3 - libgnutls30:i386 (3.7.9-2) -> 3.7.9-2+deb12u3
+	libgs-common (10.0.0~dfsg-11+deb12u2) -> 10.0.0~dfsg-11+deb12u5 - libgs10 (10.0.0~dfsg-11+deb12u2) -> 10.0.0~dfsg-11+deb12u5
+	libgs10-common (10.0.0~dfsg-11+deb12u2) -> 10.0.0~dfsg-11+deb12u5 - libgssapi-krb5-2 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2
+	libgssapi-krb5-2:i386 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2 - libgstreamer-gl1.0-0 (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2
+	libgstreamer-gl1.0-0:i386 (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2 - libgstreamer-plugins-bad1.0-0 (1.22.0-4+deb12u1) -> 1.22.0-4+deb12u5
+	libgstreamer-plugins-bad1.0-0:i386 (1.22.0-4+deb12u1) -> 1.22.0-4+deb12u5
+	libgstreamer-plugins-base1.0-0 (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2
+	libgstreamer-plugins-base1.0-0:i386 (1.22.0-3+deb12u1) -> 1.22.0-3+deb12u2 - libgtk-3-0 (3.24.38-2~deb12u1) -> 3.24.38-2~deb12u2
+	libgtk-3-0:i386 (3.24.38-2~deb12u1) -> 3.24.38-2~deb12u2 - libgtk-3-common (3.24.38-2~deb12u1) -> 3.24.38-2~deb12u2
+	libgtk2.0-0 (2.24.33-2) -> 2.24.33-2+deb12u1 - libgtk2.0-common (2.24.33-2) -> 2.24.33-2+deb12u1
+	libisl23 (0.25-1) -> 0.25-1.1 - libisl23:i386 (0.25-1) -> 0.25-1.1 - libjavascriptcoregtk-4.0-18 (2.42.1-1~deb12u1) -> 2.44.3-1~deb12u1
+	libjavascriptcoregtk-4.1-0 (2.42.1-1~deb12u1) -> 2.44.3-1~deb12u1 - libk5crypto3 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2
+	libk5crypto3:i386 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2 - libkf5kiocore5 (5.103.0-1) -> 5.103.0-1+deb12u1
+	libkf5kiofilewidgets5 (5.103.0-1) -> 5.103.0-1+deb12u1 - libkf5kiogui5 (5.103.0-1) -> 5.103.0-1+deb12u1
+	libkf5kiontlm5 (5.103.0-1) -> 5.103.0-1+deb12u1 - libkf5kiowidgets5 (5.103.0-1) -> 5.103.0-1+deb12u1
+	libkrb5-3 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2 - libkrb5-3:i386 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2
+	libkrb5support0 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2 - libkrb5support0:i386 (1.20.1-2+deb12u1) -> 1.20.1-2+deb12u2
+	libltdl7 (2.4.7-5) -> 2.4.7-7~deb12u1 - libltdl7:i386 (2.4.7-5) -> 2.4.7-7~deb12u1
+	libmagickcore-6.q16-6 (8:6.9.11.60+dfsg-1.6) -> 8:6.9.11.60+dfsg-1.6+deb12u2
+	libmagickwand-6.q16-6 (8:6.9.11.60+dfsg-1.6) -> 8:6.9.11.60+dfsg-1.6+deb12u2
+	libminizip1 (1.1-8+b1) -> 1.1-8+deb12u1 - libmount-dev (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	libmount1 (2.38.1-5+b1) -> 2.38.1-5+deb12u1 - libmount1:i386 (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	libndp0 (1.8-1) -> 1.8-1+deb12u1 - libnghttp2-14 (1.52.0-1) -> 1.52.0-1+deb12u1
+	libnghttp2-14:i386 (1.52.0-1) -> 1.52.0-1+deb12u1 - libperl5.36 (5.36.0-7) -> 5.36.0-7+deb12u1
+	libperl5.36:i386 (5.36.0-7) -> 5.36.0-7+deb12u1 - libpipewire-0.3-0 (0.3.65-3) -> 0.3.65-3+deb12u1
+	libpipewire-0.3-modules (0.3.65-3) -> 0.3.65-3+deb12u1 - libpostproc56 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1
+	libpython3.11 (3.11.2-6) -> 3.11.2-6+deb12u3 - libpython3.11-minimal (3.11.2-6) -> 3.11.2-6+deb12u3
+	libpython3.11-stdlib (3.11.2-6) -> 3.11.2-6+deb12u3 - libqpdf29 (11.3.0-1) -> 11.3.0-1+deb12u1
+	libqt5concurrent5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - libqt5core5a (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	libqt5dbus5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - libqt5gui5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	libqt5network5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - libqt5printsupport5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	libqt5sql5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - libqt5sql5-sqlite (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	libqt5test5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - libqt5widgets5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	libqt5xml5 (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - librpm9 (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1
+	librpmbuild9 (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1 - librpmio9 (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1
+	librpmsign9 (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1 - libseccomp2 (2.5.4-1+b3) -> 2.5.4-1+deb12u1
+	libsmartcols1 (2.38.1-5+b1) -> 2.38.1-5+deb12u1 - libspa-0.2-bluetooth (0.3.65-3) -> 0.3.65-3+deb12u1
+	libspa-0.2-jack (0.3.65-3) -> 0.3.65-3+deb12u1 - libspa-0.2-modules (0.3.65-3) -> 0.3.65-3+deb12u1
+	libssh-gcrypt-4 (0.10.5-2) -> 0.10.6-0+deb12u1 - libssl3 (3.0.11-1~deb12u2) -> 3.0.14-1~deb12u2
+	libssl3:i386 (3.0.11-1~deb12u2) -> 3.0.14-1~deb12u2 - libswresample4 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1
+	libswresample4:i386 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1 - libswscale6 (7:5.1.3-1) -> 7:5.1.6-0+deb12u1
+	libtiff-dev (4.5.0-6) -> 4.5.0-6+deb12u1 - libtiff6 (4.5.0-6) -> 4.5.0-6+deb12u1
+	libtiff6:i386 (4.5.0-6) -> 4.5.0-6+deb12u1 - libtiffxx6 (4.5.0-6) -> 4.5.0-6+deb12u1
+	libtommath1 (1.2.0-6) -> 1.2.0-6+deb12u1 - libuuid1 (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	libuv1 (1.44.2-1) -> 1.44.2-1+deb12u1 - libvlc-bin (3.0.18-2) -> 3.0.21-0+deb12u1
+	libvlc5 (3.0.18-2) -> 3.0.21-0+deb12u1 - libvlccore9 (3.0.18-2) -> 3.0.21-0+deb12u1
+	libvpx7 (1.12.0-1+deb12u2) -> 1.12.0-1+deb12u3 - libvpx7:i386 (1.12.0-1+deb12u2) -> 1.12.0-1+deb12u3
+	libwebkit2gtk-4.0-37 (2.42.1-1~deb12u1) -> 2.44.3-1~deb12u1 - libwebkit2gtk-4.1-0 (2.42.1-1~deb12u1) -> 2.44.3-1~deb12u1
+	libzbar0 (0.23.92-7) -> 0.23.92-7+deb12u1 - libzbar0:i386 (0.23.92-7) -> 0.23.92-7+deb12u1
+	locales (2.36-9+deb12u7) -> 2.36-9+deb12u8 - mount (2.38.1-5+b1) -> 2.38.1-5+deb12u1 - nano (7.2-1) -> 7.2-1+deb12u1
+	network-manager-openconnect (1.2.8-3) -> 1.2.8-3+deb12u1 - network-manager-openconnect-gnome (1.2.8-3) -> 1.2.8-3+deb12u1
+	open-vm-tools (2:12.2.0-1+deb12u1) -> 2:12.2.0-1+deb12u2 - openssh-client (1:9.2p1-2+deb12u1) -> 1:9.2p1-2+deb12u3
+	openssl (3.0.11-1~deb12u2) -> 3.0.14-1~deb12u2 - openvpn (2.6.3-1+deb12u1) -> 2.6.3-1+deb12u2
+	perl (5.36.0-7) -> 5.36.0-7+deb12u1 - perl-base (5.36.0-7) -> 5.36.0-7+deb12u1
+	perl-modules-5.36 (5.36.0-7) -> 5.36.0-7+deb12u1 - pipewire (0.3.65-3) -> 0.3.65-3+deb12u1 - pipewire-alsa (0.3.65-3) -> 0.3.65-3+deb12u1
+	pipewire-bin (0.3.65-3) -> 0.3.65-3+deb12u1 - pipewire-jack (0.3.65-3) -> 0.3.65-3+deb12u1
+	pipewire-pulse (0.3.65-3) -> 0.3.65-3+deb12u1 - python3-distro-info (1.5) -> 1.5+deb12u1 - python3-idna (3.3-1) -> 3.3-1+deb12u1
+	python3-pil (9.4.0-1.1+b1) -> 9.4.0-1.1+deb12u1 - python3.11 (3.11.2-6) -> 3.11.2-6+deb12u3
+	python3.11-minimal (3.11.2-6) -> 3.11.2-6+deb12u3 - python3.11-venv (3.11.2-6) -> 3.11.2-6+deb12u3
+	qt5-gtk-platformtheme (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - qt5-qmake (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	qt5-qmake-bin (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2 - qtbase5-dev (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	qtbase5-dev-tools (5.15.8+dfsg-11) -> 5.15.8+dfsg-11+deb12u2
+	rfkill (2.38.1-5+b1) -> 2.38.1-5+deb12u1 - rpm (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1
+	rpm-common (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1 - rpm2cpio (4.18.0+dfsg-1+b1) -> 4.18.0+dfsg-1+deb12u1
+	ssh-askpass-gnome (1:9.2p1-2+deb12u1) -> 1:9.2p1-2+deb12u3 - tar (1.34+dfsg-1.2) -> 1.34+dfsg-1.2+deb12u1
+	tzdata (2023c-5) -> 2024a-0+deb12u1 - usb.ids (2023.05.17-0+deb12u1) -> 2024.07.04-0+deb12u1
+	usbutils (1:014-1) -> 1:014-1+deb12u1 - usr-is-merged (35) -> 37~deb12u1
+	util-linux (2.38.1-5+b1) -> 2.38.1-5+deb12u1 - util-linux-extra (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	util-linux-locales (2.38.1-5) -> 2.38.1-5+deb12u1 - uuid-dev (2.38.1-5+b1) -> 2.38.1-5+deb12u1
+	vlc (3.0.18-2) -> 3.0.21-0+deb12u1 - vlc-bin (3.0.18-2) -> 3.0.21-0+deb12u1
+	vlc-data (3.0.18-2) -> 3.0.21-0+deb12u1 - vlc-l10n (3.0.18-2) -> 3.0.21-0+deb12u1
+	vlc-plugin-base (3.0.18-2) -> 3.0.21-0+deb12u1 - vlc-plugin-qt (3.0.18-2) -> 3.0.21-0+deb12u1
+	vlc-plugin-video-output (3.0.18-2) -> 3.0.21-0+deb12u1 - wpasupplicant (2:2.10-12) -> 2:2.10-12+deb12u2 - ion 2:21.1.7-3) -> 2:21.1.7-3+deb12u7
+
+-= ===== =-
+2024-09-19:
+
+- Обновлены значки основных разделов меню "Пуск".
+
+-= ===== =-
+2024-09-18:
+
+- Установлена программа для поиска одинаковых файлов DupeGuru:
+	dupeguru_4.3.1-3+b1_amd64.deb
+	python3-mutagen_1.46.0-1_all.deb - python3-semantic-version_2.9.0-2_all.deb
+	python3-send2trash_1.8.1~b0-2_all.deb - python3-xxhash_3.2.0-1+b1_amd64.deb
+
+-= ===== =-
+2024-09-17:
+
+- Монтирование накопителей без ввода root пароля.
+
+- Настройка locale.gen:
+	Включена локаль "C.UTF-8 UTF-8"
+	Отключены неосновные языки
+	/etc/locale.gen
+	/etc/locale.gen.all
+	/etc/locale.gen.net
+
+- Обновлён Baobab:
+	Единицы измерения переведены в стандарт IEC GiB/MiB/KiB (1 GiB = 1024 MiB).
+	baobab_43.0-1-cl2_amd64.deb
+
+-= ===== =-
+2024-09-16:
+
+- Работа наад меню "Пуск":
+	Добавлена категория "chi-dev-other".
+	Прочие незначительные доработки и изменения.
+
+- Чистка файловой системы (удалено):
+	/etc/apt/apt.conf.d/20auto-upgrades - /etc/apt/apt.conf.d/50unattended-upgrades
+	/etc/apt/apt.conf.d/51unattended-upgrades-config - /etc/init.d/unattended-upgrades
+	/etc/kernel/postinst.d/unattended-upgrades - /etc/logrotate.d/unattended-upgrades
+	/etc/pm/sleep.d/10_unattended-upgrades-hibernate - /etc/update-motd.d/92-unattended-upgrades
+	/var/lib/dpkg/info/unattended-upgrades.list - /var/lib/dpkg/info/unattended-upgrades.postrm
+	/var/lib/systemd/deb-systemd-helper-enabled/unattended-upgrades.service.dsh-also
+	/var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/unattended-upgrades.service
+	/var/lib/ucf/cache/:etc:apt:apt.conf.d:20auto-upgrades - /var/lib/ucf/cache/:etc:apt:apt.conf.d:50unattended-upgrades
+
+-= ===== =-
+2024-09-14:
+
+- Установлено приложение Meld:
+	meld_3.22.0-2_all.deb - gir1.2-gtksource-4_4.8.4-4_amd64.deb
+	libgtksourceview-4-0_4.8.4-4_amd64.deb - libgtksourceview-4-common_4.8.4-4_all.deb
+
+- Настройки ядра:
+	/etc/sysctl.d/chimbalix-sysctl-vm-settings.conf
+	Увеличен vm.min_free_kbytes с 64 до 128 MiB (минимум свободной ОЗУ)
+	Увеличен vm.dirty_bytes с 48 до 64 MiB (кэш)
+	Увеличен vm.dirty_background_bytes с 64 до 72 MiB
+
+- Обновлено ядро до версии 6.9.12-2-liquorix-amd64:
+	URL: https://liquorix.net (https://liquorix.net/debian/)
+	linux-headers-6.9.12-2-liquorix-amd64_6.9-12.1~bookworm_amd64.deb
+	linux-image-6.9.12-2-liquorix-amd64_6.9-12.1~bookworm_amd64.deb
+
+- Переработана программа установки (на основе gazelle-installer_24.05.01mx23):
+	Решена проблема сломанного (systemd) режима загрузки.
+	chimbalix-installer_2.0-cl_amd64.deb
+	chimbalix-installer-data_2.0-cl_all.deb
+
+-= ===== =-
+2024-09-13:
+
+- Увеличено время ожидания grub до 10 секунд:
+	/etc/default/grub
+	/var/lib/ucf/cache/:etc:default:grub
+	/var/lib/grub/ucf/grub.previous
+	/usr/share/grub/default/grub
+	/usr/local/share/live-files/general-files/etc/default/grub
+
+- Обновлены инструкции по установке драйвера видеокарт NVIDIA:
+	/etc/skel/Desktop/244/DRIVERS-FOR-NVIDIA/
+
+- Чистка пакетов (удалено):
+	cleanup-notifier-mx
+	ddm-mx
+	nvidia-detect
+	thunderbird
+	mx-comfort-themes
+	mx-conky
+	mx-conky-data
+
+- Работа над меню "Пуск":
+	Перенесён раздел "Viewers" в "Accessories".
+	Прочие исправления и доработки.
+
+-= ===== =-
+2024-09-11:
+
+- Чистка файловой системы (удалено):
+	/etc/snapshot_created
+	/etc/mx-version
+	/usr/local/share/live-files/files/etc/snapshot_created
+	/usr/local/share/live-files/files/etc/mx-version
+
+- Обновлён Chimbalix Snapshot:
+	URL: https://github.com/Shedou/chimbalix-snapshot
+	chimbalix-snapshot_1.1_amd64.deb
+
+-= ===== =-
+2024-09-07:
+
+- Работа над меню "Пуск":
+	Переименован раздел "Network & Web" -> "Internet & Network".
+	Расширенные категории XDG перенесены в подменю.
+
+- Установлен LibreOffice 24.2:
+	URL: https://www.libreoffice.org/
+	libobasis24.2-base (24.2.5.2-2) libobasis24.2-calc (24.2.5.2-2) libobasis24.2-core (24.2.5.2-2)
+	libobasis24.2-draw (24.2.5.2-2) libobasis24.2-en-us (24.2.5.2-2) libobasis24.2-extension-beanshell-script-provider (24.2.5.2-2)
+	libobasis24.2-extension-javascript-script-provider (24.2.5.2-2) libobasis24.2-extension-mediawiki-publisher (24.2.5.2-2)
+	libobasis24.2-extension-nlpsolver (24.2.5.2-2) libobasis24.2-extension-pdf-import (24.2.5.2-2)
+	libobasis24.2-extension-report-builder (24.2.5.2-2) libobasis24.2-firebird (24.2.5.2-2) libobasis24.2-gnome-integration (24.2.5.2-2)
+	libobasis24.2-graphicfilter (24.2.5.2-2) libobasis24.2-images (24.2.5.2-2) libobasis24.2-impress (24.2.5.2-2)
+	libobasis24.2-kde-integration (24.2.5.2-2) libobasis24.2-librelogo (24.2.5.2-2) libobasis24.2-libreofficekit-data (24.2.5.2-2)
+	libobasis24.2-math (24.2.5.2-2) libobasis24.2-ogltrans (24.2.5.2-2) libobasis24.2-onlineupdate (24.2.5.2-2)
+	libobasis24.2-ooofonts (24.2.5.2-2) libobasis24.2-ooolinguistic (24.2.5.2-2) libobasis24.2-postgresql-sdbc (24.2.5.2-2)
+	libobasis24.2-python-script-provider (24.2.5.2-2) libobasis24.2-pyuno (24.2.5.2-2)
+	libobasis24.2-writer (24.2.5.2-2) libobasis24.2-xsltfilter (24.2.5.2-2) libreoffice24.2-base (24.2.5.2-2)
+	libreoffice24.2-calc (24.2.5.2-2) libreoffice24.2-debian-menus (24.2.5-2) libreoffice24.2-dict-en (24.2.5.2-2)
+	libreoffice24.2-dict-es (24.2.5.2-2) libreoffice24.2-dict-fr (24.2.5.2-2) libreoffice24.2-draw (24.2.5.2-2)
+	libreoffice24.2-en-us (24.2.5.2-2) libreoffice24.2-impress (24.2.5.2-2) libreoffice24.2-math (24.2.5.2-2)
+	libreoffice24.2-ure (24.2.5.2-2) libreoffice24.2-writer (24.2.5.2-2) libreoffice24.2 (24.2.5.2-2)
+	libobasis24.2-ru (24.2.5.2-2) libreoffice24.2-dict-ru (24.2.5.2-2) libreoffice24.2-ru (24.2.5.2-2)
+
+- Обновлён meson [1.0.1-5] => (1.5.1-1).
+
+- Изменена версия Baobab, предотвращаёт случайное "обновление" на оригинальную версию из репозиториев Debian.
+	baobab_43.0-1-cl1_amd64.deb
+
+- Установлен CPUPower-GUI (управление частотой процессора через графический интерфейс, если поддерживается):
+	cpupower-gui_1.0.0-1_amd64.deb
+
+- Установлен neofetch-7.1.0:
+	URL: https://github.com/dylanaraps/neofetch
+
+- Отключен вызов классического меню Xfce на правый "Super" (клавиша "Win"), данная клавиша отвечает за расширенное взаимодействие с окнами.
+
+- Удалены XDG примеры для меню "Пуск".
+
+- Установлен GNOME Disks:
+	gnome-disk-utility_43.0-1_amd64.deb
+
+- Обновлён GParted до версии 1.6.0 и библиотеки:
+	URL: https://github.com/Shedou/chimbalix-gparted
+	URL: https://gparted.org
+	gparted_1.6.0_amd64.deb
+	gparted-common_1.6.0_all.deb
+	e2fsprogs_1.47.1~rc2-1~bpo12+1_amd64.deb
+	libext2fs2_1.47.1~rc2-1~bpo12+1_amd64.deb
+
+- Исправления для переменных окружения:
+	/etc/environment
+	/etc/profile
+	/etc/skel/.bashrc
+	/etc/skel/.profile
+
+- Установлен OpenJDK amazon-corretto-21.0.4.7.1-linux-x64:
+	URL: https://aws.amazon.com/corretto/
+	Новый основной путь к Java: /opt/java
+	Глобальные переменные PATH/JAVA_HOME: /etc/environment
+	Ссылка для совместимости: /usr/lib/jvm -> /opt/java
+
+- Удалён openjdk-17-jre / openjdk-17-jre-headless:
+	ca-certificates-java
+	default-jre
+	default-jre-headless
+	java-common
+	libel-api-java
+	libhsqldb1.8.0-java
+	libjsp-api-java
+	libservlet-api-java
+	libservlet3.1-java
+	libwebsocket-api-java
+
+- Удалён устаревший LibreOffice
+
+-= ===== =-
+2024-08-27:
+- Начата работа над версией.
+
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.3 Alphachi =-
+
+-= ===== =-
+2024-07-22:
+- Установлена 32 битная версия Mangohud, а так же соответствующие элементы в контекстное меню.
+	libfmt9_9.1.0+ds1-2_i386.deb
+	libspdlog1.10_1.10.0+ds-0.4_i386.deb
+	libxnvctrl0_525.85.05-3~deb12u1_i386.deb
+	mangohud_0.6.8-2_i386.deb
+
+- Выполнен откат версии Krita с 5.2.3 до 5.2.1:
+	Krita 5.2.3 не выделяет ни одного слоя при открытии файлов из проводника, что приводит к двум проблемам:
+		1) Ожидается, что будет выделен слой изображения при открытии файла, но ничего не выделено, что заставляет тратить время на выделение слоя вручную.
+		2) При использовании инструмента трансформирования слоя может произойти "crash" приложения.
+
+- Обновлено ядро Linux до версии 6.9.10:
+	linux-headers-6.9.10-1-liquorix-amd64_6.9-9.1~bookworm_amd64.deb
+	linux-image-6.9.10-1-liquorix-amd64_6.9-9.1~bookworm_amd64.deb
+
+-= ===== =-
+2024-07-21:
+- Запуск приложений с оверлеем Mangohud из контекстного меню.
+	Нативные приложения: Tools -> Launch with Mangohud overlay
+	Windows приложения: Wine -> Run with Mangohud overlay
+
+- Wine: В контекстном меню появился пункт "Run with Custom Locale (LC ALL)" для выбора локализации (некоторые приложения зависят от "правильной" настройки локали).
+
+- Доработан скрипт "/portsoft/other/chimbalix-wine-prefix/install.sh":
+	Добавлена возможность пересоздать стандартный префикс Wine.
+	Создан ярлык в меню "Пуск".
+
+- Добавлены ссылки в меню "Пуск" на каталог префикса Wine и каталог пользователя внутри префикса.
+
+-= ===== =-
+2024-07-19:
+- Оптимизированы MIME ассоциации:
+	/etc/xdg/xfce-mimeapps.list
+
+- Установлен Mangohud и Goverlay (добавлена команда в контекстное меню для запуска через Wine с Mangohud):
+	goverlay_0.9.1-1_amd64.deb
+	mangohud_0.6.8-2_amd64.deb
+	mangohudctl_0.6.8-2_amd64.deb
+	vkbasalt_0.3.2.8-1_amd64.deb
+	libfmt9_9.1.0+ds1-2_amd64.deb
+	libqt5pas1_2.6+2.2.0+dfsg1-3_amd64.deb
+	libspdlog1.10_1.10.0+ds-0.4_amd64.deb
+
+- Добавлены новые шаблоны для создания файлов через контекстное меню проводника.
+- Работа над структурой меню "Пуск".
+- Установлен Winetricks:
+	winetricks_20230212-2_all.deb
+
+-= ===== =-
+2024-07-14:
+- Добавлена возможность конвертации изображений в формат "WebP" и обработка изображений нейронными сетями (Waifu2X):
+	/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh
+	/etc/skel/.config/Thunar/uca.xml
+- Установлено приложение "waifu2x-ncnn-vulkan":
+	/portsoft/x86_64/waifu2x-ncnn/
+- Wine - Обновлён DXVK до версии 2.4
+	Удалён d8vk (встроен в DXVK)
+
+-= ===== =-
+2024-07-11:
+- Wine - Обновлён dxvk-nvapi до версии 0.7.1:
+	/portsoft/other/chimbalix-wine-prefix/
+	
+
+-= ===== =-
+2024-07-08:
+- Обновлено ядро Linux до "6.9.8-1-liquorix-amd64":
+	linux-headers-6.9.8-1-liquorix-amd64_6.9-7.1~bookworm_amd64.deb
+	linux-image-6.9.8-1-liquorix-amd64_6.9-7.1~bookworm_amd64.deb
+
+-= ===== =-
+2024-07-07:
+- Установлен Markdown редактор GhostWriter:
+	ghostwriter_2.1.6+ds-2_amd64.deb
+	libcmark-gfm0.29.0.gfm.6_0.29.0.gfm.6-6_amd64.deb
+	libcmark-gfm-extensions0.29.0.gfm.6_0.29.0.gfm.6-6_amd64.deb
+
+-= ===== =-
+2024-07-05:
+- Обновлено приложение Krita до версии 5.2.3:
+
+- Удалён ONLYOFFICE Desktop Editors:
+	1) Сочетания клавиш "прибиты гвоздями" (невозможно изменить в настройках).
+	2) При нажатии на "alt" всплывают подсказки по интерфейсу, они конфликтуют с последующими действиями пользователя через клавиатуру.
+	3) Неудобное сочетание переноса строки в таблице (alt+enter), проблема усугубляется предыдущими пунктами.
+	URL: www.onlyoffice.com
+
+- Установлено приложение CPU-X:
+	URL: https://github.com/TheTumultuousUnicornOfDarkness/CPU-X
+	/portsoft/x86_64/cpu-x/
+
+- Обновлёна программа установки:
+	chimbalix-installer_1.1_amd64.deb
+
+-= ===== =-
+2024-06-29:
+- Отключен вывод отладочной информации Wine, что приводит в некоторых случаях к проблеме жирного ".xsession-errors":
+	/etc/environment
+		> export WINEDEBUG=-all
+	Проблема: https://overclockers.ru/blog/Hard-Workshop/show/163194/Korotko-o-probleme-zhirnogo-xsession-errors-ili-kak-Linux-mozhet-unichtozhit-resurs-SSD
+
+- Обновлено ядро Linux до "6.9.6-1-liquorix-amd64":
+	linux-headers-6.9.6-1-liquorix-amd64_6.9-5.1~bookworm_amd64.deb
+	linux-image-6.9.6-1-liquorix-amd64_6.9-5.1~bookworm_amd64.deb
+
+- Wine Staging заменён на Wine Proton LG 9.5.1:
+	URL: https://github.com/Castro-Fidel/wine_builds
+
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.2 Alphachi =-
+
+-= ===== =-
+2024-06-10:
+- Отключены горячие клавиши F3 и F1 в проводнике Thunar запущенном от имени пользователя.
+
+-= ===== =-
+2024-06-08:
+- Установлен офисный пакет OnlyOffice в качестве альтернативы для LibreOffice:
+	URL: www.onlyoffice.com
+	onlyoffice-desktopeditors_amd64.deb (v8.0.1-31)
+
+- Разработан пример приложения (Example-Shared-App) использующий общий исполняемый файл "/usr/bin/godot353_shared".
+- По умолчанию отключены репозитории MX-Linux (при необходимости можно включить через пакетный менеджер Synaptic).
+- Обновлено приложение Krita до версии 5.2.3-beta1.
+- Проведена оптимизация встроенных AppImage приложений.
+	Распакованы архивы приложений:
+		+ Улучшено время запуска.
+		+ Распакованные файлы лучше сжимаются в ISO образе дистрибутива.
+		- Приложения занимают больше места на системном диске после установки дистрибутива.
+- Добавлен AppImageKit (i686 / x86_64):
+	/portsoft/other/AppImageKit_2023/
+
+-= ===== =-
+2024-06-07:
+- Работа над структурой меню "Пуск".
+	Старый "пример" был удалён, создан новый "пример" вложенного меню.
+
+-= ===== =-
+2024-06-06:
+- Работа над структурой меню "Пуск".
+
+-= ===== =-
+2024-06-05:
+- Удалены приложения "Blender" и "Kdenlive", позде будут перенесены в Chimbalix Software Catalog:
+	https://github.com/Shedou/Chimbalix-Software-Catalog
+
+-= ===== =-
+2024-06-02:
+- Работа над структурой меню "Пуск".
+	Создана категория "XDG / Linux" для совместимости с софтом что использует XDG спецификации.
+
+-= ===== =-
+2024-06-01:
+- Работа над структурой меню "Пуск".
+- Установлен набор карточных игр "Kpatience":
+	kdegames-card-data-kf5 (version 4:22.12.3-1)
+	kpackagetool5 (version 5.103.0-1)
+	kpat (version 4:22.12.3-1)
+	libfreecell-solver0 (version 5.0.0-2+b1)
+	libkf5attica5 (version 5.103.0-1)
+	libkf5kdegames7 (version 4:22.12.3-1)
+	libkf5newstuff-data (version 5.103.0-1)
+	libkf5newstuff5 (version 5.103.0-1)
+	libkf5newstuffcore5 (version 5.103.0-1)
+	libkf5newstuffwidgets5 (version 5.103.0-1)
+	libkf5package-data (version 5.103.0-1)
+	libkf5package5 (version 5.103.0-1)
+	libkf5syndication5abi1 (version 1:5.103.0-1)
+
+-= ===== =-
+2024-05-30:
+- Изменены настройки терминала.
+- В систему встроен общий исполняемый файл Godot Engine выступающий в качестве "базы" для приложений и игр, распространяемых в минимальном наборе из .pck файла и скриптов для запуска:
+	/usr/bin/godot353_shared
+
+-= ===== =-
+2024-05-29:
+- Установлена утилита "archivemount", позволяющая монтировать архивы как папки (необходима для работы с некоторыми видами установочных пакетов):
+	archivemount_0.8.7-1+b1_amd64.deb
+- Отключены горячие клавиши F3 и F1 в проводнике Thunar запущенном от имени root.
+
+-= ===== =-
+2024-05-25:
+- Работа над структурой и ошибками системного меню.
+- Изменена версия дистрибутива.
+- Обновлён "/usr/lib/iso-template/iso-template.tar.gz".
+
+-= ===== =-
+2024-05-23:
+- Добавлена команда распаковки AppImage приложений, добавлена возможность запускать в терминале любые файлы кроме мультимедийных:
+	/etc/skel/.config/Thunar/uca.xml
+	/portsoft/script/chimbalix-scripts/context-menu/tools/appimage-extract.sh
+
+- Установлен X Terminal и пакет "xbitmaps" (необходимы для установки Steam Client):
+	xbitmaps_1.1.1-2.2_all.deb
+	xterm_379-1_amd64.deb
+- Обновлены libc библиотеки:
+	libc-bin libc-dev-bin libc-l10n libc6 libc6:i386 libc6-dev libc6-dev-i386 libc6-dev-x32 libc6-i386 libc6-x32 locales
+	
+	libc6_2.36-9+deb12u7_amd64.deb			libc6_2.36-9+deb12u7_i386.deb			libc6-dev_2.36-9+deb12u7_amd64.deb
+	libc6-dev-i386_2.36-9+deb12u7_amd64.deb	libc6-dev-x32_2.36-9+deb12u7_amd64.deb	libc6-i386_2.36-9+deb12u7_amd64.deb
+	libc6-x32_2.36-9+deb12u7_amd64.deb		libc-bin_2.36-9+deb12u7_amd64.deb		libc-dev-bin_2.36-9+deb12u7_amd64.deb
+	libc-l10n_2.36-9+deb12u7_all.deb		locales_2.36-9+deb12u7_all.deb
+
+-= ===== =-
+2024-05-22:
+
+- Удалены старые пакеты Wine:
+	wine-gecko2.47.4	wine-gecko2.47.4:i386	wine-mono8.0.0
+	wine-staging		wine-staging-amd64		wine-staging-i386:i386
+	winehq-staging		winetricks
+
+- Установлен Wine Staging v9.2
+	wine-staging-i386_9.2~bookworm-1_i386.deb		wine-staging_9.2~bookworm-1_amd64.deb
+	wine-staging-amd64_9.2~bookworm-1_amd64.deb		winehq-staging_9.2~bookworm-1_amd64.deb
+	libpcsclite1_1.9.9-2_i386.deb					libxkbregistry0_1.5.0-1_amd64.deb
+	libxkbregistry0_1.5.0-1_i386.deb
+	/usr/share/wine/mono/wine-mono-9.0.0-x86.msi
+
+- Обновлёны файлы стандартного префикса Wine:
+	/portsoft/other/chimbalix-wine-prefix/
+	Обновлён DXVK до версии 2.3.1.
+	Обновлён DXVK-nvapi до версии 0.7.
+	Обновлён VKD3D-proton до версии 2.12.
+
+- Настройки меню Пуск:
+	Установлен первым раздел "Recently Used".
+
+- Удалены пакеты Conky:
+	conky-all		conky-manager		conky-toggle-mx
+
+- Удалены неиспользуемые пакеты:
+	libaudclient2 libclutter-1.0-0	libclutter-gtk-1.0-0			libcogl-pango20		libcogl-path20 libcogl20
+	libgnome-games-support-1-3		libgnome-games-support-common	libircclient1		libmikmod3 libsdl-mixer1.2
+
+-= ===== =-
+2024-05-21:
+
+- Удалён пакет "neofetch".
+- Оптимизированы каталоги стандартных категорий:
+	/usr/share/applications/
+
+
+-= ================================== =-
+-= ---------------------------------- =-
+-= ================================== =-
+2024: -= Chimbalix 24.1 Alphachi-Pre7 =-
+
+2024-05-12:
+- Thunar (Explorer): Отключены сочетания F1 ("справка") и F3 (разрушительное действие, разделение окна на два) для исключения случайных нажатий, т.к. клавиша F2 (переименовать файл) часто используется.
+- Thunar (Explorer): Изменены настройки интерфейса.
+
+2024-05-11:
+- Удалены игры: swell-foop, peg-e, lbreakout2.
+- Удалено из дистрибутива Arduino IDE v2.2.1, автономный установочный архив приложения перенесен в Chimbalix Software Catalog:
+	URL: https://github.com/Shedou/Chimbalix-Software-Catalog
+- Обновлён образ: /usr/lib/iso-template/template-initrd.gz
+- Для вызова меню Пуск "Whisker Menu" используется левая клавиша "Win/Super", для вызова старого XFCE меню используется правая "Win/Super".
+
+2024-05-08:
+- Доработан скрипт "disable-nouveau"
+	/portsoft/script/chimbalix-scripts/disable-nouveau-driver/
+
+2024-05-07:
+- Настроен терминал для более комфортной работы.
+- Возвращено и настроено меню "Пуск" (Whisker Menu).
+- Ядро Zabbly 6.8.7 удалено из-за проблем совместимости с существующими приложениями и драйверами для Linux, установлено ядро Liquorix 6.7.12:
+	URL: https://overclockers.ru/blog/Hard-Workshop/show/156332/Pochemu-razrabotka-softa-dlya-Linux-eto-vybroshennye-resursy-ili-kak-ya-podbiral-yadro-dlya-Chimbalix
+	linux-headers-6.7.12-1-liquorix-amd64_6.7-18.1~bookworm_amd64.deb
+	linux-image-6.7.12-1-liquorix-amd64_6.7-18.1~bookworm_amd64.deb
+
+2024-05-02:
+- Обновлены шаблоны iso-template:
+	/usr/lib/iso-template/iso-template.tar.gz
+	/usr/lib/iso-template/template-initrd.gz
+- Добавлена команда jar-load для удобства запуска jar файлов:
+	/bin/jar-load
+- Обновлён "Костыль для Linux":
+	/opt/crutch-for-linux.sh
+- По умолчанию включен композитор рабочего стола Compton:
+	/etc/skel/.config/autostart/zcompton.desktop
+	/etc/skel/.config/compton.conf
+
+2024-04-29:
+- Обновлён скрипт создания скриншотов (необходим для обхода проблем возникающих при длительном и интенсивном использовании xfce4-screenshooter):
+	/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh
+- "Книга заклинаний Chimbalix"
+	/etc/skel/Desktop/Pre7/Книга заклинаний Chimbalix/
+
+2024-04-27:
+- Переработана программа установки и исправлена программа создания ISO образа дистрибутива:
+	chimbalix-installer_1.0_amd64.deb
+	chimbalix-snapshot_1.0_amd64.deb
+	URL: https://github.com/Shedou/chimbalix-installer
+	URL: https://github.com/Shedou/chimbalix-snapshot
+
+- Модифицирован Disk Usage Analyzer Baobab (удалена токсичная боковая панель):
+	baobab_43.0-1_chimbalix_amd64.deb
+	URL: https://github.com/Shedou/chimbalix-baobab
+
+2024-04-26:
+- Обновлено ядро Linux с Liquorix 6.6.13-1 до Zabbly 6.8.7:
+	linux-headers-6.8.7-zabbly+_6.8.7-amd64-202404181922-debian12_amd64.deb
+	linux-image-6.8.7-zabbly+_6.8.7-amd64-202404181922-debian12_amd64.deb
+	linux-libc-dev_6.8.7-amd64-202404181922-debian12_amd64.deb
+	URL: https://pkgs.zabbly.com/kernel/stable
+	URL: https://github.com/zabbly/linux
+
+
+-= ================================== =-
+-= ================================== =-
+-= ================================== =-
+2024: -= Chimbalix 24.1 Alphachi-pre6 =-
+
+-= =============== =-
+-= Несортированное =-
+- Обновлён скрипт скриншотера, а так же сочетания клавиш.
+ /portsoft/script/chimbalix-scripts/utils/printscreen/
+ /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+- Добавлена команда "blender" (/usr/bin)
+- Исправлен "crutch-for-linux" (пост-инсталляционный скрипт).
+- Добавлен каталог "/etc/chimbalix" для информации об установленных пакетах обновлений и прочей информации.
+- Исправлена устаневшая информация о дистрибутиве в "/etc/initrd_release", "/etc/issue" и "/etc/live/version/".
+- Исправлены "CLI" элементы в меню "Пуск".
+- Обновлены MIME-типы и ассоциации
+ /usr/share/mime/packages/
+ /home/chh/.config/mimeapps.list
+- Добавлена генерация превью для webp изображений
+ /usr/share/thumbnailers/webp.thumbnailer
+- Отключено автоматическое монтирование накопителей.
+- Создан и добавлен логотип дистрибутива Chimbalix
+ /etc/chimbalix/logo/Chimbalix-Logo*
+- Настроен браузер Mozilla Firefox
+ /opt/firefox/distribution/distribution.ini
+- Изменена тема GRUB:
+ /var/lib/ucf/cache/:etc:default:grub
+ /var/lib/grub/ucf/grub.previous
+ /usr/share/grub/default/grub
+ /usr/local/share/live-files/general-files/etc/default/grub
+ /etc/default/grub
+ /boot/grub/themes/chimbalix/
+- Настройка ядра:
+ /etc/sysctl.d/chimbalix-sysctl-vm-settings.conf
+- Установлена поддержка файловых систем: HFS/HFS+, nilfs2, reiser4/reiserfs.
+ hfsprogs_540.1.linux3-5+b1_amd64.deb
+ hfsutils_3.2.6-15_amd64.deb
+ hfsutils-tcltk_3.2.6-15_amd64.deb
+ libtk8.6_8.6.13-2_amd64.deb
+ nilfs-tools_2.2.9-1_amd64.deb
+ reiser4progs_1.2.2-1+b1_amd64.deb
+ reiserfsprogs_1%3a3.6.27-4_amd64.deb
+ tk8.6_8.6.13-2_amd64.deb
+- Добавлен архиватор PeaZip
+ /portsoft/x86_64/peazip_portable/
+- Добавлены Шаблоны:
+ /etc/skel/Templates/
+- Удалён пакет mx-docs (~185 MiB)
+- Удалён пакет unattended-upgrades
+- Установлен Godot Engine 3.5.3:
+ /portsoft/x86_64/godot353/
+ /etc/skel/.local/share/godot/templates/3.5.3.stable/ (only Linux templates)
+- Убран мусор из Автозапуска
+- Добавлена проверка на ссылку вместо файла "resolv.conf":
+ /etc/init.d/network-manager
+ /usr/lib/systemd/system/systemd-networkd.service
+ /lib/systemd/systemd-networkd.sh
+- Удалены пакеты "mx-tour", "mx-welcome", "mx-welcome-data"
+- Прочие незначительные исправления/доработки
+
+
+-= ==== =-
+-= Ядро =-
+- Обновлено ядро до версии "6.6.13-1-liquorix-amd64"
+ linux-headers-6.6.13-1-liquorix-amd64_6.6-17.1~bookworm_amd64
+ linux-image-6.6.13-1-liquorix-amd64_6.6-17.1~bookworm_amd64
+ libbabeltrace1_1.5.11-1+b2_amd64
+ libpfm4_4.13.0-1_amd64
+ libtraceevent1_1%3a1.7.1-1_amd64
+Удалено старое ядро:
+ linux-headers-6.5.0-1mx-ahs-amd64
+ linux-headers-6.5.0-1mx-ahs-common
+ linux-image-6.5.0-1mx-ahs-amd64-unsigned
+ linux-kbuild-6.5.0-1mx-ahs
+
+
+-= ====================== =-
+- Контекстное меню Thunar =-
+Обновлены/Созданы:
+ /etc/skel/.config/Thunar/uca.xml
+ /portsoft/script/chimbalix-scripts/context-menu/
+Добавлено меню "Tools"
+Добавлено меню "Wine"
+Добавлено меню "Video Encode"
+Добавлено меню "Image Convert"
+Обновлено меню "Archive Manager"
+
+
+-= ===================== =-
+-= Темы и внешний вид =-
+- Добавлены GTK/Xfwm4 темы "Chimbalix-Orange-Greybird-mx" и "Chimbalix-Orange-Greybird-mx-dark".
+- Удалена устаревшая Xfwm4 тема "Chimbalix-orange".
+
+-= ========================== =-
+-= Меню "Пуск" =-
+- Добавлен раздел "Record & Stream" (chi-rec-stream).
+- Добавлен раздел "AI" (chi-ai).
+- Задано меню по умолчанию "Xfce4 Applications Menu" вместо "Whisker Menu"
+- Переход к вложенной структуре меню, добавлен раздел для сторонних приложений (Applications)
+
+
+-= ===================== =-
+-= Установлено / Удалено =-
+
+- Установлен файловый менеджер Double Commander (doublecmd-1.0.11.gtk2.x86_64)
+ /portsoft/x86_64/doublecmd/
+
+- Установлено приложение IMSProg для работы с CH341 программаторами
+ imsprog_1.1.11-2_amd64.deb
+
+- Установлена среда разработки Arduino IDE  v2.2.1
+ Отключена телеметрия и автоматическая проверка обновлений.
+ /portsoft/x86_64/arduino-ide_2.2.1_Linux_64bit
+ /etc/skel/.arduino15
+
+- Установлены шрифты Noto:
+ fonts-noto_20201225-1_all
+ fonts-noto-color-emoji_2.042-0+deb12u1_all
+ fonts-noto-core_20201225-1_all
+ fonts-noto-mono_20201225-1_all
+ fonts-noto-ui-core_20201225-1_all
+ fonts-noto-ui-extra_20201225-1_all
+ fonts-noto-hinted_20201225-1_all.deb
+ fonts-noto-unhinted_20201225-1_all.deb
+ 
+
+- Установлен пакет GTK3 Examples
+gtk-3-examples_3.24.38-2~deb12u1_amd64.deb
+Добавлены элементы в меню "Пуск, категория "Development":
+ GTK3 - GTK+ Demo
+ GTK3 - Widget Factory
+ Icon Browser - GTK3
+
+- Удалён пакет "apt-notifier"
+
+- Удалён торрент-клиент "Transmission"
+ transmission-common
+ transmission-qt
+ Removed dependencies: libminiupnpc17, libnatpmp1.
+
+- Установлен торрент-клиент "qBittorrent"
+ AppImage: /portsoft/x86_64/qBittorrent
+
+- Установлен пакет python3-venv
+ python3.11-venv_3.11.2-6_amd64.deb
+ python3-pip-whl_23.0.1+dfsg-1_all.deb
+ python3-setuptools-whl_66.1.1-1_all.deb
+ python3-venv_3.11.2-1+b1_amd64.deb
+
+- Установлен OBS Studio v30.0.1
+ obs-studio_30.0.1-0obsproject1.lunar_amd64
+Зависимости:
+ libfdk-aac2_2.0.2-1_amd64
+ libluajit-5.1-2_2.1.0~beta3+git20220320+dfsg-4.1_amd64
+ libluajit-5.1-common_2.1.0~beta3+git20220320+dfsg-4.1_all
+ libmbedtls14_2.28.3-1_amd64
+ libmbedx509-1_2.28.3-1_amd64
+ libqrcodegencpp1_1.8.0-1.1_amd64
+ libqt6network6_6.4.2+dfsg-10_amd64
+ libqt6opengl6_6.4.2+dfsg-10_amd64
+ libqt6qml6_6.4.2+dfsg-1_amd64
+ libqt6qmlmodels6_6.4.2+dfsg-1_amd64
+ libqt6quick6_6.4.2+dfsg-1_amd64
+ libqt6svg6_6.4.2-2_amd64
+ libqt6waylandclient6_6.4.2-1_amd64
+ libqt6waylandcompositor6_6.4.2-1_amd64
+ libqt6waylandeglclienthwintegration6_6.4.2-1_amd64
+ libqt6waylandeglcompositorhwintegration6_6.4.2-1_amd64
+ libqt6widgets6_6.4.2+dfsg-10_amd64
+ libqt6wlshellintegration6_6.4.2-1_amd64
+ libqt6xml6_6.4.2+dfsg-10_amd64
+ libsrt1.5-openssl_1.5.1-1_amd64
+ libvpl2_2023.1.1-1_amd64
+ libxcb-composite0_1.15-1_amd64
+ qt6-qpa-plugins_6.4.2+dfsg-10_amd64
+ qt6-wayland_6.4.2-1_amd64
+

@@ -12,7 +12,7 @@ Name=Install Chimbalix
 Comment=Adapted Gazelle Installer for Chimbalix
 #GenericName=
 
-Icon=/usr/share/chimbalix-installer/data/logo.png
+Icon=/usr/share/chimbalix-installer-data/logo.png
 Exec=cinstall-launcher
 #TryExec=
 Path=

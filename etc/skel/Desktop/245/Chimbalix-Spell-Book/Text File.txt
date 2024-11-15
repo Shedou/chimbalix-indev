@@ -1,6 +1,4 @@
-env WINEDEBUG=-all LC_ALL=ru_RU.UTF-8 wine '/media/USERNAME/PNY/games/HoYoPlay/launcher.exe'
-
-objdump -T /usr/sbin/nordvpnd | grep GLIBC | sed 's/.*GLIBC_\([.0-9]*\).*/\1/g' | sort -Vu
+objdump -T /portsoft/x86_64/ChimbaBench_v26_Linux_x64/ChimbaBench.exec | grep GLIBC | sed 's/.*GLIBC_\([.0-9]*\).*/\1/g' | sort -Vu
 
 sudo apt install gnome-builder
 sudo apt install glade
@@ -16,22 +14,15 @@ fakeroot ./debian/rules binary
 Error for mount: system call failed: File exists.
 btrfstune -m
 
-sudo gtk-update-icon-cache -f /usr/share/icons/hicolor
-xfce4-panel -r
-
 for i in "$(ls /home)"; do
 	file="/home/$i/Desktop/file.desktop"
 done
-
 
 pkg-query -L
 dpkg-deb -c
 dpkg --info
 apt show
 apt-cache depends
-
-f2fs-tools hfsprogs hfsutils jfsutils nilfs-tools reiserfsprogs reiser4progs
-install hfsprogs
 
 ${string/substring/replacement}
 Замещает первое вхождение $substring строкой $replacement.
@@ -48,12 +39,6 @@ apt-get update --allow-unauthenticated
 Also if you need to remove them forcefully
 sudo dpkg -r --force-all pkg_name
 
-# Linux Kerner Install
-sudo apt search linux-headers
-sudo apt install linux-headers-4.13 linux-image-4.13
-sudo apt purge linux-headers-4.13 linux-image-4.13
-
-
 # XDG and MIME
 sudo update-mime-database /usr/share/mime
 sudo update-desktop-database
@@ -69,17 +54,14 @@ xdg-mime default org.qbittorrent.qBittorrent.desktop x-scheme-handler/magnet
 
 xdg-mime default chi-network-qbittorrent.desktop x-scheme-handler/magnet
 
-
 # Thumbnails
 ~/.local/share/thumbnailers/
 /usr/share/thumbnailers/
 /etc/xdg/tumbler/
 
 
-
 /etc/xdg/xfce-mimeapps.list
 /home/chimba/.config/mimeapps.list
-
 
 
 ## RESTART Thunar
@@ -97,14 +79,7 @@ sudo tc qdisc del dev wlan0 root
 diff -r <directory1> <directory2>
 
 # compile whisker menu
-sudo apt-get install libgtk-3-dev
-sudo apt-get install libexo-2-dev
-sudo apt-get install libgarcon-1-dev
-sudo apt-get install libxfce4panel-2.0
-sudo apt-get install libxfce4ui-2-dev
-sudo apt-get install accountsservice
-sudo apt-get install libaccountsservice-dev
-sudo apt-get install libgtk-layer-shell-dev
+sudo apt-get install libgtk-3-dev libexo-2-dev libgarcon-1-dev libxfce4panel-2.0 libxfce4ui-2-dev accountsservice libaccountsservice-dev libgtk-layer-shell-dev
 
 
 /usr/share/desktop-directories/apps/
@@ -113,15 +88,6 @@ sudo apt-get install libgtk-layer-shell-dev
 /usr/share/applications/
 
 /usr/local/share/live-files/
-
-
-
-# GRUB
-/var/lib/ucf/cache/:etc:default:grub
-/var/lib/grub/ucf/grub.previous
-/usr/share/grub/default/grub
-/usr/local/share/live-files/general-files/etc/default/grub
-/etc/default/grub
 
 
 https://www.kernel.org/doc/Documentation/sysctl/vm.txt

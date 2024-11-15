@@ -7,7 +7,6 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 Useful links:
 Полезные ссылки:
 - Chimbalix Software Catalog: https://github.com/Shedou/Chimbalix-Software-Catalog
-- Stable Diffusion Web UI Neuro Linux: https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux
 
 -= ============================================ =-
 -= ============================================ =-

@@ -1,0 +1,30 @@
+
+- Глобальные переменные:
+/etc/environment
+
+- Работает в TTY, но не работает в терминале на "рабочем столе":
+/etc/profile
+/home/$USER/.profile
+
+- Работает в терминале на "рабочем столе", но не работает в TTY:
+/etc/bash.bashrc
+/home/$USER/.bashrc
+
+- Похоже не работает:
+/etc/login.defs
+
+...
+/usr/share/base-files/profile
+
+
+
+- DOC:
+/usr/share/doc/adduser/examples/adduser.local.conf.examples/profile
+
+
+
+ Терминал:
+LC_ALL=C.utf8 /portsoft/x86_64/App/App.exec
+
+ Ярлык (Desktop Entry):
+env LC_ALL=en_EN.utf8 /portsoft/x86_64/App/App.exec

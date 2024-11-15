@@ -5,6 +5,7 @@
 
  Путь к шаблонам:
 /usr/lib/iso-template/
+tar -czf ../iso-template.tar.gz .
 
 -= ------ =-
 -= InitRD =-

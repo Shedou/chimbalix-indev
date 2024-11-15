@@ -1,4 +1,5 @@
 
+/etc/lsb-release
 /etc/initrd_release
 /etc/issue
 
@@ -10,8 +11,6 @@
 /etc/live/version/
 
 
-
 /usr/local/share/live-files/general-files/etc/hostname
 
 /usr/local/share/live-files/files/etc/lsb-release
-/usr/local/share/live-files/files/etc/mx-version
