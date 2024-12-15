@@ -7,7 +7,7 @@ FilesToRemove=(
 "$User_Home_Dir/.config/menus/applications-merged/Example_Shared_App.menu"
 "$User_Home_Dir/.local/share/applications/apps/Example_Shared_App/"
 "$User_Home_Dir/.local/share/desktop-directories/apps/Example_Shared_App/"
-"$User_Home_Dir/.local/portsoft/other/Example_Shared_App/"
+"$User_Home_Dir/portsoft/other/Example_Shared_App/"
 )
 
 function _remove {
