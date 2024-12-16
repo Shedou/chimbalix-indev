@@ -1,0 +1,52 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Date & Time
+Comment=Date & Time Settings
+GenericName=
+
+Icon=mx-datetime
+Exec=mx-datetime-launcher
+TryExec=mx-datetime-launcher
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-regional;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Дата и время
+Comment[ca]=Paràmetres de data i hora
+Comment[cs]=Nastavení datumu a času
+Comment[de]=Datum & Uhrzeit Einstellungen
+Comment[el]=Ρυθμίσεις ημερομηνίας και ώρας
+Comment[es]=Configuración de fecha y hora
+Comment[es_ES]=Configuración de fecha y hora
+Comment[fr]=Paramètres de la date et de l’heure
+Comment[fr_BE]=Paramètres de la date et de l’heure
+Comment[he_IL]=הגדרות תאריך ושעה
+Comment[hu]=Dátum és idő beállítások
+Comment[it]=Impostazioni Data & Ora
+Comment[ja]=システムの日付と時刻の設定を行います
+Comment[nb]=Oppsett av dato og tid
+Comment[nl]=Datum & Tijd Instellingen
+Comment[pl]=Ustawienia daty i godziny
+Comment[pt]=Definições de Data & Hora
+Comment[pt_BR]=Configurações de data, hora, fuso horário e hora automática do servidor da internet com o MX Date & Time
+Comment[ru]=Настройки даты и времени
+Comment[sl]=Nastavitve datuma in časa
+Comment[sq]=Rregullime Date & Kohe
+Comment[sv]=Datum & Tid Inställningar
+Comment[tr]=Tarih ve Saat Ayarları

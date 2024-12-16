@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Nomacs
+Comment=nomacs is a free, open source image viewer.
+GenericName=Image Viewer - Nomacs
+
+Icon=org.nomacs.ImageLounge
+Exec=nomacs %f
+TryExec=nomacs
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-view;
+Keywords=Image Viewer
+MimeType=image/avif;image/bmp;image/gif;image/heic;image/heif;image/jpeg;image/jxl;image/png;image/tiff;image/webp;image/x-eps;image/x-ico;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Nomacs
+GenericName[ru]=Просмотр Изображений - Nomacs
+Comment[de]=Ressourcenschonender, plattformübergreifender Bildbetrachter mit Unterstützung für verschiedenste Formate
+Comment[pt]=Um visualizador de imagens desenvolvido em Qt

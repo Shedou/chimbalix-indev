@@ -1,0 +1,52 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- CPU Power GUI
+Comment=Sets the frequency limits of the CPU
+GenericName=
+
+Icon=org.rnd2.cpupower_gui
+Exec=gapplication launch org.rnd2.cpupower_gui
+TryExec=cpupower-gui
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=true
+
+Categories=chixset-hardware;
+Keywords=frequency;limits;
+#MimeType=
+
+DBusActivatable=true
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- CPU Power GUI
+Comment[ru]=Управляет частотой процессора
+Keywords[el_GR]=συχνότητα;όρια;
+Keywords[en]=frequency;limits;
+Keywords[en_GB]=frequency;limits;
+Keywords[hu]=frekvencia;korlát;
+Keywords[nl]=snelheid;beperkingen;
+Keywords[it]=frequenza;limiti;
+Keywords[zh_CN]=频率;限制;
+
+Actions=Performance;Balanced;
+
+[Desktop Action Performance]
+Name[el_GR]=Αλλαγή σε προφίλ επίδοσης
+Name=Switch to Performance profile
+Exec=gapplication launch org.rnd2.cpupower_gui Performance
+
+[Desktop Action Balanced]
+Name[el_GR]=Αλλαγή σε ισορροπημένο προφίλ
+Name=Switch to Balanced profile
+Exec=gapplication launch org.rnd2.cpupower_gui Balanced

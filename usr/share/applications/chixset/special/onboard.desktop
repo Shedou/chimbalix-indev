@@ -1,0 +1,55 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Onscreen Keyboard (Start)
+Comment=Flexible onscreen keyboard
+GenericName=
+
+Icon=onboard
+Exec=onboard
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-special;
+#Keywords=
+#MimeType=
+
+X-Ubuntu-Gettext-Domain=onboard
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Экранная Клавиатура (Запуск)
+Comment[ast]=Tecláu en pantalla adautable
+Comment[ca]=Teclat flexible de pantalla
+Comment[cs]=Nastavitelná klávesnice na obrazovce
+Comment[da]=Fleksibelt skærmtastatur
+Comment[de]=Flexible Bildschirmtastatur
+Comment[en_AU]=Flexible onscreen keyboard
+Comment[en_GB]=Flexible onscreen keyboard
+Comment[es]=Teclado en pantalla flexible
+Comment[fr]=Clavier virtuel flexible
+Comment[gl]=Teclado na pantalla flexíbel
+Comment[ia]=Claviero flexibile sur le schermo
+Comment[it]=Tastiera a schermo flessibile
+Comment[km]=ក្ដារចុច​លើ​អេក្រង់​ប្រែប្រួល
+Comment[ko]=유연한 화상 키보드
+Comment[mr]=लवचिक ऑनस्क्रीन कळफलक
+Comment[ms]=Papan kekunci atas-skrin fleksibel
+Comment[oc]=Clavièr virtual flexible
+Comment[pl]=Elastyczna klawiatura ekranowa
+Comment[pt]=Teclado no ecrã flexível
+Comment[sl]=Prilagodljiva zaslonska tipkovnica
+Comment[sv]=Flexibelt onscreen-tangentbord
+Comment[tr]=Esnek ekran klavyesi
+Comment[ug]=ماسلىشىشچان ئېكران ھەرپتاختىسى

@@ -1,0 +1,86 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Autorun (Xfce)
+Comment=Customize desktop startup
+GenericName=
+
+Icon=org.xfce.session
+Exec=xfce4-session-settings
+TryExec=xfce4-session-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-system;
+#Keywords=
+#MimeType=
+
+X-XfcePluggable=true
+X-XfceHelpComponent=xfce4-session
+X-XfceHelpPage=preferences
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Автозапуск (Xfce)
+Comment[ar]=تخصيص بدأ التشغيل لسطح المكتب
+Comment[az]=İş qoyağı başlanışını özəlləşdir
+Comment[be]=Наладка запуску працоўнага асяроддзя
+Comment[be@tarask]=Наладзіць запуск працоўнага асяродьдзя
+Comment[bg]=Персонализиране на стартирането на работния плот
+Comment[ca]=Personalitza l'inici de l'escriptori
+Comment[cs]=Přizpůsobení spouštění pracovního prostředí
+Comment[da]=Tilpas skrivebordsopstart
+Comment[de]=Anpassen des Startverhaltens der Arbeitsumgebung
+Comment[el]=Διαμόρφωση εκκίνησης επιφάνειας εργασίας
+Comment[en_AU]=Customize desktop startup
+Comment[en_CA]=Customize desktop startup
+Comment[en_GB]=Customise desktop startup
+Comment[es]=Personalice el inicio del escritorio
+Comment[et]=Kohenda töölauakeskkonna käivitumist
+Comment[eu]=Mahaigainaren abioa pertsonalizatu
+Comment[fa_IR]=سفارشی‌سازی شروع میزکار
+Comment[fi]=Mukauta työpöydän käynnistystä
+Comment[fr]=Personnaliser le démarrage du bureau
+Comment[gl]=Personalizar o inicio do escritorio
+Comment[he]=התאם אישית את הפעלת שולחן העבודה
+Comment[hi]=डेस्कटॉप आरंभ अनुकूलन
+Comment[hr]=Prilagodi pokretanje radne površine
+Comment[hu]=Az asztali környezet indításának személyre szabása
+Comment[hy_AM]=Յարմարեցնել աշխատասեղանի մեկնարկումը
+Comment[hye]=Յարմարեցնել աշխատասեղանի մեկնարկումը
+Comment[id]=Pengaturan hidupkan desktop
+Comment[ie]=Personalisar li inicie del ambientie
+Comment[is]=Sérsníða ræsingu skjáborðs
+Comment[it]=Personalizza l'avvio
+Comment[ja]=デスクトップの起動をカスタマイズします
+Comment[kk]=Жұмыс үстелінің қосылуын баптау
+Comment[ko]=데스크톱 시작 개별 설정
+Comment[lt]=Tinkinti darbalaukio paleidimą
+Comment[ms]=Suaikan permulaan desktop
+Comment[nb]=Tilpass skrivebordsoppstart
+Comment[nl]=Opstarten van werkomgeving aanpassen
+Comment[oc]=Personalizar l’aviada del burèu
+Comment[pl]=Konfiguruje ustawienia środowiska graficznego
+Comment[pt]=Personalizar arranque do ambiente de trabalho
+Comment[pt_BR]=Personalizar inicialização do ambiente
+Comment[ru]=Персонализация запуска 
+Comment[sk]=Prispôsobuje spúšťanie prostredia
+Comment[sl]=Prilagajanje zagona namizja
+Comment[sq]=Përshtatni nisjen e desktopit
+Comment[sr]=Прилагодите покретање радног простора
+Comment[sv]=Anpassa skrivbordsuppstart
+Comment[th]=ปรับแต่งการเปิดวาระเดสก์ท็อป
+Comment[tr]=Masaüstü başlangıcını özelleştir
+Comment[uk]=Налаштувати запуск стільниці
+Comment[zh_CN]=自定义桌面启动
+Comment[zh_TW]=自訂桌面啟動

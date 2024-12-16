@@ -1,0 +1,60 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Meld
+Comment=Compare and merge your files
+GenericName=Diff Viewer
+
+Icon=org.gnome.Meld
+Exec=meld %F
+TryExec=meld
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=true
+
+Categories=chi-dev;
+Keywords=diff;merge;
+MimeType=application/x-meld-comparison;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+GenericName[ru]=Сравнение файлов
+Comment[ru]=Сравнение и объединение файлов
+
+# TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+Keywords[ca]=diff;fusió;
+Keywords[cs]=rozdíl;odlišnosti;diff;porovnání;porovnávání;srovnání;srovnávání;slučování;sloučení;
+Keywords[da]=diff;flet;
+Keywords[de]=diff;merge;vergleichen;zusammenführen;
+Keywords[es]=diff;mezcla;
+Keywords[eu]=diff;merge;
+Keywords[fi]=diff;merge;yhdistäminen;erot;vertailu;vertaa;
+Keywords[fr]=diff;fusion;
+Keywords[gl]=comparar;combinar;
+Keywords[hu]=diff;merge;különbség;patch;folt;
+Keywords[id]=diff;merge;
+Keywords[it]=diff;merge;differenze;unione;
+Keywords[ja]=diff;merge;比較;マージ;
+Keywords[nb]=forskjell;flett;
+Keywords[pl]=różnica;diff;merge;scalanie;łączenie;połącz;porównaj;łata;łatka;patch;
+Keywords[pt]=diff;diferenças;comparar;unir;
+Keywords[pt_BR]=comparar;diferença;diff;mesclar;mesclagem;merge;
+Keywords[ro]=diff;merge;diferență;diferențe;îmbinare;
+Keywords[ru]=diff;merge;сравнение;объединение;
+Keywords[sl]=diff;merge;primerjava;usklajevanje;
+Keywords[sr]=разлике;стопи;
+Keywords[sr@latin]=razlike;stopi;
+Keywords[sv]=diff;merge;sammanfogning;
+Keywords[tr]=diff;fark;birleştir;merge;
+Keywords[uk]=diff;merge;різниця;відмінність;об'єднати;порівняти;
+Keywords[zh_CN]=diff;merge;差异;合并;
+Keywords[zh_TW]=差異;合併;diff;merge;

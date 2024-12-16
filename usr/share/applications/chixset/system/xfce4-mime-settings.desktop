@@ -1,0 +1,77 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Default Applications
+Comment=Associate preferred applications with MIME types
+GenericName=
+
+Icon=org.xfce.settings.default-applications
+Exec=xfce4-mime-settings
+TryExec=xfce4-mime-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-system;
+#Keywords=
+#MimeType=
+
+X-XfcePluggable=true
+X-XfceHelpPage=mime
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Приложения По Умолчанию
+Comment[be]=Звязвае праграмы з тыпамі MIME
+Comment[be@tarask]=Зьвязаць пераважныя дастасаваньні MIME-тыпамі
+Comment[bg]=Обвързване на предпочитани програми с MIME типове
+Comment[ca]=Associeu les aplicacions preferides amb els tipus MIME
+Comment[cs]=Asociujte upřednostňované aplikace s typy MIME
+Comment[da]=Tilknyt foretrukne programmer med MIME-typer
+Comment[de]=Bevorzugte Anwendungen mit MIME-Typen verknüpfen
+Comment[el]=Συσχετίστε εφαρμογές με τύπους MIME
+Comment[en_CA]=Associate preferred applications with MIME types
+Comment[en_GB]=Associate preferred applications with MIME types
+Comment[es]=Asocie aplicaciones preferidas a los tipos MIME
+Comment[et]=Seosta eelistatud rakendused MIME-tüüpidega
+Comment[eu]=Lotu hobetsitako MIME motak aplikazioekin.
+Comment[fr]=Associer les applications préférées aux types MIME
+Comment[gl]=Asocia as aplicacións preferidas con tipos MIME
+Comment[he]=קשר ישומים מועדפים עם סוגי MIME 
+Comment[hr]=Poveži aplikacije s MIME tipovima
+Comment[hu]=Előnyben részesített alkalmazások társítása MIME-típusokhoz
+Comment[hy_AM]=Նախընտրած ծրագրերը MIME տեսակների համար
+Comment[id]=Asosiasikan aplikasi yang disukai dengan tipe MIME
+Comment[ie]=Associar li preferret applicationes con tipes MIME
+Comment[it]=Associa le applicazioni preferite con i tipi MIME
+Comment[ja]=MIME タイプにお気に入りのアプリケーションを割り当てます
+Comment[kk]=Таңдамалы қолданбаларды MIME түрлерімен сәйкестендіру
+Comment[ko]=MIME 형식에 프로그램 연결하기
+Comment[lt]=Susieti pageidaujamas programas su MIME tipais
+Comment[ms]=Kait aplikasi dikehendaki dengan jenis MIME
+Comment[nb]=Tilknytt MIME-typer til foretrukne programmer
+Comment[nl]=Koppel voorkeurstoepassingen aan bestandssoorten (MIME-typen)
+Comment[oc]=Associar las aplicacions preferidas als tipes MIME
+Comment[pl]=Powiązuje typy MIME z preferowanymi programami
+Comment[pt]=Associar aplicações preferidas com tipos de MIME
+Comment[pt_BR]=Associa aplicativos preferidos aos tipos MIME
+Comment[ru]=Связать предпочитаемые приложения с MIME-типами 
+Comment[sk]=Priradenie uprednostňovaných aplikácií k typom MIME
+Comment[sl]=Poveži prednostne aplikacije z MIME vrstami
+Comment[sq]=Përshoqëroni aplikacione të parapëlqyer me lloje MIME
+Comment[sr]=Придружите омиљене програме МИМЕ врстама
+Comment[sv]=Associera föredragna program med MIME-typer
+Comment[th]=เชื่อมโยงโปรแกรมที่ชอบเข้ากับชนิด MIME ต่างๆ
+Comment[tr]=Yeğlenen uygulamaları MIME türleriyle ilişkilendirin
+Comment[uk]=Асоціювати програми з відповідними типами MIME
+Comment[zh_CN]=首选应用程序与 MIME 类型绑定
+Comment[zh_TW]=將偏好的應用程式與 MIME 類型關聯

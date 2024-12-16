@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=IMSProg Editor 
+Comment=Chip editor database for IMSProg
+GenericName=IMSProg Editor
+
+Icon=/usr/share/pixmaps/chipEdit64.png
+Exec=/usr/bin/IMSProg_editor
+TryExec=/usr/bin/IMSProg_editor
+Path=/usr/bin/
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-imsprog;
+Keywords=Microcircuit;Microchip;IC;Integrated circuit
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=IMSProg Editor 
+#GenericName[ru]=
+Comment[ru]=Редактор базы микросхем для IMSProg
+Keywords[ru]=Микросхема;Микрочип;ИС;Интегральная схема;chip

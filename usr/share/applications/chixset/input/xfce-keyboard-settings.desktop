@@ -1,0 +1,92 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Keyboard (Xfce)
+Comment=Edit keyboard settings and application shortcuts
+GenericName=
+
+Icon=org.xfce.settings.keyboard
+Exec=xfce4-keyboard-settings
+TryExec=xfce4-keyboard-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-input;
+#Keywords=
+#MimeType=
+
+X-XfcePluggable=true
+X-XfceHelpPage=keyboard
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Клавиатура (Xfce)
+Comment[ar]=تحرير إعدادات لوحة المفاتيح واختصارات التطبيقات
+Comment[ast]=Edita la configuración del tecláu y los accesos direutos d'aplicación
+Comment[be]=Рэдагаванне налад клавіятуры і спалучэнняў клавіш
+Comment[be@tarask]=Рэдагаваць налады клявіятуры й спалучэньні клявішаў
+Comment[bg]=Настройки на клавиатурата и съчетанията от клавиши
+Comment[bn]=কীবোর্ড সেটিংসমূহ ও অ্যাপ্লিকেশন শর্টকাট সম্পাদনা
+Comment[ca]=Editeu els ajusts del teclat i les dreceres de les aplicacions
+Comment[cs]=Úprava nastavení klávesnice a klávesových zkratek
+Comment[da]=Rediger tastaturindstillinger og programgenveje
+Comment[de]=Die Tastatureinstellungen und Tastenkürzel für Anwendungen bearbeiten
+Comment[el]=Επεξεργασία ρυθμίσεων πληκτρολογίου και συντομεύσεων εφαρμογών
+Comment[en_AU]=Edit keyboard settings and application shortcuts
+Comment[en_CA]=Edit keyboard settings and application shortcuts
+Comment[en_GB]=Edit keyboard settings and application shortcuts
+Comment[es]=Edite la configuración del teclado y los atajos de las aplicaciones
+Comment[et]=Halda klaviatuuri seadistusi ning rakenduste otseteesid
+Comment[eu]=Editatu teklatu ezarpenak eta aplikazio lasterbideak
+Comment[fi]=Näppäimistön asetukset ja sovellusten pikanäppäimet
+Comment[fr]=Éditer les paramètres du clavier et les raccourcis des applications
+Comment[gl]=Modificar as preferencias do teclado e os atallos das aplicacións
+Comment[he]=עריכת הגדרות מקלדת וקיצורי יישומים
+Comment[hr]=Uredi postavke tipkovnice i prečace programa
+Comment[hu]=Billentyűzet-beállítások és alkalmazás-gyorsbillentyűk szerkesztése
+Comment[hy_AM]=Խմբագրել ստեղնաշարի կարգաւորումները եւ ծրագրի դիւրանցումները
+Comment[hye]=Խմբագրել ստեղնաշարի կարգաւորումները եւ ծրագրի դիւրանցումները
+Comment[id]=Sunting pengaturan papan ketik dan pintasan aplikasi
+Comment[ie]=Modificar parametres de tastatura a rapid-tastes de applicationes
+Comment[is]=Sýsla með stillingar lyklaborðs og flýtilykla
+Comment[it]=Configurazione della tastiera e delle scorciatoie per le applicazioni
+Comment[ja]=キーボード設定とアプリケーションショートカットキーを編集します
+Comment[ka]=კლავიატურის პარამეტრების და პროგრამების მალსახმობების რედაქტირება
+Comment[kk]=Пернетақта баптауларын мен қолданбалар жарлықтарын түзету
+Comment[ko]=키보드 설정과 프로그램 바로 가기를 편집합니다
+Comment[lt]=Taisyti klaviatūros nustatymus ir programų susiejimus
+Comment[lv]=Rediģēt tastatūras iestatījumus un lietotņu īsceļus
+Comment[ms]=Sunting tetapan dan pintasan aplikasi papan kekunci
+Comment[nb]=Rediger tastaturinnstillinger og programsnarveier
+Comment[nl]=Bewerk toetsenbordinstellingen en toepassingssneltoetsen
+Comment[nn]=Endra tastaturinnstillingar og snøggtastar
+Comment[oc]=Editar los paramètres del clavièr e acorchis de las aplicacions
+Comment[pl]=Konfiguruje ustawienia klawiatury oraz skróty klawiszowe programów
+Comment[pt]=Editar definições do teclado e atalhos das aplicações
+Comment[pt_BR]=Edite configurações de teclado e atalhos de aplicativos
+Comment[ro]=Editați opțiunile de tastatură și combinațiile de taste
+Comment[ru]=Изменение настроек клавиатуры и комбинаций клавиш
+Comment[sk]=Úprava nastavení klávesnice a klávesových skratiek
+Comment[sl]=Uredite nastavitve tipkovnice in bližnjičnih tipk
+Comment[sq]=Përpunoni rregullime tastiere dhe shkurtore aplikacionesh
+Comment[sr]=Уредите поставке тастатуре и пречица програма
+Comment[sv]=Redigera tangentbordsinställningar och programgenvägar
+Comment[th]=ตั้งค่าแป้นพิมพ์และปุ่มลัดเรียกโปรแกรม
+Comment[tr]=Klavye ayarlarını ve uygulama kısayollarını düzenle
+Comment[ug]=ھەرپتاختا تەڭشىكى ۋە پروگرامما تېزلەتمىلىرىنى تەھرىرلەيدۇ
+Comment[uk]=Редагувати властивості клавіатури та ярликів запуску програм
+Comment[ur]=کیبورڈ کی ترتیبات اور اطلاقیوں کے شارٹ کٹس مدون کریں
+Comment[ur_PK]=کیبورڈ کی ترتیبات اور اطلاقیوں کے شارٹ کٹس مدون کریں
+Comment[zh_CN]=编辑键盘设置和应用程序快捷键
+Comment[zh_HK]=編輯鍵盤設定值和應用程式捷徑
+Comment[zh_TW]=編輯鍵盤設定與應用程式捷徑

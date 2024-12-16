@@ -1,0 +1,87 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Onscreen Keyboard
+Comment=Change Onboard settings
+GenericName=
+
+Icon=onboard
+Exec=onboard-settings
+TryExec=onboard-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-special;
+#Keywords=
+#MimeType=
+
+X-Ubuntu-Gettext-Domain=onboard
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Экранная Клавиатура
+Comment[ar]=غيّر إعدادات لوحة مفاتيح الشاشة
+Comment[ast]=Camudar configuración d'Onboard
+Comment[be]=Змяніць наладкі Onboard
+Comment[bg]=Промяна на настройките на Onboard
+Comment[bn]=অনবোর্ড সেটিং পরিবর্তন করুন
+Comment[bs]=Promenite postavke Onboarda
+Comment[ca]=Canvia els paràmetres de l'Onboard
+Comment[ca@valencia]=Canvia els paràmetres de l'Onboard
+Comment[cs]=Změnit nastavení Onboardu
+Comment[da]=Ændr indstillinger i Onboard
+Comment[de]=Onboard-Einstellungen ändern
+Comment[el]=Αλλαγή των ρυθμίσεων του Onboard
+Comment[en_AU]=Change Onboard settings
+Comment[en_GB]=Change Onboard settings
+Comment[eo]=Ŝanĝi agordojn de Onboard
+Comment[es]=Cambiar configuración de Onboard
+Comment[eu]=Aldatu Onboard-en ezarpenak
+Comment[fi]=Muuta Onboardin asetuksia
+Comment[fr]=Modifier les paramètres d'Onboard
+Comment[fr_CA]=Changer les paramètres d'Onboard
+Comment[gd]=Atharraich roghainnean Onboard
+Comment[gl]=Cambiar a configuración de Onboard
+Comment[he]=שינוי הגדרות Onboard
+Comment[hr]=Promijeni postavke zaslonske tipkovnice
+Comment[hu]=Onboard beállításainak módosítása
+Comment[ia]=Cambiar le configurationes de Onboard
+Comment[id]=Ganti pengaturan Onboard
+Comment[it]=Modifica le impostazioni di Onboard
+Comment[ja]=Onboardの設定を変更
+Comment[km]=ប្ដូរ​ការ​កំណត់ Onboard
+Comment[ko]=온보드 설정 바꾸기
+Comment[lt]=Keisti Onboard nustatymus
+Comment[lv]=Mainīt Onboard iestatījumus
+Comment[mr]=OnBoard सेटिंग्ज बदला
+Comment[ms]=Ubah tetapan Onboard
+Comment[nb]=Endre Onboard-innstillinger
+Comment[nl]=Onboard-instellingen wijzigen
+Comment[oc]=Cambiatz los paramètres d'Onboard
+Comment[pl]=Konfiguruje preferencje klawiatury ekranowej onBoard
+Comment[pt]=Alterar as definições do Onboard
+Comment[pt_BR]=Alterar configurações do Onboard
+Comment[ro]=Modifică configurările Onboard
+Comment[ru]=Изменить настройки Onboard
+Comment[sk]=Mení nastavenia Klávesnice na obrazovke
+Comment[sl]=Spremeni nastavitve Onboard
+Comment[sq]=Ndrysho Parametrat Onboard
+Comment[sr]=Промените поставке Онбоарда
+Comment[sv]=Ändra inställningar för Onboard
+Comment[tg]=Тағйир додани танзимоти Onboard
+Comment[tr]=Ekran Klavyesi ayarlarını değiştir
+Comment[ug]=Onboard تەڭشىكىنى ئۆزگەرتىش
+Comment[uk]=Змінити налаштування Onboard
+Comment[zh_CN]=更改 Onboard 设置
+Comment[zh_HK]=變更 Onboard 設定
+Comment[zh_TW]=變更 Onboard 設定

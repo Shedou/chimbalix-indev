@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=OBS Studio
+Comment=Free and Open Source Streaming/Recording Software
+GenericName=Record - OBS Studio
+
+Icon=com.obsproject.Studio
+Exec=obs
+TryExec=obs
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+StartupWMClass=obs
+
+Categories=chi-multimedia;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=OBS Studio
+GenericName[ru]=Запись - OBS Studio
+Comment[ru]=Свободное и открытое ПО для видеостриминга и видеозаписи

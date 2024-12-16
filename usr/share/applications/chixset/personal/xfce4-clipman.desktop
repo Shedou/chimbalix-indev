@@ -1,0 +1,56 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=true
+Hidden=false
+
+Name=- Clipboard Manager (Start)
+Comment=Clipboard Manager Autostart File
+GenericName=
+
+Icon=xfce4-clipman-plugin
+Exec=xfce4-clipman
+TryExec=xfce4-clipman
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-personal;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Менеджер Буфера Обмена (Запуск)
+Comment[bg]=Мениджър на системния буфер - автостартиращ файл
+Comment[ca]=Fitxer d'inici automàtic del gestor del porta-retalls
+Comment[da]=Autostart-fil for udklipsholderhåndtering
+Comment[de]=Zwischenablageverwaltung Autostart-Datei
+Comment[es]=Archivo de inicio automático del administrador del portapapeles
+Comment[et]=Lõikepuhvri halduri automaatse käivituse fail
+Comment[fr]=Fichier de démarrage automatique du gestionnaire de presse-papiers
+Comment[gl]=Ficheiro de inicio automático do xestor do portapapeis
+Comment[he]=קובץ התחלה אוטומטית מנהל לוח אטיב
+Comment[hye]=Ստեղնաշարի կառաւարչի ինքնամեկնարկ
+Comment[id]=Berkas Mulai Otomatis Manajer Papan Klip
+Comment[it]=File di avvio automatico del gestore degli appunti
+Comment[ja]=クリップボードマネージャーの自動起動ファイル
+Comment[lt]=Iškarpinės tvarkytuvės automatinio paleidimo failas
+Comment[nb]=Autostartfil for utklippsbehandler
+Comment[nl]=Bestand voor automatische start van Klembordbeheer
+Comment[pl]=Plik autostartu Menedżera schowka
+Comment[pt]=Ficheiro de arranque automático do gestor de área de transferência
+Comment[pt_BR]=Arquivo Automático do Gerenciador da Área de Transferência
+Comment[ru]=Файл автозапуска менеджера буфера обмена
+Comment[sq]=Kartelë Vetënisjeje Përgjegjësi të Papastre
+Comment[sr]=Датотека самопокретања управника исечака
+Comment[tr]=Pano Yöneticisi Otomatik Başlatma Dosyası
+Comment[uk]=Файл автозапуску Менеджера Буфера обміну
+Comment[zh_CN]=剪贴板管理器自动启动文件
+Comment[zh_TW]=剪貼簿管理程式自動啟動檔案

@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Wine - Winetricks
+Comment=Work around problems and install applications under Wine
+GenericName=
+
+Icon=winetricks
+Exec=winetricks --gui
+TryExec=winetricks
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-wine;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Comment[pl]=Rozwiązuj problemy i instaluj aplikacje z użyciem Wine
+Comment[ru]=Решение проблем и установка программ с помощью Wine

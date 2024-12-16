@@ -8,25 +8,22 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Uninstall "Example Shared Application"
-Comment=
+Name=Chimbalix - "Program Files" Folder (system, portsoft)
+Comment=Test Entry
 GenericName=
 
-Icon=user-trash-full
-Exec="portsoft/other/Example_Shared_App/uninstaller.sh"
-TryExec=
-Path=~
+Icon=folder-deeporange-applications
+Exec=thunar "/portsoft/"
+TryExec=thunar
+Path=
 #StartupWMClass=
 
-Terminal=true
+Terminal=false
 StartupNotify=false
 
-Categories=Example_Shared_App
+Categories=chi-other;
 #Keywords=
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=

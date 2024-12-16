@@ -1,0 +1,34 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=IMSProg
+Comment=i2C,SPI,MW programmer for CH341a devices
+GenericName=IMSProg
+
+Icon=/usr/share/pixmaps/IMSProg64.png
+Exec=/usr/bin/IMSProg
+TryExec=/usr/bin/IMSProg
+Path=/usr/bin/
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-imsprog;
+Keywords=Microcircuit;Microchip;IC;Integrated circuit;BIOS;EEPROM;MicroWire
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=IMSProg
+#GenericName[ru]=
+Comment[ru]=Программатор i2c,SPI,MW микросхем для CH341a
+Keywords[ru]=Микросхема;Микрочип;ИС;Интегральная схема;chip;BIOS;EEPROM;MicroWire
+

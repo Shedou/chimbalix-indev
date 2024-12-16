@@ -1,0 +1,49 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Bash Config
+Comment=bashrc aliases and prompt theming
+GenericName=
+
+Icon=preferences-system
+Exec=bash-config
+TryExec=bash-config
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-system;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Конфигурация Bash
+Comment[ca]=Àles del bashrc i temes de l'indicador
+Comment[cs]=bashrc aliasy a prompt theming
+Comment[es]=alias de bashrc y tematización rápida
+Comment[es_ES]=alias bashrc y tematización del prompt
+Comment[fr]=alias bashrc et thèmes d'invite de ligne de commande
+Comment[fr_BE]=alias bashrc et thèmes d'invite de ligne de commande
+Comment[he_IL]=קיצורי דרך ב־bashrc ועיצוב שורת הפקודה
+Comment[hu]=bashrc parancs helyettesítők (alias) és a parancsbekérő (prompt) beállításai
+Comment[it]=alias bashrc e temi prompt
+Comment[ja]=bashrc のエイリアスとプロンプトテーマを設定します
+Comment[nb]=bashrc-aliaser og oppsett av ledetekst
+Comment[nl_BE]=bashrc aliassen en snelle thema's
+Comment[pl]=Konfiguracja aliasów bashrc i wiersza poleceń
+Comment[pt]=Aliases no bashrc e temas da prompt
+Comment[pt_BR]=Apelidos ou aliases do bashrc e temas do interpretador de linha de comando
+Comment[sl]=bashrc vzdevki in teme vnosnikov
+Comment[sv]=bashrc aliases och prompt teman
+Comment[tr]=bashrc'nin diğer isimleri ve komut temalama
+Comment[zh_CN]=bashrc 别名和提示符主题

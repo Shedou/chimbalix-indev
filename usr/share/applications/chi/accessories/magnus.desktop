@@ -8,25 +8,25 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Example Shared Application
-Comment=
-GenericName=
+Name=Magnus
+Comment=A very simple screen magnifier
+GenericName=Screen Magnifier - Magnus
 
-Icon=godot
-Exec=portsoft/other/Example_Shared_App/Example-Shared-App.run
-TryExec=
-Path=~
+Icon=gnome-logs
+Exec=magnus
+TryExec=magnus
+Path=
 #StartupWMClass=
 
 Terminal=false
 StartupNotify=false
 
-Categories=Example_Shared_App
-#Keywords=
+Categories=chi-accessories;
+Keywords=magnifier;accessibility;utility;
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=
+Name[ru]=Magnus
+GenericName[ru]=Экранная Лупа - Magnus
+

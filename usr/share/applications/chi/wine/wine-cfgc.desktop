@@ -8,25 +8,23 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Example Shared Application
-Comment=
+Name=Wine - Configure
+Comment=Change application-specific and general Wine options
 GenericName=
 
-Icon=godot
-Exec=portsoft/other/Example_Shared_App/Example-Shared-App.run
-TryExec=
-Path=~
+Icon=wine-winecfg
+Exec=winecfg
+TryExec=winecfg
+Path=
 #StartupWMClass=
 
 Terminal=false
 StartupNotify=false
 
-Categories=Example_Shared_App
+Categories=chi-wine;
 #Keywords=
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=
+Comment[ru]=Изменение общих параметров Wine и настройка параметров для отдельных приложений

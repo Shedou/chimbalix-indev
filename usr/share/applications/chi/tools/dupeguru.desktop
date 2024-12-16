@@ -8,25 +8,25 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Uninstall "Example Shared Application"
-Comment=
-GenericName=
+Name=DupeGuru
+Comment=Find duplicate files.
+GenericName=DupeGuru
 
-Icon=user-trash-full
-Exec="portsoft/other/Example_Shared_App/uninstaller.sh"
-TryExec=
-Path=~
+Icon=dupeguru
+Exec=dupeguru
+TryExec=dupeguru
+Path=
 #StartupWMClass=
 
-Terminal=true
+Terminal=false
 StartupNotify=false
 
-Categories=Example_Shared_App
-#Keywords=
+Categories=chi-tools;
+Keywords=storage;space;cleanup;
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
 #Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=
+Comment[ru]=Поиск дубликатов.
+

@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Midnight Commander (mc, CLI)
+Comment=File manager
+GenericName=File Manager - Midnight Commander (CLI)
+
+Icon=MidnightCommander
+Exec=mc
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-accessories-fm;
+Keywords=file manager;console;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Midnight Commander (mc, CLI)
+Comment[pl]=Menedżer plików
+GenericName[ru]=Файловый Менеджер - Midnight Commander (CLI)

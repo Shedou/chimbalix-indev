@@ -1,0 +1,94 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Settings Editor (Xfce)
+Comment=Graphical settings editor for Xfconf
+GenericName=
+
+Icon=org.xfce.settings.editor
+Exec=xfce4-settings-editor
+TryExec=xfce4-settings-editor
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-other;
+#Keywords=
+#MimeType=
+
+X-XfceSettingsManagerHidden=true
+X-XfcePluggable=true
+X-XfceHelpPage=editor
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Редактор настроек (Xfce)
+Comment[ar]=محرر إعدادات رسومي لـإكسفس4
+Comment[ast]=Editor gráficu de configuración pa Xfconf
+Comment[be]=Графічны рэдактар налад для  Xfconf
+Comment[be@tarask]=Графічны рэдактар наладаў для Xfconf
+Comment[bg]=Графичен редактор на настройките за Xfconf
+Comment[bn]=Xfconf-র জন্য গ্রাফিকাল সেটিংস সম্পাদক
+Comment[ca]=Editor gràfic d'ajusts de Xfconf
+Comment[cs]=Grafický editor nastavení služby Xfconf
+Comment[da]=Grafisk indstillingsredigering til Xfconf
+Comment[de]=Grafische Einstellungsbearbeitung für Xfconf
+Comment[el]=Επεξεργαστής ρυθμίσεων για το Xfconf
+Comment[en_AU]=Graphical settings editor for Xfconf
+Comment[en_CA]=Graphical settings editor for Xfconf
+Comment[en_GB]=Graphical settings editor for Xfconf
+Comment[es]=Editor gráfico de los ajustes del servicio de configuración de Xfce
+Comment[et]=Graafiline kasutajaliides Xfconf'i haldamiseks
+Comment[eu]=Xfconf-ren ezarpen editore grafikoa
+Comment[fi]=Graafinen Xfconf-asetusten muokkain
+Comment[fr]=Éditeur graphique de paramètres pour Xfconf
+Comment[gl]=Editor da configuración gráfica do Xfconf
+Comment[he]=עורך הגדרות גרפי עבור Xfconf
+Comment[hr]=Grafički uređivač postavki za Xfconf
+Comment[hu]=Grafikus beállításszerkesztő az Xfconf-hoz
+Comment[hy_AM]=Տեսապատկերային կարգաւորումների խմբագրիչ` Xfconf֊ի համար
+Comment[hye]=Տեսապատկերային կարգաւորումների խմբագրիչ` Xfconf֊ի համար
+Comment[id]=Penyunting pengaturan grafis untuk Xfconf
+Comment[ie]=Un grafic redactor de parametres de Xfconf
+Comment[is]=Myndrænn stillingaritill fyrir Xfconf
+Comment[it]=Editor grafico delle impostazioni per Xfconf
+Comment[ja]=Xfconf のグラフィカル設定エディターです
+Comment[kab]=Amaẓrag n yiɣewwaren udlifen i Xfconf
+Comment[kk]=Xfconf үшін баптауларды графикалық түзетуші
+Comment[ko]=Xfconf 그래픽 설정 편집기
+Comment[lt]=Grafinis nustatymų redaktorius skirtas Xfconf
+Comment[lv]=Grafiskais iestatījumu redaktors priekš Xfconf
+Comment[ms]=Penyunting tetapan bergrafik untuk Xfconf
+Comment[nb]=Grafisk redigeringsprogram for Xfconf
+Comment[nl]=Grafische instellingenbewerker voor Xfconf
+Comment[nn]=Grafisk innstillingsprogram for Xfconf
+Comment[oc]=Editor grafic dels paramètres Xfconf
+Comment[pl]=Konfiguruje ustawienia przechowywane przez program Xfconf
+Comment[pt]=Editor gráfico para as definições Xfconf
+Comment[pt_BR]=Editor de configurações gráficas para o Xfconf
+Comment[ro]=Editor grafic al opțiunilor Xfconf
+Comment[ru]=Графический редактор настроек для Xfconf
+Comment[sk]=Grafický editor nastavení pre Xfconf
+Comment[sl]=Grafični urejevalnik Xfconf nastavitev
+Comment[sq]=Përpunim grafik vetish Xfconf-i
+Comment[sr]=Графички уређивач поставки Иксфконф-а
+Comment[sv]=Grafisk inställningsredigerare för Xfconf
+Comment[te]=Xfconf కొరకు గ్రాఫికల్ అమరికల కూర్పకం
+Comment[th]=โปรแกรมแก้ไขค่าตั้งแบบกราฟิกสำหรับ Xfconf
+Comment[tr]=Xfconf için grafik ayar düzenleyicisi
+Comment[ug]=Xfconf نىڭ گرافىكىلىق تەڭشەك تەھرىرلىگۈسى
+Comment[uk]=Графічний редактор параметрів для Xfconf
+Comment[ur]=تصویری ترتیبات مدون کار برائے Xfconf
+Comment[ur_PK]=تصویری ترتیبات مدون کار برائے Xfconf
+Comment[zh_CN]=Xfconf 的图形设置编辑器
+Comment[zh_HK]=Xfconf 的圖像化設定編輯器
+Comment[zh_TW]=Xfconf 的圖形化設定編輯器

@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Image Editor - ImageMagick (q16)
+Comment=Display and edit image files
+GenericName=ImageMagick (q16)
+
+Icon=display-im6.q16
+Exec=/usr/bin/display-im6.q16 -nostdin %F
+TryExec=/usr/bin/display-im6.q16
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-edit-image;
+Keywords=Image;Slideshow;View;Transform;Enhance;F/X;Special Effects;
+MimeType=image/avs;image/bie;image/x-ms-bmp;image/cmyk;image/dcx;image/eps;image/fax;image/fits;image/gif;image/gray;image/jpeg;image/pjpeg;image/miff;image/mono;image/mtv;image/x-portable-bitmap;image/pcd;image/pcx;image/pdf;image/x-portable-graymap;image/pict;image/png;image/x-portable-anymap;image/x-portable-pixmap;image/ps;image/rad;image/x-rgb;image/rgba;image/rla;image/rle;image/sgi;image/sun-raster;image/targa;image/tiff;image/uyvy;image/vid;image/viff;image/x-xbitmap;image/x-xpixmap;image/x-xwindowdump;image/x-icon;image/yuv;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Редактор Изображений - ImageMagick (q16)
+Comment[fr]=Affiche et édite des fichiers images
+Comment[pt]=Exiba e edite arquivos de imagem
+Keywords[fr]=Image;Diaporama;Visualiser;Transformer;Améliorer;Effets spéciaux;

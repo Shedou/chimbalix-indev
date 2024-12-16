@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=true
+Hidden=false
+
+Name=Feh
+Comment=Image viewer
+GenericName=Feh
+
+Icon=image-viewer
+Exec=feh %F
+TryExec=feh
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-view;
+#Keywords=
+MimeType=image/jpeg;image/png;image/gif;image/tiff;image/bmp;image/x-icon;image/x-xpixmap;image/x-xbitmap;image/webp;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Feh
+Comment[fr_FR]=Visualisateur d'image
+Comment[de_DE]=Bildbetrachter

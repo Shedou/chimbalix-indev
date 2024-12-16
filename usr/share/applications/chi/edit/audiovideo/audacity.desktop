@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Audacity
+Comment=Audio editor
+GenericName=Audio Editor - Audacity
+
+Icon=/portsoft/x86_64/audacity/audacity.svg
+Exec=/portsoft/x86_64/audacity/squashfs-root/AppRun %F
+TryExec=/portsoft/x86_64/audacity/squashfs-root/AppRun
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-edit-audiovideo;
+Keywords=Audio;Editor;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Audacity
+Comment[ru]=Редактор Звука
+GenericName[ru]=Аудио Редактор - Audacity

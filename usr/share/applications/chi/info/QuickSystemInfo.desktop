@@ -1,0 +1,54 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=MX Quick System Info
+Comment=inxi -Fxxxrza
+GenericName=System Info - MX Quick System Info
+
+Icon=mx-qsi
+Exec=quick-system-info-gui
+TryExec=quick-system-info-gui
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-info;
+Keywords=qsi;quick;system;info;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=MX Quick System Info
+GenericName=Системная Информация - MX Quick System Info
+Comment[ca]=inxi -Fxxxrza
+Comment[cs]=inxi -Fxxxrza
+Comment[de]=inxi -Fxxxrza
+Comment[el]=inxi -Fxxxrza
+Comment[es]=inxi -Fxxxrza
+Comment[es_ES]=inxi -Fxxxrza
+Comment[fr]=inxi -Fxxxrza
+Comment[fr_BE]=inxi -Fxxxrza
+Comment[he_IL]=inxi -Fxxxrza
+Comment[hu]=Gyors rendszerinformáció terminálban
+Comment[it]=inxi -Fxxxrza
+Comment[ja]=システム情報を表示します。端末からは inxi -Fxxxrza で起動します
+Comment[nb]=inxi -Fxxxrza
+Comment[nl]=inxi -Fxxxrza
+Comment[nl_BE]=inxi -Fxxxrza
+Comment[pl]=inxi -Fxxxrza
+Comment[pt]=Mostra em terminal/consola a informação sobre o sistema dada pelo comando inxi -Fxxxrza
+Comment[pt_BR]=Utiliza o comando inxi -Fxxxrza para exibir as informações sobre os dispositivos do computador com o inxi-gui
+Comment[ru]=inxi -Fxxxrza
+Comment[sl]=inxi -Fxxxrza
+Comment[sq]=inxi -Fxxxrza
+Comment[sv]=inxi -Fxxxrza
+Comment[tr]=inxi -Fxxxrza

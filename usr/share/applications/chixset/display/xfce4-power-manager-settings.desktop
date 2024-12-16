@@ -1,0 +1,90 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+NotShowIn=GNOME;KDE;Unity;
+NoDisplay=false
+Hidden=false
+
+Name=- Power Manager
+Comment=Settings for the Xfce Power Manager
+GenericName=
+
+Icon=org.xfce.powermanager
+Exec=xfce4-power-manager-settings
+TryExec=xfce4-power-manager-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-display;
+#Keywords=
+#MimeType=
+
+X-XfcePluggable=true
+X-XfceHelpComponent=xfce4-power-manager
+X-XfceHelpPage=start
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Менеджер Питания
+Comment[ar]=إعدادات مدير طاقة إكسفس
+Comment[ast]=Axustes pal xestor d'enerxía Xfce
+Comment[be]=Налады кіраўніка сілкавання Xfce
+Comment[bg]=Настройки на Управление на захранването на Xfce
+Comment[ca]=Ajusts per al gestor d'energia de Xfce
+Comment[cs]=Nastavení Správce napájení pro Xfce
+Comment[da]=Indstillinger for Xfce Strømstyringen
+Comment[de]=Einstellungen für die Xfce-Energieverwaltung
+Comment[el]=Ρυθμίσεις για τον διαχειριστή ρεύματος του xfce
+Comment[en_AU]=Settings for the Xfce Power Manager
+Comment[en_CA]=Settings for the Xfce Power Manager
+Comment[en_GB]=Settings for the Xfce Power Manager
+Comment[es]=Configuración del gestor de energía de Xfce
+Comment[et]=Xfce vooluhalduri seadistused
+Comment[eu]=Xfce Energia kudeatzailearen ezarpenak
+Comment[fi]=Xfce:n virrankäyttöasetukset
+Comment[fr]=Paramètres du gestionnaire d’alimentation Xfce
+Comment[gl]=Configuración do Xestor de enerxía de Xfce
+Comment[he]=הגדרות עבור מנהל צריכת חשמל Xfce
+Comment[hr]=Postavke za Xfce upravitelja energijom
+Comment[hu]=Az Xfce energiakezelő beállításai
+Comment[hy_AM]=Xfce լիցքի կառավարչի կարգաւորումներ
+Comment[hye]=Xfce լիցքի կառավարչի կարգաւորումներ
+Comment[id]=Pengaturan untuk Manajer Daya Xfce
+Comment[ie]=Parametres de gerente de energie Xfce
+Comment[is]=Stillingar fyrir XFCE aflstjórnun
+Comment[it]=Impostazioni per il gestore dell'energia di Xfce
+Comment[ja]=Xfce 電源管理を設定します
+Comment[kk]=Xfce Power Manager баптаулары
+Comment[kn]=ಪವರ್ ಮ್ಯಾನೇಜರ್ ಗೆ  ನಿಲುವುಗಳು 
+Comment[ko]=Xfce 전원 관리자를 설정합니다
+Comment[lt]=Xfce maitinimo tvarkytuvės nustatymai
+Comment[ms]=Tetapan untuk Pengurus Kuasa Xfce
+Comment[nb]=Innstillinger for Xfce-strømstyring
+Comment[nl]=Instellingen voor de Xfce-energiebeheerder
+Comment[nn]=Innstillingar for Xfce-straumstyraren
+Comment[oc]=Paramètres del gestionari d'alimentacion Xfce
+Comment[pl]=Konfiguruje ustawienia zasilania
+Comment[pt]=Definições para o gestor de energia do Xfce4
+Comment[pt_BR]=Configurações para o Gerenciador de Energia do Xfce
+Comment[ro]=Opțiuni pentru managerul de consum Xfce
+Comment[ru]=Настройки менеджера питания Xfce
+Comment[sk]=Nastavenia Správcu napájania Xfce
+Comment[sl]=Nastavitve upravljalnika porabe energije
+Comment[sq]=Rregullime për Përgjegjësin Xfce të Energjisë
+Comment[sr]=Поставке управника потрошње за Иксфце4
+Comment[sv]=Inställningar för Strömhanterare för Xfce
+Comment[te]=Xfce విద్యుత్ నిర్వాహకము కొరకు అమరికలు
+Comment[th]=ตั้งค่าระบบจัดการพลังงานของ Xfce
+Comment[tr]=Xfce Güç Yöneticisi için Ayarlar
+Comment[ug]=مەنبە باشقۇرغۇ تەڭشەكلىرى
+Comment[uk]=Налаштування для менеджера живлення Xfce
+Comment[vi]=Cài đặt cho Trình quản lý năng lượng Xfce
+Comment[zh_CN]=Xfce 电源管理器设置
+Comment[zh_HK]=Xfce 電力管理員設定
+Comment[zh_TW]=Xfce 電源管理員設定值

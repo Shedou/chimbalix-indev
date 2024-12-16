@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=IMSProg Updater
+Comment=Updating the chip database for IMSProg
+GenericName=IMSProg Updater
+
+Icon=/usr/share/pixmaps/IMSProg_database_update.png
+Exec=/usr/bin/IMSProg_database_update
+TryExec=/usr/bin/IMSProg_database_update
+Path=/usr/bin/
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-imsprog;
+Keywords=Microcircuit;Microchip;IC;Integrated circuit
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=IMSProg Updater
+#GenericName[ru]=
+Comment[ru]=Обновление базы данных микросхем для IMSProg
+Keywords[ru]=Микросхема;Микрочип;ИС;Интегральная схема;chip

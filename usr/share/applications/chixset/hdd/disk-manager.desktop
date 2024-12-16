@@ -1,0 +1,46 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Disk Manager
+Comment=Manage filesystem configuration
+GenericName=
+
+Icon=disk-manager
+Exec=/usr/bin/disk-manager-launcher
+TryExec=/usr/bin/disk-manager-launcher
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-hdd;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Менеджер Дисков
+Comment[ca]=Gestiona la configuració del sistema de fitxers
+Comment[de]=Verwalte Dateisystem Konfiguration
+Comment[es]=Administra la configuración del sistema de archivos
+Comment[es_ES]=Administra la configuración del sistema de archivos
+Comment[fi]=Hallinnoi tiedostojärjestelmän määrityksiä
+Comment[fr]=Gérer la configuration du système de fichiers
+Comment[fr_BE]=Gérer la configuration du système de fichiers
+Comment[hr]=Upravlja konfiguracijom datotečnog sustava
+Comment[it]=Gestione della configurazione del filesystem
+Comment[nb]=Behandle oppsett av filsystemet
+Comment[pl]=Zarządaj konfiguracją systemu plików
+Comment[pt]=Gerir a configuração do sistema de ficcheiros
+Comment[pt_BR]=Gerenciar as configurações do sistema de arquivos com o Disk Manager
+Comment[sq]=Administroni formësim sistemi kartelash
+Comment[sv]=Hantera filsystemskonfiguration
+Comment[zh_CN]=管理文件系统的配置

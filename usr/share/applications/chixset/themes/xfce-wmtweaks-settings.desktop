@@ -1,0 +1,95 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Window Manager (Tweaks)
+Comment=Fine-tune window behaviour and effects
+GenericName=
+
+Icon=org.xfce.xfwm4-tweaks
+Exec=xfwm4-tweaks-settings
+TryExec=xfwm4-tweaks-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-themes;
+#Keywords=
+#MimeType=
+
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=wmtweaks
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Диспетчер Окон (Твики)
+Comment[ar]=تهذيب سلوك و تأتيرات النافذة
+Comment[ast]=Axuste finu de comportamientu y efeutos de ventanes
+Comment[be]=Падрабязныя налады паводзін акна і эфектаў
+Comment[be@tarask]=Наладзіць паводзіны вокнаў й эфэкты
+Comment[bg]=Разширени настройки за поведението на прозорците и ефектите
+Comment[bn]=ফাইন-টিউন উইন্ডো আচরণ ও প্রভাব
+Comment[ca]=Afineu el comportament i els efectes de les finestres
+Comment[cs]=Doladění chování okna a efektů
+Comment[da]=Finjuster vinduesopførsel og -effekter
+Comment[de]=Feineinstellungen des Fensterverhaltens und der Fenstereffekte
+Comment[el]=Ρύθμιση συμπεριφοράς παραθύρων και οπτικών εφέ
+Comment[en_AU]=Fine-tune window behaviour and effects
+Comment[en_CA]=Fine-tune window behaviour and effects
+Comment[en_GB]=Fine-tune window behaviour and effects
+Comment[es]=Ajuste con precisión el comportamiento y los efectos de las ventanas
+Comment[et]=Peenhäälesta akende käitumist ja efekte
+Comment[eu]=Leiho portaera eta efektuak doitu
+Comment[fa_IR]=تنظیم دقیق رفتار و جلوه‌های پنجره
+Comment[fi]=Hienosäädä ikkunoiden käytöstä ja tehosteita
+Comment[fr]=Ajuster le comportement et les effets des fenêtres
+Comment[gl]=Afinar o comportamento e os efectos das xanelas
+Comment[he]=לטש התנהגות ואפקט חלון
+Comment[hr]=Detaljno postavljanje ponašanja prozora i efekata
+Comment[hu]=Ablakviselkedés és -effektusok finomhangolása
+Comment[hy_AM]=Պատուհանների կարգաւորումներ
+Comment[hye]=Պատուհանների կարգաւորումներ
+Comment[id]=Atur perilaku jendela dan efek
+Comment[ie]=Precis configuration de fenestres e efectes
+Comment[is]=Fínstilla gluggahegðun og brellur
+Comment[it]=Regolazione del comportamento della finestra e delle scorciatoie
+Comment[ja]=ウィンドウの振る舞いと効果を微調整します
+Comment[ka]=ფანჯრის ქცევის და ეფექტების გასწორება
+Comment[kk]=Терезе әрекеттерін мен жарлықтарды туралау
+Comment[ko]=창 동작 및 효과 최적화
+Comment[lt]=Konfigūruoti langų elgseną ir efektus
+Comment[lv]=Noskaņot logu uzvedību un efektus
+Comment[ms]=Sempurnakan tingkah laku dan kesan tetingkap
+Comment[nb]=Finjuster vindusoppførsel og effekter
+Comment[nl]=Fijnregeling van venstergedrag en -effecten
+Comment[nn]=Finstill korleis vindaugo og effektar verkar
+Comment[oc]=Ajustar lo comportament de las fenèstras e lors efièches
+Comment[pl]=Konfiguruje ustawienia menedżera okien oraz efekty wizualne
+Comment[pt]=Configurar comportamento e efeitos das janelas
+Comment[pt_BR]=Ajustes finos do comportamento e efeitos das janelas
+Comment[ro]=Optimizați efectele și comportamentul ferestrelor
+Comment[ru]=Дополнительная настройка поведения окна и эффектов
+Comment[si]=Fine-tune window behaviour and effects
+Comment[sk]=Doladenie správania okna a efektov
+Comment[sl]=Natančno nastavite obnašanje oken in učinkov
+Comment[sq]=Rregulloni më imët efekte dhe sjellje dritaresh
+Comment[sr]=Фино подесите понашање прозора и дејства
+Comment[sv]=Finjustera fönsterbeteende och effekter
+Comment[th]=ปรับแต่งพฤติกรรมและเอฟเฟ็กต์หน้าต่างอย่างละเอียด
+Comment[tr]=Pencere davranışı ve olaylarını ayarla
+Comment[ug]=كۆزنەك ھەرىكىتى ۋە ئۈنۈمىنى ئىنچىكە تەڭشەش
+Comment[uk]=Тонке налаштування заголовку вікна і ефектів
+Comment[ur]=ونڈو کا سلوک اور ایفیکٹ مرتب کریں
+Comment[ur_PK]=ونڈو کا سلوک اور ایفیکٹ مرتب کریں
+Comment[zh_CN]=微调窗口行为和效果
+Comment[zh_HK]=微調視窗視窗行為與特效
+Comment[zh_TW]=微調視窗視窗行為與特效

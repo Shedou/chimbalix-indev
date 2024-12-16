@@ -8,25 +8,22 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Uninstall "Example Shared Application"
-Comment=
+Name=- Chroot Rescue Scan
+Comment=Chroot into a Linux system in order to repair it
 GenericName=
 
-Icon=user-trash-full
-Exec="portsoft/other/Example_Shared_App/uninstaller.sh"
-TryExec=
-Path=~
+Icon=rescuetime-mx
+Exec=x-terminal-emulator -e sudo chroot-rescue-scan --pause
+TryExec=x-terminal-emulator
+Path=
 #StartupWMClass=
 
-Terminal=true
+Terminal=false
 StartupNotify=false
 
-Categories=Example_Shared_App
+Categories=chixset-livemedia;
 #Keywords=
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=

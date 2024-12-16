@@ -1,0 +1,100 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Geany
+Comment=A fast and lightweight IDE using GTK+
+GenericName=IDE - Geany
+
+Icon=geany
+Exec=geany %F
+TryExec=geany
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-ide;
+Keywords=Text;Editor;
+MimeType=text/plain;text/x-chdr;text/x-csrc;text/x-c++hdr;text/x-c++src;text/x-java;text/x-dsrc;text/x-pascal;text/x-perl;text/x-python;application/x-php;application/x-httpd-php3;application/x-httpd-php4;application/x-httpd-php5;application/xml;text/html;text/css;text/x-sql;text/x-diff;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Geany
+GenericName[ru]=IDE - Geany
+Comment[ar]=بيئة تطوير خفيفة وسريع تستخدم مكتبات GTK+
+Comment[ast]=Un IDE rápidu y llixeru basáu en GTK+
+Comment[be]=Хуткае і легкаважнае асяроддзе распрацоўкі, выкарыстоўваючае GTK+
+Comment[ca]=Un IDE ràpid i lleuger fet amb GTK+
+Comment[cs]=Rychlé a lehké IDE pro GTK+
+Comment[da]=En hurtig og letvægts-IDE som bruger GTK+
+Comment[de]=Eine kleine und schnelle Entwicklungsumgebung für GTK+
+Comment[el]=Γρήγορο και ελαφρύ GTK+ IDE
+Comment[en_GB]=A fast and lightweight IDE using GTK+
+Comment[es]=Un IDE rápido y ligero para GTK+
+Comment[et]=Väike ja kiire IDE GTK+ baasil
+Comment[eu]=GTK+ erabiltzen duen IDE azkar eta arina
+Comment[fa]=A fast and lightweight IDE using GTK+
+Comment[fi]=Nopea ja kevyt GTK+-pohjainen ohjelmointiympäristö
+Comment[fr]=Un EDI rapide et léger utilisant GTK+
+Comment[gl]=Un IDE rápido e lixeiro empregando GTK+
+Comment[he]=סביבת פיתוח משולבת קטנה וקלת משקל העושה שימוש ב־GTK+
+Comment[hi]=एक तेज और हलका GTK+ का उपयोग कर आईडीई
+Comment[hu]=Gyors és pehelykönnyű IDE GTK+ alapokon
+Comment[id]=Sebuah IDE yang cepat dan ringan menggunakan GTK+
+Comment[ie]=Un rapid e minimalistic IDE que usa GTK+
+Comment[it]=Un IDE veloce e leggero che usa GTK+
+Comment[ja]=GTK+ を用いた高速で軽量な IDE
+Comment[kk]=GTK+ негізіндегі жылдам әрі жеңіл өндіру ортасы
+Comment[ko]=빠르고 가벼운 GTK+ 기반의 통합개발환경
+Comment[ku]=بيئة تطوير خفيفة وسريع تستخدم مكتبات GTK+
+Comment[lb]=En klenge an schnelle IDE fir GTK+
+Comment[lt]=Greita ir supaprastinta kūrimo aplinka naudojanti GTK+
+Comment[lv]=Ātra un viegla IDE, lietojoša GTK+
+Comment[nl]=Een snelle en lichtgewicht IDE, gebaseerd op GTK+
+Comment[nn]=Eit raskt og lett IDE som nyttar GTK+
+Comment[pl]=Szybkie i lekkie środowisko programistyczne oparte na GTK+
+Comment[pt]=Um IDE rápido e leve, usando GTK+
+Comment[pt_BR]=Um IDE rápida e leve usando GTK+
+Comment[ro]=Un IDE rapid folosind GTK+
+Comment[ru]=Быстрая и легковесная среда разработки, использующая GTK+
+Comment[sk]=Rýchle a nenáročné IDE pre GTK+
+Comment[sl]=Hitro in lahkotno vdelano razvojno okolje z uporabo GTK+
+Comment[sr]=Брзо и лагано GTK развојно окружење
+Comment[sv]=Ett snabbt och lättviktigt IDE som använder GTK+
+Comment[tr]=GTK+ kullanan hızlı ve hafif bir IDE
+Comment[uk]=Швидке та компактне середовище розробки (IDE) на основі GTK+
+Comment[vi]=Một IDE nhanh và nhẹ nhàng dùng GTK+
+Comment[zh_CN]=GTK+ 编写的轻快的 IDE
+Comment[zh_TW]=一個快速且輕巧的 GTK+ 整合開發環境
+Keywords[ca]=Text;Editor;
+Keywords[da]=Tekst;Editor;
+Keywords[de]=Text;Editor;
+Keywords[el]=Κείμενο;Επεξεργαστής;
+Keywords[es]=Texto;Editor;
+Keywords[et]=Tekst;Redaktor;
+Keywords[fr]=Texte;Éditeur;
+Keywords[hu]=Szöveg;Szerkesztő;
+Keywords[id]=Text;Editor
+Keywords[ie]=textu;redactor;
+Keywords[it]=Testo;Editor;
+Keywords[ja]=Text;Editor;
+Keywords[kk]=Мәтін;Түзеткіш;
+Keywords[lt]=Teksto;Redaktorius;
+Keywords[lv]=Teksts;Redaktors;
+Keywords[nl]=Tekst;Editor;
+Keywords[pt]=Texto;Editor;
+Keywords[ru]=Текст;Редактор;
+Keywords[sk]=Text;Editor;
+Keywords[sv]=Text;Editor;
+Keywords[tr]=Metin;Düzenleyici;
+Keywords[uk]=Текст;Редактор;
+Keywords[zh_CN]=文本;编辑器;
+Keywords[zh_TW]=文字;編輯器;

@@ -1,0 +1,36 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Asunder
+Comment=An application to save tracks from an Audio CD as WAV, MP3, OGG, FLAC, and/or Wavpack.
+GenericName=Audio-CD Ripper - Asunder
+
+Icon=asunder
+Exec=asunder %U
+TryExec=asunder
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-multimedia;
+Keywords=CD;Extraction;Ripper;MP3;
+MimeType=x-content/audio-cdda;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Asunder
+GenericName[ru]=Audio-CD Риппер - Asunder
+Comment[de]=Oberfläche zur Erstellung von Audio-Dateien
+Comment[es]=Una aplicación para extraer las pistas de un CD de Auido como WAV, MP3, OGG, FLAC y/o Wavpack
+Comment[hu]=Egy alkalmazás ami az Audió CD-n lévő sávokat lementi, MP3, OGG, FLAC és/vagy Wavpack formátumba.
+Comment[ru]=Программа для сохранения звуковых дорожек CD в файлы форматов WAV, MP3, OGG, FLAC и/или Wavpack.
+Comment[sv]=Ett program för att spara spår från en ljudskiva som WAV, MP3, OGG och/eller FLAC.

@@ -1,0 +1,78 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+OnlyShowIn=XFCE;
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Control Panel
+Comment=Graphical Settings Manager for Xfce
+GenericName=Settings
+
+Icon=org.xfce.settings.manager
+Exec=xfce4-settings-manager
+TryExec=xfce4-settings-manager
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-toplevel;
+#Keywords=
+#MimeType=
+
+X-XfceSettingsManagerHidden=true
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Панель Управления
+GenericName[ru]=Настройки
+Comment[ar]=مدير الإعدادات الرسومية ل Xfce
+Comment[be]=Графічны кіраўнік налад для Xfce
+Comment[be@tarask]=Графічны кіраўнік наладаў для Xfce
+Comment[bg]=Графичен мениджър за настройките на Xfce
+Comment[ca]=Gestor d'ajusts gràfics per a Xfce
+Comment[cs]=Grafický správce nastavení pro Xfce
+Comment[da]=Grafisk indstillingshåndtering til Xfce
+Comment[de]=Grafische Einstellungsverwaltung für Xfce
+Comment[el]=Διαχειριστής ρυθμίσεων για το Xfce
+Comment[en_CA]=Graphical Settings Manager for Xfce
+Comment[en_GB]=Graphical Settings Manager for Xfce
+Comment[es]=Gestor de configuración para Xfce
+Comment[et]=Graafiline kasutajaliides Xfce seadistuste haldamiseks
+Comment[eu]=Xfce ezarpen kudeatzaile grafikoa
+Comment[fi]=Graafinen asetushallinta Xfce:lle
+Comment[fr]=Gestionnaire de paramètres graphique pour Xfce
+Comment[gl]=Xestor da configuración gráfica do Xfce
+Comment[he]=מנהל הגדרות גרפי עבור Xfce
+Comment[hr]=Grafički upravitelj postavkama za Xfce 4
+Comment[hu]=Grafikus beállításkezelő az Xfce környezethez
+Comment[hy_AM]=Կարգաւորումների կառավարիչ Xfce-ի համար
+Comment[id]=Manajer Pengaturan Grafis untuk Xfce
+Comment[it]=Gestore delle impostazioni grafico per Xfce
+Comment[ja]=Xfce のグラフィカル設定マネージャー
+Comment[kk]=Xfce үшін баптауларды графикалық түзету сайманы
+Comment[ko]=Xfce용 그래픽 설정 관리자
+Comment[lt]=Xfce grafinė nustatymų tvarkytuvė
+Comment[ms]=Pengurus Tetapan Bergrafik untuk Xfce
+Comment[nb]=Grafisk innstillingsbehandler for Xfce
+Comment[nl]=Grafische instellingenbeheerder voor Xfce
+Comment[oc]=Gestionari grafic de paramètres per Xfce
+Comment[pl]=Konfiguruje ustawienia środowiska graficznego Xfce
+Comment[pt]=Gestor gráfico de definições do Xfce
+Comment[pt_BR]=Gerenciador de Configurações Gráficas para Xfce
+Comment[ru]=Графический диспетчер настроек для Xfce
+Comment[sk]=Grafický správca nastavení pre prostredie Xfce
+Comment[sl]=Grafični upravljalnik nastavitev za Xfce
+Comment[sq]=Përgjegjës Grafik Rregullimesh për Xfce
+Comment[sr]=Графички управник поставки ИксФЦЕ-а
+Comment[sv]=Grafisk inställningshanterare för Xfce
+Comment[th]=โปรแกรมจัดการค่าตั้งแบบกราฟิกสำหรับ Xfce
+Comment[tr]=Xfce için Grafiksel Ayarlar Yöneticisi
+Comment[uk]=Графічний менеджер параметрів для Xfce
+Comment[zh_CN]=Xfce 的图形设置管理器
+Comment[zh_TW]=Xfce 的圖形化設定管理器

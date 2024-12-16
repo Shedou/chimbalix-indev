@@ -1,0 +1,54 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- MX Boot Options
+Comment=Common start-up choices
+GenericName=
+
+Icon=mx-boot-options
+Exec=mxbo-launcher
+TryExec=mxbo-launcher
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-system;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- MX Параметры Загрузки
+Comment[ca]=Elecció de les opcions d'arrencada
+Comment[cs]=Volby spouštění systému
+Comment[de]=Allgemeine Start-up-Auswahlmöglichkeiten
+Comment[el]=Κοινές επιλογές εκκίνησης
+Comment[es]=Opciones comunes de inicio
+Comment[es_ES]=Opciones comunes de inicio
+Comment[fr]=Choix courants pour le démarrage
+Comment[fr_BE]=Choix courants pour le démarrage
+Comment[he_IL]=ברירות טעינה משותפות
+Comment[hu]=Általános indítási lehetőségek
+Comment[it]=Scelte di avvio comuni
+Comment[ja]=通常の起動時のオプションです
+Comment[nb]=Vanlige oppstartsalternativer
+Comment[nl]=Veel voorkomende opstart keuzes
+Comment[nl_BE]=Veelvoorkomende opstartkeuzes
+Comment[pl]=Typowe wybory uruchomienia
+Comment[pt]=Opções normais de arranque
+Comment[pt_BR]=Defina os serviços que iniciarão junto com o sistema operacional
+Comment[ru]=Часто используемые варианты запуска
+Comment[sl]=Običajne zagonske izbire
+Comment[sq]=Zgjedhje të rëndomta për gjatë nisjes
+Comment[sv]=Vanliga start-alternativ
+Comment[tr]=Yaygın başlatma seçenekleri
+Comment[zh_CN]=常见的启动选择

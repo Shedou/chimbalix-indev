@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Script - Restart Xfce4 Panel
+Comment=Force the main menu to refresh without rebooting or logging out.
+GenericName=Restart Xfce4 Panel
+
+Icon=dialog-warning
+Exec=xfce4-panel -r
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-other;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Скрипт - Restart Xfce4 Panel
+Comment[ru]=Принудительно обновить меню "Пуск" без перезагрузки или выхода из системы.

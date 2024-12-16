@@ -1,0 +1,61 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Clipboard
+Comment=Customize your clipboard
+GenericName=
+
+Icon=xfce4-clipman-plugin
+Exec=xfce4-clipman-settings
+TryExec=xfce4-clipman-settings
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-personal;
+#Keywords=
+#MimeType=
+
+X-XfcePluggable=true
+X-XfceHelpComponent=clipman
+X-XfceHelpPage=start
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Буфер Обмена
+Comment[bg]=Персонализирайте вашият системен буфер
+Comment[ca]=Personalitzeu el vostre porta-retalls
+Comment[da]=Tilpas din udklipsholder
+Comment[de]=Anpassen der Zwischenablage
+Comment[es]=Personaliza tu portapapeles
+Comment[et]=Kohenda oma lõikepuhvrit
+Comment[fi]=Mukauta leikepöytääsi
+Comment[fr]=Personnaliser votre presse-papiers
+Comment[gl]=Personalizar o portapapeis
+Comment[he]=התאם אישית מנהל לוח אטיב
+Comment[hu]=Szabd személyre a vágólapot
+Comment[hye]=Յարմարեցնել ձեր ստեղնաշարը
+Comment[it]=Personalizza i tuoi appunti
+Comment[ja]=クリップボードのカスタマイズ
+Comment[lt]=Tinkinti savo iškarpinę
+Comment[nb]=Tilpass utklippstavla
+Comment[nl]=Pas uw klembord aan
+Comment[pl]=Dostosowywanie schowka
+Comment[pt]=Personalize a sua área de transferência
+Comment[pt_BR]=Personalizar seu clipboard
+Comment[ru]=Настройте свой буфер обмена
+Comment[sq]=Përshtatni të papastrën tuaj
+Comment[sr]=Прилагодите своју оставу исечака
+Comment[tr]=Panonuzu özelleştirin
+Comment[uk]=Персоналізація буферу обміну
+Comment[zh_CN]=自定义剪贴板
+Comment[zh_TW]=自訂您的剪貼簿

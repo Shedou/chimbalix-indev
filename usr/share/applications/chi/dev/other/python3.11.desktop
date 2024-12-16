@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Python (v3.11, CLI)
+Comment=Python Interpreter (v3.11)
+GenericName=Interpreter - Python (v3.11, CLI)
+
+Icon=/usr/share/pixmaps/python3.11.xpm
+Exec=/usr/bin/python3.11
+TryExec=/usr/bin/python3.11
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-dev-other;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Python (v3.11, CLI)
+GenericName[ru]=Интерпретатор - Python (v3.11, CLI)

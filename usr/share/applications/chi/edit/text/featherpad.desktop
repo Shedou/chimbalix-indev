@@ -1,0 +1,70 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=FeatherPad
+Comment=Lightweight Qt text editor
+GenericName=Text Editor - FeatherPad
+
+Icon=featherpad
+Exec=featherpad %U
+TryExec=featherpad
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-edit-text;
+Keywords=Text;Editor;Plaintext;
+MimeType=text/plain;application/x-zerosize;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=FeatherPad
+GenericName[ru]=Текстовый Редактор - FeatherPad
+Comment[cs]=Nenáročný textový editor, založený na Qt
+Comment[da]=Letvægts Qt-tekstredigering
+Comment[es]=Editor de texto ligero basado en Qt
+Comment[eo]=Malpeza tekst-redaktilo bazita sur Qt
+Comment[fa]=ويرايشگر سبک متن
+Comment[hu]=Gyors szövegszerkesztő Qt-ben
+Comment[ja_JP]=軽量 Qt テキストエディタ
+Comment[pl]=Lekki edytor tekstu oparty na Qt
+Comment[pt]=Editor de texto leve baseado em Qt
+Comment[ru]=Лёгкий текстовый редактор на Qt
+Comment[sv]=Lättviktig Qt-textredigering
+Comment[tr]=Hafif Qt tabanlı metin düzenleyici
+Comment[zh_CN]=轻量级 Qt 文本编辑器
+
+# - ------------- - #
+# - Actions Begin - #
+Actions=new-window;standalone-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=featherpad --win
+# - Translations:
+Name[cs]=Nové okno
+Name[de]=Neues Fenster
+Name[eo]=Nova Fenestro
+Name[fa]=پنجره‌ی جديد
+Name[it]=Nuova finestra
+Name[hu]=Új ablak
+Name[pt]=Nova Janela
+Name[sv]=Nytt Fönster
+
+[Desktop Action standalone-window]
+Name=Standalone Window
+Exec=featherpad --standalone
+# - Translations:
+Name[de]=Eigenständiges Fenster
+Name[eo]=Memstara Fenestro
+Name[fa]=پنجره‌ی مستقل
+Name[sv]=Fristående Fönster

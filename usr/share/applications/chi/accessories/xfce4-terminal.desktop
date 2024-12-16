@@ -1,0 +1,41 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Terminal - XFCE
+Comment=Terminal Emulator (xfce4-terminal)
+GenericName=xfce4-terminal
+
+Icon=org.xfce.terminal
+Exec=xfce4-terminal
+TryExec=xfce4-terminal
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-accessories;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Терминал - XFCE
+Comment[ru]=Эмулятор терминала (xfce4-terminal)
+#GenericName[ru]=
+
+
+# - ------------- - #
+# - Actions Begin - #
+Actions=preferences;
+
+[Desktop Action preferences]
+Name=Terminal Preferences
+Exec=xfce4-terminal --preferences

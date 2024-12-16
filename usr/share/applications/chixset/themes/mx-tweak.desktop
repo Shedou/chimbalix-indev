@@ -1,0 +1,55 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- MX Tweak
+Comment=Assorted useful tweaks
+GenericName=
+
+Icon=mx-tweak
+Exec=mx-tweak
+TryExec=mx-tweak
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-themes;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Comment[am]=የ ተለየ ጠቃሚ ማሰናጃ
+Comment[ca]=Diversos ajustos útils
+Comment[cs]=Výběr užitečných vyladění systému
+Comment[da]=Diverse nyttige finjusteringer
+Comment[de]=Eine Zusammenstellung nützlicher Einstellungen
+Comment[el]=Χρήσιμες βελτιώσεις
+Comment[es]=Varios ajustes útiles
+Comment[es_ES]=Varios ajustes útiles
+Comment[fr]=Divers ajustements bien pratiques
+Comment[fr_BE]=Divers ajustements bien pratiques
+Comment[hu]=Válogatott hasznos trükkök
+Comment[it]=Utili rifiniture di vario genere
+Comment[ja]=色々と便利な tweak があります
+Comment[lt]=Įvairūs naudingi patobulinimai
+Comment[nb]=Diverse nyttige finjusteringer
+Comment[nl]=Verschillende handige fijninstellingen
+Comment[pl]=Różne użyteczne poprawki
+Comment[pt]=Alteração fácil e prática de vários elementos [mx-tweak]
+Comment[pt_BR]=Permite fazer alterações de vários elementos do MX Linux com o MX Tweak
+Comment[ru]=Различные полезные изменения (твики)
+Comment[sk]=Výber užitočných vylepšení vzhľadu
+Comment[sl]=Izbor uporabnih prilagoditev
+Comment[sq]=Përimtime të ndryshme të dobishme
+Comment[sv]=Blandade användbara justeringar
+Comment[tr]=Çeşitli yararlı ince ayarlar
+Comment[zh_TW]=多項有用的調校工具

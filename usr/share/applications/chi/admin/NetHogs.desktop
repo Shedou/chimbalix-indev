@@ -8,25 +8,23 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Uninstall "Example Shared Application"
-Comment=
-GenericName=
+Name=Network - NetHogs (CLI)
+Comment=NetHogs: Q - exit, M - switch mode, S and R - sort by traffic
+GenericName=NetHogs
 
-Icon=user-trash-full
-Exec="portsoft/other/Example_Shared_App/uninstaller.sh"
+Icon=utilities-x-terminal
+Exec=sudo nethogs
 TryExec=
-Path=~
+Path=
 #StartupWMClass=
 
 Terminal=true
 StartupNotify=false
 
-Categories=Example_Shared_App
+Categories=chi-admin;
 #Keywords=
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=
+Name[ru]=Сеть - NetHogs

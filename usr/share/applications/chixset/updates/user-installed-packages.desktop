@@ -1,0 +1,51 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Packages (User Installed)
+Comment=List user installed packages. Install packages from existing list.
+GenericName=
+
+Icon=user-installed-packages
+Exec=user-installed-packages
+TryExec=user-installed-packages
+Path=
+StartupWMClass=user-installed-packages
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-updates;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Пакеты (Уст. Пользователем)
+Comment[ca]=Llista paquets instal·lats per l'usuari. Instal·la paquets de la llista.
+Comment[de]=Vom Benutzer installierte Pakete auflisten. Pakete aus der vorhandenen Liste installieren.
+Comment[es_ES]=Lista de paquetes instalados por el usuario. Instalar paquetes de la lista existente.
+Comment[es]=Lista de paquetes instalados por el usuario. Instalar paquetes de la lista existente.
+Comment[fi]=Listaa käyttäjän asentamat paketit. Asenna paketit olemassa olevasta luettelosta.
+Comment[fr_BE]=Liste des paquets installés par l’utilisateur. Installer des paquets à partir d’une liste existante.
+Comment[fr]=Liste des paquets installés par l’utilisateur. Installer des paquets à partir d’une liste existante.
+Comment[hu]=A felhasználó által telepített csomagok listájának megjelenítése. Csomagok telepítése meglévő listából.
+Comment[it]=Elenco dei pacchetti dell'utente installati. Installa pacchetti dall'elenco esistente.
+Comment[ja]=ユーザー自身が追加したパッケージの一覧を表示します。既存の一覧の中からパッケージを追加します。
+Comment[nb]=List brukerinstallerte pakker. Installer pakker fra eksisterende liste.
+Comment[nl_BE]=Lijst van door gebruiker geïnstalleerde pakketten. Installeren van pakketten uit bestaande lijst.
+Comment[nl]=Lijst van door gebruiker geïnstalleerde pakketten. Installeren van pakketten uit bestaande lijst.
+Comment[pl]=Lista pakietów zainstalowanych przez użytkownika. Zainstaluj pakiety z istniejącej listy.
+Comment[pt_BR]=Lista os pacotes instalados pelo usuário e instal os pacotes a partir de uma lista existente
+Comment[pt]=Listar pacotes instalados pelo utilizador e instalar pacotes a partir de uma listagem existente.
+Comment[ru]=Перечислить установленные пользователем пакеты. Установить пакеты из имеющегося списка.
+Comment[sl]=Izpiši uporabniško nameščene pakete. Namesti pakete z obstoječih seznamov.
+Comment[sq]=Paraqit paketa të instaluara nga përdoruesi. Instalo paketa nga listë ekzistuese.
+Comment[sv]=Lista användarinstallerade paket. Installera paket från befintlig lista.
+Comment[tr]=Kullanıcının yüklediği paketleri listeleyin. Mevcut listeden paketleri kurun.

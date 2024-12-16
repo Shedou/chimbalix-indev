@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Ghostwriter
+Comment=Distraction-free text editor for Markdown
+GenericName=Markdown Editor - Ghostwriter
+
+Icon=ghostwriter
+Exec=ghostwriter %f
+TryExec=ghostwriter
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev;
+Keywords=Markdown;editor;document;fullscreen;distraction;concentration;focused;writing;
+MimeType=text/plain;text/markdown;text/x-markdown;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+GenericName[ru]=Редактор Markdown
+Comment[ru]=Текстовый редактор Markdown для сосредоточенной работы

@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Chimbalix Snapshot
+Comment=Create a live iso snapshot of your running system.
+GenericName=
+
+Icon=chimbalix-snapshot
+Exec=chimbalix-snapshot
+#TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-backup;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Chimbalix Snapshot
+Name[ru_RU]=- Chimbalix Snapshot
+Comment[ru]=Создание Live-CD образа из работающей системы.
+Comment[ru_RU]=Создание Live-CD образа из работающей системы.

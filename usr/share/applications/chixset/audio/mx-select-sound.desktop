@@ -1,0 +1,58 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Default Audio Device
+Comment=Easily select a default sound card
+GenericName=
+
+Icon=mx-select-sound
+Exec=mx-select-sound
+TryExec=mx-select-sound
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-audio;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Аудио Устройство По Умолчанию
+Comment[am]=የ ድምፅ ካርድ ይምረጡ ለ መጠቀም
+Comment[ca]=Selecciona fàcilment la tarja de so per omissió
+Comment[cs]=Nastavte zvukovou kartu
+Comment[da]=Nem valg af standardlydkort
+Comment[de]=Einfache Auswahl der Standard-Soundkarte
+Comment[el]=Επιλογή βασικής κάρτας ήχου
+Comment[es]=Seleccionar fácilmente la tarjeta de sonido por defecto
+Comment[es_ES]=Selecciona fácilmente la tarjeta de sonido por defecto
+Comment[fr]=Sélection facile d’une carte son par défaut
+Comment[fr_BE]=Sélection facile d’une carte son par défaut
+Comment[he_IL]=בחירת כרטיס השמע כברירת מחדל בקלות
+Comment[hu]=Az alapértelmezett hangkártya kiválasztása könnyedén
+Comment[it]=Seleziona facilmente la scheda audio di default
+Comment[ja]=サウンドカードのデフォルト値を簡単に選択
+Comment[lt]=Lengvai pasirinkti numatytąją garso plokštę
+Comment[nb]=Velg hvilket lydkort som skal brukes
+Comment[nl]=Eenvoudig een standaard geluidskaart selecteren
+Comment[nl_BE]=Selecteer eenvoudig een standaard geluidskaart
+Comment[pl]=Łatwy wybór domyślnej karty dźwiękowej
+Comment[pt]=Pré-definir facilmente a placa de som a usar [mx-select-sound]
+Comment[pt_BR]=Selecionar a placa de som para ser utilizada com o MX Select Sound
+Comment[ru]=Простой выбор звуковой карты по умолчанию
+Comment[sk]=Nastavenie zvykovej karty
+Comment[sl]=Preprosto izbiranje privzete zvočne kartice
+Comment[sq]=Përzgjidhni me lehtësi një kartë zëri parazgjedhje
+Comment[sv]=Välj lätt standardljudkort
+Comment[tr]=Kolayca bir varsayılan ses kartı seçin
+Comment[zh_TW]=輕輕鬆鬆選擇預設的音效卡

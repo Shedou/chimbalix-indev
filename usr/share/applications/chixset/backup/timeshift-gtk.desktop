@@ -1,0 +1,40 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- System Restore (Timeshift)
+Comment=System Restore Utility
+GenericName=
+
+Icon=timeshift
+Exec=timeshift-launcher
+TryExec=timeshift-launcher
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-backup;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Восстановление Системы (Timeshift)
+Comment[ca]=Utilitat de restauració del sistema
+Comment[cs]=Nástroj pro obnovení systému
+Comment[da]=Værktøj til systemgendannelse
+Comment[fr]=Utilitaire de restauration système
+Comment[hr]=Alat obnove sustava
+Comment[ja]=システムの復元ユーティリティ
+Comment[ko]=시스템 복원 유틸리티
+Comment[lt]=Sistemos atkūrimo paslaugų programa
+Comment[nl]=Hulpmiddel voor systeemherstel
+Comment[ru]=Программа для восстановления системы

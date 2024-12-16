@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=CPU-X
+Comment=Gathers information on CPU, motherboard and more
+GenericName=System Info - CPU-X
+
+Icon=/portsoft/x86_64/cpu-x/squashfs-root/usr/share/icons/hicolor/192x192/apps/io.github.thetumultuousunicornofdarkness.cpu-x.png
+Exec=/portsoft/x86_64/cpu-x/squashfs-root/AppRun %F
+TryExec=/portsoft/x86_64/cpu-x/squashfs-root/AppRun
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-info;
+Keywords=CPU;system;core;speed;clock;rate;Intel;AMD;motherboard;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=CPU-X
+Comment[ru]=Сбор информации о процессоре, материнской плате и др.
+GenericName[ru]=Системная Информация - CPU-X

@@ -1,0 +1,77 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- System Sounds
+Comment=Configure Event & Session Sounds
+GenericName=
+
+Icon=audio-on
+Exec=mx-system-sounds
+TryExec=mx-system-sounds
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-audio;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Системные Звуки
+Comment[am]=ሁኔታ & የ  ክፍለ ጊዜ ድምፅ ማሰናጃ
+Comment[ar]=Configure Event & Session Sounds
+Comment[bg]=Configure Event & Session Sounds
+Comment[ca]=Configura els sons de sessió i esdeveniments
+Comment[cs]=Konfigurace zvuků událostí a relace
+Comment[da]=Konfigurer hændelses- og sessionslyde
+Comment[de]=Ereignis- und Sitzungsklänge konfigurieren
+Comment[el]=Διαμόρφωση ήχων συνεδρίας και συμβάντων
+Comment[es]=Configurar sonidos de eventos y sesión
+Comment[es_ES]=Configurar sonidos de Eventos y Sesión
+Comment[et]=Configure Event & Session Sounds
+Comment[eu]=Configure Event & Session Sounds
+Comment[fa]=Configure Event & Session Sounds
+Comment[fi]=Configure Event & Session Sounds
+Comment[fr]=Configurer les sons des événements et de la session
+Comment[fr_BE]=Configurer les sons des événements et de la session
+Comment[gl_ES]=Configurar sons dos eventos e da sesión
+Comment[he_IL]=Configure Event & Session Sounds
+Comment[hi]=Configure Event & Session Sounds
+Comment[hr]=Configure Event & Session Sounds
+Comment[hu]=Rendszerhangok konfigurálása
+Comment[id]=Configure Event & Session Sounds
+Comment[is]=Configure Event & Session Sounds
+Comment[it]=Configura Notifiche & Suoni di Sessione
+Comment[ja]=イベント・セッション音の設定を行います
+Comment[kk]=Configure Event & Session Sounds
+Comment[ko]=Configure Event & Session Sounds
+Comment[lt]=Konfigūruoti įvykių ir seanso garsus
+Comment[mk]=Configure Event & Session Sounds
+Comment[mr]=Configure Event & Session Sounds
+Comment[nb]=Oppsett av hendelses- og øktlyder
+Comment[nl]=Configureer gebeurtenis- en sessiegeluiden
+Comment[nl_BE]=Configureer gebeurtenis- en sessiegeluiden
+Comment[pl]=Skonfiguruj dźwięki sesji i zdarzeń
+Comment[pt]=Configurar sons dos eventos e da sessão [mx-system-sounds]
+Comment[pt_BR]=Configurar os sons de eventos e da sessão com o MX System Sounds
+Comment[ro]=Configurare sunete pentru evenimente și sesiune
+Comment[ru]=Настройка звуков событий и сеанса
+Comment[sk]=Konfiguruje zvuky udalostí a relácie
+Comment[sl]=Določi zvoke za dogodke in seje
+Comment[sq]=Configure Event & Session Sounds
+Comment[sr]=Configure Event & Session Sounds
+Comment[sv]=Konfigurera ljud för händelser och session
+Comment[tr]=Configure Event & Session Sounds
+Comment[uk]=Configure Event & Session Sounds
+Comment[zh_CN]=Configure Event & Session Sounds
+Comment[zh_TW]=設定系統事件與登入狀態音效

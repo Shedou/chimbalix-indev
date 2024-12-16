@@ -1,0 +1,43 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=PDF View - qpdfview
+Comment=A tabbed document viewer using Qt and the Poppler library.
+GenericName=PDF View - qpdfview
+
+Icon=qpdfview
+Exec=qpdfview --unique %F
+TryExec=qpdfview
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-view;
+Keywords=viewer;document;presentation;pdf;ps;djvu;
+MimeType=application/pdf;application/x-pdf;text/pdf;text/x-pdf;image/pdf;image/x-pdf;application/postscript;image/vnd.djvu;image/x-djvu;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=PDF Просмотр - qpdfview
+GenericName[ru]=PDF Просмотр - qpdfview
+
+# - ------------- - #
+# - Actions Begin - #
+Actions=ChooseInstance;NonUniqueInstance;
+
+[Desktop Action ChooseInstance]
+Name=Choose instance
+Exec=qpdfview --unique --choose-instance %F
+
+[Desktop Action NonUniqueInstance]
+Name=Non-unique instance
+Exec=qpdfview %F

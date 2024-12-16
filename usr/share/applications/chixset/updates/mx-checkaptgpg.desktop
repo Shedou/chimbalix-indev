@@ -1,0 +1,49 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Fix GPG keys
+Comment=Check and install missing apt GPG keys
+GenericName=
+
+Icon=checkaptgpg
+Exec=pkexec checkaptgpg --wait-at-end
+TryExec=checkaptgpg
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chixset-updates;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Comment[ca]=Comprova i instal·la les claus GPG d'apt absents
+Comment[da]=Tjek og installer manglende apt GPG-nøgler
+Comment[de]=Überprüfung und Installation fehlender apt GPG Schlüssel
+Comment[el]=Έλεγχος και εγκατάσταση των κλειδιών GPG που λείπουν
+Comment[es_ES]=Comprobar e instalar las claves GPG de apt que faltan
+Comment[es]=Comprobar e instalar las claves GPG de apt que faltan
+Comment[fi]=Tarkista ja asenna puuttuvat apt GPG avaimet
+Comment[fr_BE]=Vérifier et installer les clés GPG manquantes pour apt
+Comment[fr]=Vérifier et installer les clés GPG manquantes pour apt
+Comment[it]=Controlla e installa le chiavi GPG mancanti
+Comment[ja]=APT GPG キーのチェック／インストールを行います
+Comment[nb]=Kontroller og installer manglende GPG-nøkler til apt
+Comment[nl]=Controleer en installeer ontbrekende GPG sleutels
+Comment[pl]=Sprawdź i zainstaluj brakujące klucze GPG dla apt
+Comment[pt_BR]=Verifica e instala as chaves GPG ou GnuPG (GNU Privacy Guard ou Proteção de Privacidade do GNU) que estiverem ausentes com o programa MX Fix GPG Keys
+Comment[pt]=Verificar chaves GPG do apt e instalar chaves em falta [checkaptgpg]
+Comment[sl]=Popravi in namesti manjkajoče apt GPG ključe
+Comment[sq]=Kontrolloni dhe instaloni kyçe GPG që mungojnë për apt-in
+Comment[sv]=Leta efter och installera saknade apt GPG keys
+Comment[tr]=Eksik apt GPG anahtarlarını denetleyin ve kurun

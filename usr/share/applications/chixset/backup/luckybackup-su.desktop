@@ -1,0 +1,59 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Backup & Sync (LuckyBackup, SU)
+Comment=Backup & sync your data with the power of rsync (Super User)
+GenericName=
+
+Icon=luckybackup
+Exec=/usr/bin/luckybackup-pkexec
+TryExec=/usr/bin/luckybackup-pkexec
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-backup;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Резервное Копирование (LuckyBackup, SU)
+Comment[en]=Backup & sync your data with the power of rsync (Super User)
+Comment[en_US]=Backup & sync your data with the power of rsync (Super User)
+Comment[ara]=احفظ وزامن بياناتك مستخدماً قوة rsync (Super User)
+Comment[bs]=Backup & sync your data with the power of rsync (Super User)
+Comment[bg]=Бекъп и синхронизация на данните ви със силата на rsync (Super User)
+Comment[ca]=Crear còpia de seguretat i sincronitzar dades amb el poder de rsync (Super User)
+Comment[zh_TW]=借助 rsync 之力備份並同步您的資料 (Super User)
+Comment[cs]=Zálohujte a seřizujte svá data pomocí síly nástroje rsync (Super User)
+Comment[nl]=Backup & sync je bestanden met de kracht van rsync (Super User)
+Comment[eo]=Savkopiu & sinkronigu viajn datumojn per la potenco de rsync (Super User)
+Comment[et]=Backup & sync your data with the power of rsync (Super User)
+Comment[fr]=Sauvegarde et Synchronise vos données avec la puissance de rsync (Super User)
+Comment[gl]=Faga copias e sincronice os seus datos co poder de rsync (Super User)
+Comment[de]=Sichere & Synchronisiere mit der Kraft von rsync (Super User)
+Comment[el]=Αντίγραφα ασφαλείας & συγχρονισμός δεδομένων με τη δύναμη του rsync (Super User)
+Comment[it]=Effettua il backup e sincronizza i tuoi dati col potere di rsync (Super User)
+Comment[ja_JP]=Backup & sync your data with the power of rsync (Super User)
+Comment[no]=Backup & sync your data with the power of rsync (Super User)
+Comment[pl]=Kopie zapasowe i synchronizacja danych z siłą rsync (Super User)
+Comment[pt_BR]=Backup & sincronize seus dados com o poder do rsync (Super User)
+Comment[pt_PT]=Backup e sincronização dos seus dados com o poder do rsync (Super User)
+Comment[ro]=Faceți copii de siguranță & sincronizați datele cu puterea aplicației rsync (Super User)
+Comment[ru]=Резервное копирование и синхронизация с помощью rsync (Super User)
+Comment[sk]=Backup & sync your data with the power of rsync (Super User)
+Comment[sl]=Ustvarjanje varnostnih kopij in usklajevanje z uporabo rsync (Super User)
+Comment[es]=Respalda y sincroniza tus datos con el poder de rsync (Super User)
+Comment[sv]=Säkerhetskopiera och synkronisera din data med hjälp av rsync (Super User)
+Comment[tr]=rsync gücüyle verinizi yedekleyin & şipşaklayın (Super User)
+Comment[vi]=Backup & sync your data with the power of rsync (Super User)

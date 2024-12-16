@@ -1,0 +1,51 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Brightness (Software)
+Comment=Brightness systray application
+GenericName=
+
+Icon=brightness-systray
+Exec=mx-tweak --tray &
+TryExec=mx-tweak
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-display;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Яркость (Программно)
+Comment[ca]=Aplicació de sistema de brillantor
+Comment[cs]=Aplikace lišty jasu
+Comment[de]=Helligkeitsregler in der Systemleiste anzeigen
+Comment[el]=Εικονίδιο ρυθμίσεων του συστήματος
+Comment[es]=aplicación de bandeja de brillo
+Comment[es_ES]=aplicación de bandeja de brillo
+Comment[fr]=application Luminosité dans la barre d’état système / systray
+Comment[fr_BE]=application Luminosité dans la barre d’état système / systray
+Comment[hu]=fényerősség tálcaalkalmazás
+Comment[it]=applicazione systray di luminosità
+Comment[ja]=明るさ調節を行うトレイアプレット
+Comment[nb]=Program i systemkurven for justering av lysstyrke
+Comment[nl]=helderheid systray applicatie
+Comment[pl]=regulacja jasności w zasobniku systemowym
+Comment[pt]=aplicação systray brilho
+Comment[pt_BR]=Aplicativo da bandeja do sistema para o controle do brilho da tela
+Comment[ro]=aplicare sistem de luminozitate
+Comment[ru]=Приложение в трее для регулировки яркости
+Comment[sl]=Aplikacija za osvelitev za sistemsko pasico
+Comment[sv]=systembrickeapp för ljusstyrka
+Comment[tr]=parlaklık ayarı sistem tepsisi uygulaması

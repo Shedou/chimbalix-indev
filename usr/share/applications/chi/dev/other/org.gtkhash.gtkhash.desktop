@@ -1,0 +1,65 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=GtkHash
+Comment=Calculate message digests or checksums
+GenericName=Checksum Calculator - GtkHash
+
+Icon=org.gtkhash.gtkhash
+Exec=gtkhash %U
+TryExec=gtkhash
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-other;
+Keywords=hash;checksum;digest;md5;sha1;sha256;crc32;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=GtkHash
+GenericName[ru]=Калькулятор Контрольной Суммы - GtkHash
+Comment[ar]=احسب جُملة ورقم التحقق
+Comment[bn]=ডাইজেস্ট বা চেকসাম বার্তা গণনা করুন
+Comment[bn_BD]=ডাইজেস্ট বা চেকসাম বার্তা গণনা করুন
+Comment[ca]=Calcula resums de missatges o sumes de verificació
+Comment[cs]=Vypočítává digest zpráv nebo kontrolní součty
+Comment[da]=Udregn fingeraftryk eller tjeksumme
+Comment[de]=Berechnet Message Digest oder Prüfsummen
+Comment[el]=Υπολογίστε συνόψεις μηνυμάτων ή αθροίσματα ελέγχου
+Comment[en_GB]=Calculate message digests or checksums
+Comment[en_US]=Calculate message digests or checksums
+Comment[eo]=Kalkuli haketaĵojn aŭ kontrolsumojn
+Comment[es]=Calcular resúmenes de mensajes o sumas de comprobación
+Comment[fi]=Laske viestien hajautukset tai tarkistussummat
+Comment[fr]=Calcule des condensats ou des sommes de contrôle
+Comment[he]=חישוב קוד גיבוב או סיכום ביקורת
+Comment[hr]=Izračunaj sažetke poruka ili kontrolne sume
+Comment[id]=Menghitung pesan inti atau ceksum
+Comment[ie]=Calcular digestes o summas de control de missages
+Comment[it]=Un'utility GTK+ per calcolare i digest (impronte) di messaggi o checksum
+Comment[ja]=メッセージダイジェストやチェックサムの計算
+Comment[lt]=Apskaičiuoti žinučių maišos reikšmes ar kontrolines sumas
+Comment[nb_NO]=Kalkuler meldingsføljetonger eller sjekksummer
+Comment[nl]=Berichtdigests of controlesommen berekenen
+Comment[nl_BE]=Berichtdigests of controlesommen berekenen
+Comment[pl]=Obliczanie skrótów wiadomości i sum kontrolnych
+Comment[pt]=Calcula resumos de mensagens e somas de verificação (checksums)
+Comment[pt_BR]=Calcular resumos de mensagens ou somas de verificação (checksums)
+Comment[ru]=Вычисление дайджестов или контрольных сумм
+Comment[sr]=Израчунајте сажетке порука или суме провере
+Comment[sv]=Beräkna meddelandesammandrag eller kontrollsummor
+Comment[tr]=Mesaj özetlerini veya sağlama toplamlarını hesapla
+Comment[vi]=Tính toán thông báo các chữ số hoặc kiểm tra tổng
+Comment[zh_CN]=计算信息摘要或校验和
+Comment[zh_TW]=計算訊息摘要或資料校驗值

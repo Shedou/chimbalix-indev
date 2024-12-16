@@ -13,7 +13,7 @@ Comment=
 GenericName=
 
 Icon=user-trash-full
-Exec=".local/portsoft/other/Example/uninstaller.sh"
+Exec="portsoft/other/Example/uninstaller.sh"
 TryExec=
 Path=~/
 #StartupWMClass=

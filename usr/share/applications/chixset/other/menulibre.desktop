@@ -1,0 +1,68 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+OnlyShowIn=Budgie;Cinnamon;GNOME;KDE;LXDE;LXQt;MATE;Pantheon;Unity;XFCE;
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Menu Editor (MenuLibre)
+Comment=Add or remove applications from the menu
+GenericName=
+
+Icon=menulibre
+Exec=/usr/bin/menulibre
+TryExec=/usr/bin/menulibre
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-other;
+Keywords=Configuration;Menu;User;
+#MimeType=
+
+X-Ubuntu-Gettext-Domain=menulibre
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Редактор Меню (MenuLibre)
+Comment[ar]=إضافة أو إزالة التطبيقات من القائمة
+Comment[ca]=Afegiu o suprimiu aplicacions del menú
+Comment[cs]=Přidat nebo odebrat programy z nabídky
+Comment[da]=Tilføj eller fjern programmer fra menuen
+Comment[de]=Anwendungen aus bzw. zu diesem Menü hinzufügen oder entfernen
+Comment[el]=Προσθήκη ή αφαίρεση εφαρμογών από το μενού
+Comment[en_GB]=Add or remove applications from the menu
+Comment[es]=Añadir o eliminar aplicaciones del menú
+Comment[eu]=Gehitu edo kendu menuko aplikazioak
+Comment[fi]=Lisää tai poista sovelluksia valikosta
+Comment[fr]=Ajouter ou retirer des applications du menu
+Comment[gl]=Engadir ou retirar aplicativos do menú
+Comment[he]=הוסף או הסר יישומים מתוך התפריט
+Comment[hr]=Dodaj ili ukloni program iz izbornika
+Comment[is]=Bættu við eða fjarlægðu forrit úr valmyndinni
+Comment[it]=Aggiungi e rimuovi applicazioni dal menù
+Comment[ja]=メニューにあるアプリケーションの追加と削除
+Comment[kk]=Мәзірге қолданбаларды қосу немесе өшіру
+Comment[lt]=Pridėkite ar šalinkite meniu programas
+Comment[ms]=Tambah atau buang aplikasi dari menu
+Comment[ms@Arab]=تمبه اتاو بواڠ اڤليکاسي دري مينو
+Comment[nb]=Legg til eller fjern programmer fra menyen
+Comment[nl]=Voeg toepassingen toe aan of verwijder toepassingen uit het menu
+Comment[pl]=Dodaje i usuwa programy z menu
+Comment[pt]=Adicionar ou remover aplicações ao menu
+Comment[pt_BR]=Adicione ou remove programas do menu
+Comment[pt_PT]=Adicionar ou remover aplicações do menu
+Comment[ru]=Добавление и удаление пунктов меню
+Comment[sk]=Pridáva alebo odstraňuje aplikácie z ponuky
+Comment[sl]=Dodajte ali odstranite program iz menija
+Comment[sr]=Додаје или уклања програме у изборнику
+Comment[sv]=Lägg till eller ta bort program från menyn
+Comment[tr]=Menüye uygulamalar ekleyin veya silin
+Comment[uk]=Додавання або вилучення програм з меню
+Comment[zh_CN]=从菜单中添加或移除应用程序
+Comment[zh_TW]=在選單加入或移除應用程式

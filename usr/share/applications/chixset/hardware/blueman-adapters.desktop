@@ -1,0 +1,60 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Bluetooth Adapters
+Comment=Set Bluetooth Adapter Properties
+GenericName=
+
+Icon=blueman-device
+Exec=blueman-adapters
+TryExec=blueman-adapters
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-hardware;
+#Keywords=
+#MimeType=
+
+X-XfceSettingsName=Bluetooth
+X-XfcePluggable=true
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Bluetooth Адаптеры
+Comment[be]=Вызначыць уласцівасці Bluetooth-адаптара
+Comment[da]=Indstil Bluetooth-adapteres egenskaber
+Comment[de]=Bluetooth-Adapter-Einstellungen
+Comment[el]=Ρύθμιση προσαρμογέα Bluetooth
+Comment[es]=Establecer propiedades del adaptador Bluetooth
+Comment[et]=Seadista Bluetooth adapteri omadusi
+Comment[fi]=Aseta Bluetooth-sovittimen ominaisuudet
+Comment[fr]=Définir les propriétés de l'adaptateur Bluetooth
+Comment[he]=הגדרת מאפייני מתאם בלוטות׳
+Comment[hr]=Postavi svojstva Bluetooth adaptera
+Comment[hu]=Bluetooth csatoló beállítások
+Comment[it]=Imposta le Proprietà di un Adattatore Bluetooth
+Comment[ja]=Bluetooth アダプター属性設定
+Comment[ko]=블루투스 어댑터 속성 지정하기
+Comment[lt]=Nustatyti „Bluetooth“ adapterio savybes
+Comment[nb]=Velg egenskaper for Blåtannsadaptere
+Comment[nl]=Eigenschappen instellen voor Bluetooth-adapters
+Comment[pl]=Ustaw właściwości adaptera Bluetooth
+Comment[pt_BR]=Definir as Propriedades do Adaptador de Bluetooth
+Comment[pt]=Definir propriedades de adaptadores de Bluetooth
+Comment[ru]=Установить свойства адаптера Bluetooth
+Comment[sk]=Nastavuje vlastnosti bluetooth adaptéra
+Comment[sl]=Nastavi lastnosti Bluetooth vmesnika
+Comment[tr]=Bluetooth Bağdaştırıcısı Özelliklerini Ayarla
+Comment[uk]=Встановити властивості адаптера Bluetooth
+Comment[zh_CN]=设置蓝牙适配器属性
+Comment[oc]=Definir las proprietats de l'adaptator Bluetooth

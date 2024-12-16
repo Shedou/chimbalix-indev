@@ -1,0 +1,50 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- Job Scheduler
+Comment=Job scheduling utility which uses crontab as the backend
+GenericName=
+
+Icon=job-scheduler
+Exec=job-scheduler
+TryExec=job-scheduler
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-system;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- Планировщик Заданий
+Comment[ca]=Eina de planificació de tasques que usa crontab en rerefons
+Comment[cs]=Plánování akcí s využitím podpory crontab  
+Comment[de]=Dienstprogramm zur Aufgabenplanung, das crontab als Backend verwendet
+Comment[el]=Εργαλείο προγραμματισμού εργασιών που χρησιμοποιεί το υποσύστημα crontab
+Comment[es]=Utilidad de programación de trabajos que utiliza crontab como backend
+Comment[es_ES]=Utilidad de programación de trabajos que utiliza crontab como backend
+Comment[fr]=Utilitaire de planification des tâches qui utilise crontab en arrière-plan
+Comment[fr_BE]=Utilitaire de planification des tâches qui utilise crontab en arrière-plan
+Comment[he_IL]=כלי תזמון משימות שמשתמש ב־crontab ברקע
+Comment[it]=Utilità di pianificazione del lavoro che utilizza crontab come backend
+Comment[ja]=crontab がバックエンドのジョブ管理ユーティリティ
+Comment[nb]=Verktøy for planlagt kjøring av jobber som bruker crontab som bakstykke
+Comment[nl]=Taakplanner die crontab als backend gebruikt
+Comment[pt]=Utilidade de agendamento de Tarefas que funciona sob o crontab
+Comment[pt_BR]=Utilitário de agendamento de tarefas que utiliza o programa crontab como interface de programação para o Job Scheduler
+Comment[ru]=Средство планирования заданий, использующая crontab в качестве бэкенда
+Comment[sl]=Orodje za časovno razporejanje opravil, kiuporablja crontab
+Comment[sq]=Mjet për planifikim aktesh, që përdor crontab-in si mekanizëm për të
+Comment[sv]=Verktyg för schemaläggning av arbete som använder crontab som backend
+Comment[tr]=Arka uç olarak crontab kullanan iş planlama yardımcı programı

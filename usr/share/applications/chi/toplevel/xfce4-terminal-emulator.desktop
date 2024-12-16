@@ -1,0 +1,90 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+OnlyShowIn=XFCE;
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Terminal
+Comment=Use the command line
+GenericName=Terminal
+
+Icon=org.xfce.terminalemulator
+Exec=terminal --working-directory ~
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-toplevel;
+#Keywords=
+#MimeType=
+
+X-AppStream-Ignore=True
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Терминал
+GenericName[ru]=Терминал
+Comment[ar]=إستعمل سطر الأوامر
+Comment[ast]=Usa la llinia comandos
+Comment[be]=Выкарыстоўваць загадны радок
+Comment[be@tarask]=Выкарыстоўваёце загадны радок
+Comment[bg]=Използване на команден ред
+Comment[bn]=কমান্ড লাইন ব্যবহার করুন
+Comment[ca]=Utilitzeu la línia d'ordres
+Comment[cs]=Použít příkazový řádek
+Comment[da]=Brug kommandolinjen
+Comment[de]=Befehlszeile verwenden
+Comment[el]=Χρησιμοποιείστε την γραμμή εντολών
+Comment[en_AU]=Use the command line
+Comment[en_CA]=Use the command line
+Comment[en_GB]=Use the command line
+Comment[es]=Use la línea de órdenes
+Comment[et]=Kasuta käsurida
+Comment[eu]=Erabili komando lerroa
+Comment[fi]=Käytä komentoriviä
+Comment[fr]=Utiliser la ligne de commande
+Comment[gl]=Usar a liña de ordes
+Comment[he]=השתמש בשורת הפקודה
+Comment[hr]=Koristi naredbeni redak
+Comment[hu]=Parancssor használata
+Comment[hy_AM]=Գործածել հրամանատողը
+Comment[hye]=Գործածել հրամանատողը
+Comment[id]=Gunakan baris perintah
+Comment[ie]=Usar li linea de comandes
+Comment[is]=Nota skipanalínuna
+Comment[it]=Usa la linea di comando
+Comment[ja]=コマンドラインを使用します
+Comment[ka]=ბრზანების ხაზის გამოყენება
+Comment[kab]=Seqdec izirig n unezḍay
+Comment[kk]=Командалық жолды қолдану
+Comment[ko]=명령줄 사용
+Comment[lt]=Naudoti komandų eilutę
+Comment[ms]=Guna perintah suai
+Comment[nb]=Bruk kommandlinjen
+Comment[nl]=Gebruik de opdrachtregel
+Comment[nn]=Bruk kommandlinja
+Comment[oc]=Utilizar la linha de comanda
+Comment[pl]=Wprowadza i wykonuje wiersze poleceń
+Comment[pt]=Utilizar a linha de comandos
+Comment[pt_BR]=Usar a linha de comando
+Comment[ro]=Utilizați linia de comandă
+Comment[ru]=Использовать командную строку
+Comment[sk]=Použiť príkazový riadok
+Comment[sl]=Uporabite ukazno vrstico
+Comment[sq]=Përdorni rreshtin e urdhrave
+Comment[sr]=Користите линију наредби
+Comment[sv]=Använd kommandoraden
+Comment[th]=ใช้บรรทัดคำสั่ง
+Comment[tr]=Komut satırını kullan
+Comment[ug]=بۇيرۇق قۇرىنى ئىشلىتىدۇ
+Comment[uk]=Використовуєте командну стрічку
+Comment[zh_CN]=使用命令行
+Comment[zh_HK]=使用指令列
+Comment[zh_TW]=使用指令列

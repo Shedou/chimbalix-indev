@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=true
+Hidden=true
+
+Name=Install Chimbalix
+Comment=Adapted Gazelle Installer for Chimbalix
+#GenericName=
+
+Icon=/usr/share/chimbalix-installer-data/logo.png
+Exec=cinstall-launcher
+#TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+#Categories=
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Установить Chimbalix
+Name[ru_RU]=Установить Chimbalix
+Comment[ru]=Адаптированный Gazelle Installer для Chimbalix
+Comment[ru_RU]=Адаптированный Gazelle Installer для Chimbalix

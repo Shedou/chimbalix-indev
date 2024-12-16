@@ -8,25 +8,24 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Uninstall "Example Shared Application"
-Comment=
+Name=Script - Update HiColor icons cache
+Comment=Force the icons cache refresh without rebooting or logging out.
 GenericName=
 
-Icon=user-trash-full
-Exec="portsoft/other/Example_Shared_App/uninstaller.sh"
+Icon=dialog-warning
+Exec=sudo gtk-update-icon-cache -f /usr/share/icons/hicolor/
 TryExec=
-Path=~
+Path=
 #StartupWMClass=
 
 Terminal=true
 StartupNotify=false
 
-Categories=Example_Shared_App
+Categories=chi-other;
 #Keywords=
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
+Name[ru]=Скрипт - Update HiColor icons cache
 #Comment[ru]=
-#GenericName[ru]=

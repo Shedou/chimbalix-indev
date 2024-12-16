@@ -1,0 +1,33 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Firefox 131.0.3
+Comment=Web browser for viewing web pages
+GenericName=Web browser - Firefox 131.0.3
+
+Icon=/portsoft/x86_64/firefox13103/default48.png
+# Don't use quotes here, otherwise the app won't be in the "open with" menu...
+Exec=/portsoft/x86_64/firefox13103/firefox/firefox %u
+TryExec=/portsoft/x86_64/firefox13103/firefox/firefox
+Path=
+StartupWMClass=Firefox
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-network;
+#Keywords=
+MimeType=text/html;image/gif;application/xml;application/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Firefox 131.0.3
+GenericName[ru]=Веб-браузер - Firefox 131.0.3
+Comment[ru]=Веб-браузер для просмотра веб-страниц

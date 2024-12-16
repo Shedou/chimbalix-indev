@@ -13,7 +13,7 @@ Comment=
 GenericName=
 
 Icon=folder-yaru
-Exec=thunar ".local/portsoft/other/Example/"
+Exec=thunar "portsoft/other/Example/"
 TryExec=
 Path=~/
 #StartupWMClass=

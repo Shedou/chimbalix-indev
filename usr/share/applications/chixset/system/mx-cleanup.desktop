@@ -1,0 +1,62 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=- MX Cleanup
+Comment=Quick and safe removal of old files
+GenericName=
+
+Icon=mx-cleanup
+Exec=mx-cleanup-launcher
+TryExec=mx-cleanup-launcher
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chixset-system;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=- MX Очистка
+Comment[ca]=Elimina de forma ràpida i segura fitxers antics
+Comment[cs]=Rychlé a bezpečné odstranění starých souborů
+Comment[da]=Hurtig og sikker fjernelse af gamle filer
+Comment[de]=Schnelles und sicheres Entfernen alter Dateien
+Comment[el]=Γρήγορη και ασφαλής αφαίρεση παλιών αρχείων
+Comment[es]=Eliminar ficheros viejos, rápido y seguro
+Comment[es_ES]=Eliminación rápida y segura de archivos antiguos
+Comment[fi]=Vanhojen tiedostojen nopea ja turvallinen poistaminen
+Comment[fr]=Suppression rapide et sûre des anciens fichiers
+Comment[fr_BE]=Suppression rapide et sûre des anciens fichiers
+Comment[gl_ES]=Eliminación rápida e segura de ficheiros antigos que xa non son necesarios
+Comment[he_IL]=הסרה מהירה ובטוחה של קבצים ישנים
+Comment[hi]=पुरानी फाइलों को त्वरित व सुरक्षित रूप से हटाएँ
+Comment[hr]=Brzo i sigurno uklanjanje starih datoteka
+Comment[hu]=A régi fájlok gyors és biztonságos eltávolítása
+Comment[it]=Rimozione rapida e sicura dei vecchi file
+Comment[ja]=古いファイルを迅速かつ安全に削除します
+Comment[lt]=Greitas ir saugus senų failų šalinimas
+Comment[nb]=Fjern gamle filer raskt og trygt
+Comment[nl]=Snelle en veilige verwijdering van oude bestanden
+Comment[nl_BE]=Snelle en veilige verwijdering van oude bestanden
+Comment[pl]=Szybkie i bezpieczne usuwanie starych plików
+Comment[pt]=Remoção rápida e segura de ficheiros antigos ou já desnecessários [mx-cleanup]
+Comment[pt_BR]=Remover/excluir arquivos que se tornaram desnecessários ao sistema operacional com o MX Cleanup
+Comment[ru]=Быстрое и безопасное удаление старых файлов
+Comment[sk]=Rýchle a bezpečné mazanie nepotrebných súborov
+Comment[sl]=Hitra in varna odstranitev starih datotek
+Comment[sq]=Heqje e shpejtë dhe e parrezik kartelash të vjetra
+Comment[sv]=Snabb och säker borttagning av gamla filer
+Comment[th]=ลบไฟล์เก่าอย่างรวดเร็วและปลอดภัย
+Comment[tr]=Eski dosyaların hızlı ve güvenli şekilde kaldırılması
+Comment[zh_CN]=安全快速清理旧文件

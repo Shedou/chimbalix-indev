@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=KPatience
+Name[ru]=KPatience
+Exec=kpat -qwindowtitle %c %u
+Type=Application
+Icon=kpat
+X-DocPath=kpat/index.html
+GenericName=Game - KPatience
+GenericName[ru]=Игра - KPatience
+Comment=Solitaire card game
+Comment[ru]=Косынка
+X-DBUS-StartupType=Multi
+Categories=chi-games;
+MimeType=application/vnd.kde.kpatience.savedstate;
+X-DBUS-ServiceName=org.kde.kpat

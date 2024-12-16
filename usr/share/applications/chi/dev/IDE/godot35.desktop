@@ -1,0 +1,44 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Godot Engine 3.5.3
+Comment=
+GenericName=IDE - Godot Engine 3.5.3
+
+Icon=/portsoft/x86_64/godot353/icon_color.png
+Exec=/portsoft/x86_64/godot353/Godot_v3.5.3-stable_x11.exec
+TryExec=/portsoft/x86_64/godot353/Godot_v3.5.3-stable_x11.exec
+Path=/portsoft/x86_64/godot353/
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-ide;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+#Name[ru]=
+#GenericName[ru]=
+#Comment[ru]=
+
+# - ------------- - #
+# - Actions Begin - #
+
+#Actions=Act;
+
+#[Desktop Action Act]
+#Name=Acttion Template
+#Exec=thunar
+
+# -  Actions End  - #
+# - ------------- - #

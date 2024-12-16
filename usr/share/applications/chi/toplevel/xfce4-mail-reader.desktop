@@ -1,0 +1,90 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+OnlyShowIn=XFCE;
+#NotShowIn=
+NoDisplay=false
+Hidden=true
+
+Name=Mail Reader
+Comment=Read your email
+GenericName=Mail Reader
+
+Icon=org.xfce.mailreader
+Exec=exo-open --launch MailReader %u
+TryExec=exo-open
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-toplevel;
+#Keywords=
+#MimeType=
+
+X-XFCE-MimeType=x-scheme-handler/mailto;
+X-AppStream-Ignore=True
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Почтовый Клиент
+GenericName[ru]=Почтовый Клиент
+Comment[ar]=إقرء بريدك الإلكتروني
+Comment[ast]=Llei'l to corréu
+Comment[be]=Чытаць электронную пошту
+Comment[be@tarask]=Чытайце сваю электронную пошту
+Comment[bg]=Прочетете си пощата
+Comment[bn]=ইমেইল পড়ুন
+Comment[ca]=Llegiu el vostre correu electrònic
+Comment[cs]=Číst poštu
+Comment[da]=Læs dine e-mail
+Comment[de]=E-Mails lesen
+Comment[el]=Τα ηλεκτρονικά σας μηνύματα
+Comment[en_AU]=Read your email
+Comment[en_CA]=Read your email
+Comment[en_GB]=Read your e-mail
+Comment[es]=Lea el correo
+Comment[et]=Loe e-posti
+Comment[eu]=Irakurri zure posta
+Comment[fi]=Käytä sähköpostiasi
+Comment[fr]=Consulter ses courriels
+Comment[gl]=Ler o correo electrónico
+Comment[he]=קרא את הדוא״ל שלך
+Comment[hr]=Čitaj svoju poštu
+Comment[hu]=E-mail olvasása
+Comment[hy_AM]=Ընթերցել նամակները
+Comment[hye]=Ընթերցել նամակները
+Comment[id]=Baca email anda
+Comment[ie]=Leer vor postage
+Comment[is]=Lesa tölvupóstinn
+Comment[it]=Leggi le email
+Comment[ja]=電子メールを読みます
+Comment[kab]= Γeṛ imayl-inek·inem
+Comment[kk]=Поштаңызды оқу
+Comment[ko]=이메일 읽기
+Comment[lt]=Skaityti paštą
+Comment[ms]=Baca emel anda
+Comment[nb]=Les e-post
+Comment[nl]=Lees uw email
+Comment[nn]=Les eposten din
+Comment[oc]=Legir sos mails
+Comment[pl]=Odbiera i wysyła pocztę elektroniczną
+Comment[pt]=Ler o correio eletrónico
+Comment[pt_BR]=Ler seu e-mail
+Comment[ro]=Citiți-vă mailul
+Comment[ru]=Читать электронную почту
+Comment[sk]=Prečítať poštu
+Comment[sl]=Preberite svojo pošto
+Comment[sq]=Lexoni email-et tuaj
+Comment[sr]=Читајте своју е-пошту
+Comment[sv]=Läs din e-post
+Comment[th]=อ่านอีเมลของคุณ
+Comment[tr]=E-postanızı okuyun
+Comment[ug]=ئېلخەت ئوقۇيدۇ
+Comment[uk]=Перегляньте Вашу пошту
+Comment[zh_CN]=阅读您的电子邮件
+Comment[zh_HK]=讀取電子郵件
+Comment[zh_TW]=讀取您的電子郵件

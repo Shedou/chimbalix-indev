@@ -1,0 +1,37 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Icon Browser - yad
+Comment=Inspect GTK Icon Theme
+GenericName=Yad
+
+Icon=yad
+Exec=yad-icon-browser
+TryExec=yad-icon-browser
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-dev-other;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Каталог Значков - yad
+Comment[fr]=Parcourir les icônes du thème GTK
+Comment[it]=Sfoglia le icone del tema GTK
+Comment[pt_BR]=Inspecionar ícone tema do GTK
+Comment[ru]=Исследование темы иконок GTK
+Comment[sk]=Preskúmať tému ikon GTK
+Comment[uk]=Перегляд теми іконок GTK
+Comment[zh_TW]=檢閱 GTK 圖示布景主題

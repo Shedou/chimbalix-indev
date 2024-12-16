@@ -1,0 +1,32 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=HardInfo
+Comment=Displays system information
+GenericName=System Info - HardInfo
+
+Icon=/usr/share/hardinfo/pixmaps/logo.png
+Exec=/usr/bin/hardinfo
+TryExec=/usr/bin/hardinfo
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-info;
+Keywords=linux;kernel;system;hardware;cpu;processor;capabilities;frequency;memory;ram;board;resources;sensors;devices;usb;pci;display;network;benchmark;test;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=HardInfo
+Comment[ru]=Показывает информацию о системе
+GenericName=Системная Информация - HardInfo

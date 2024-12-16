@@ -1,0 +1,91 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+OnlyShowIn=XFCE;
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=File Manager
+Comment=Browse the file system
+GenericName=File Manager
+
+Icon=org.xfce.filemanager
+Exec=exo-open --launch FileManager %u
+TryExec=exo-open
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-toplevel;
+#Keywords=
+#MimeType=
+
+X-XFCE-MimeType=inode/directory;x-scheme-handler/trash;
+X-AppStream-Ignore=True
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Файловый Менеджер
+GenericName[ru]=Файловый Менеджер
+Comment[ar]=تصفح ملفات النظام
+Comment[ast]=Restola pel sistema de ficheros
+Comment[be]=Прагляд файлавай сістэмы
+Comment[be@tarask]=Прагляд файлавай сыстэмы
+Comment[bg]=Преглед на файловата система
+Comment[bn]=ফাইল সিস্টেম ব্রাউজ করুন
+Comment[ca]=Navega pel sistema de fitxers
+Comment[cs]=Procházet systém souborů
+Comment[da]=Gennemse filsystemet
+Comment[de]=Dateisystem durchsuchen
+Comment[el]=Περιήγηση στο σύστημα αρχείων
+Comment[en_AU]=Browse the file system
+Comment[en_CA]=Browse the file system
+Comment[en_GB]=Browse the file system
+Comment[es]=Navegue por el sistema de archivos
+Comment[et]=Failisüsteemi sirvimine
+Comment[eu]=Arakatu fitxategi-sistema
+Comment[fi]=Selaa tiedostojärjestelmää.
+Comment[fr]=Parcourir le système de fichiers
+Comment[gl]=Explorar o sistema de ficheiros
+Comment[he]=סייר במערכת הקבצים
+Comment[hr]=Pregledaj datotečni sustav
+Comment[hu]=A fájlrendszer tallózása
+Comment[hy_AM]=Որոնել նիշային համակարգում
+Comment[hye]=Որոնել նիշային համակարգում
+Comment[id]=Ramban sistem berkas
+Comment[ie]=Navigar li sistema de files
+Comment[is]=Vafra um skráakerfi
+Comment[it]=Esplora il file system
+Comment[ja]=ファイルシステムを参照します。
+Comment[ka]=ფაილურ სისტემაში ძებნა
+Comment[kab]=Inig deg unagraw n yifuyla
+Comment[kk]=Файлдық жүйені шолу
+Comment[ko]=파일 시스템 탐색
+Comment[lt]=Naršyti failų sistemą
+Comment[ms]=Layar sistem fail
+Comment[nb]=Utforsk filsystemet
+Comment[nl]=Verken het bestandssysteem
+Comment[nn]=Bla gjennom filsystemet
+Comment[oc]=Percórrer lo sistèma de fichièrs
+Comment[pl]=Przegląda system plików za pomocą menedżera plików
+Comment[pt]=Navegar no sistema de ficheiros
+Comment[pt_BR]=Navega no sistema de arquivos
+Comment[ro]=Arată sistemul de fișiere
+Comment[ru]=Просмотр файловой системы
+Comment[sk]=Prehliadať súborový systém
+Comment[sl]=Brskajte po datotečnem sistemu
+Comment[sq]=Shfleto sistemin e kartelave
+Comment[sr]=Разгледај систем датотека
+Comment[sv]=Bläddra i filsystemet
+Comment[th]=ท่องดูระบบแฟ้ม
+Comment[tr]=Dosya sistemine göz at
+Comment[ug]=ھۆججەت سىستېمىسىنى كۆرىدۇ
+Comment[uk]=Перегляд файлової системи
+Comment[zh_CN]=浏览文件系统
+Comment[zh_HK]=瀏覽檔案系統
+Comment[zh_TW]=瀏覽檔案系統

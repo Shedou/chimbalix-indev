@@ -1,0 +1,82 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Ark
+Comment=Work with file archives
+GenericName=Archiver - Ark
+
+Icon=ark
+Exec=ark %U
+TryExec=ark
+Path=
+StartupWMClass=ark
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-tools-archivers;
+#Keywords=
+MimeType=application/x-tar;application/x-compressed-tar;application/x-bzip-compressed-tar;application/x-tarz;application/x-xz-compressed-tar;application/x-lzma-compressed-tar;application/x-lzip-compressed-tar;application/x-tzo;application/x-lrzip-compressed-tar;application/x-lz4-compressed-tar;application/x-zstd-compressed-tar;application/vnd.debian.binary-package;application/x-deb;application/x-cd-image;application/x-bcpio;application/x-cpio;application/x-cpio-compressed;application/x-sv4cpio;application/x-sv4crc;application/x-rpm;application/x-source-rpm;application/vnd.ms-cab-compressed;application/x-xar;application/x-iso9660-appimage;application/x-archive;application/x-compress;application/gzip;application/x-bzip;application/zlib;application/zstd;application/x-lzma;application/x-xz;application/x-lz4;application/x-lzip;application/x-lrzip;application/x-lzop;application/vnd.rar;application/x-rar;application/x-7z-compressed;application/zip;application/x-java-archive;application/x-lha;application/x-arj;application/arj;
+
+X-DocPath=ark/index.html
+X-DBUS-StartupType=Multi
+X-DBUS-ServiceName=org.kde.ark
+InitialPreference=3
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Ark
+GenericName[ru]=Архиватор - Ark
+Comment[ar]=العمل مع أرشيفات الملفات
+Comment[az]=Fayl arxivləri ilə işləmək
+Comment[bg]=Работа с файлови архиви
+Comment[ca]=Treball amb arxius de fitxer
+Comment[ca@valencia]=Treball amb arxius de fitxer
+Comment[cs]=Práce s archivy souborů
+Comment[da]=Arbejd med filarkiver
+Comment[de]=Arbeiten mit Dateiarchiven
+Comment[el]=Εργασία με αρχειοθήκες
+Comment[en_GB]=Work with file archives
+Comment[es]=Trabajar con archivos comprimidos
+Comment[et]=Arhiivifailide käitlemine
+Comment[eu]=Fitxategien artxiboekin lan egiteko
+Comment[fi]=Käsittele tiedostoarkistoja
+Comment[fr]=Travailler avec des archives de fichiers
+Comment[gl]=Traballa con arquivos de ficheiros
+Comment[he]=עבוד עם קבצי ארכיונים
+Comment[hu]=Archívumkezelő program
+Comment[ia]=Trvalia con le archivos de file
+Comment[id]=Bekerja dengan arsip-arsip file
+Comment[ie]=Operationes con archives de files
+Comment[is]=Vinna með safnskrár
+Comment[it]=Lavora con gli archivi di file
+Comment[ja]=ファイルアーカイブを操作
+Comment[ka]=იმუშავეთ ფაილის არქივებთან
+Comment[ko]=압축 파일로 작업하기
+Comment[lt]=Dirbti su failų archyvais
+Comment[nl]=Mert bestandsarchieven werken
+Comment[nn]=Arbeid med filarkiv
+Comment[pl]=Pracuj z archiwami plików
+Comment[pt]=Lidar com pacotes em ficheiros
+Comment[pt_BR]=Manipulação de arquivos compactados
+Comment[ro]=Lucrează cu arhive de fișiere
+Comment[ru]=Работа с архивами файлов
+Comment[sk]=Práca so súbormi archívov
+Comment[sl]=Delajte z datotečnimi arhivi
+Comment[sr]=Рад са фајловима архива
+Comment[sr@ijekavian]=Рад са фајловима архива
+Comment[sr@ijekavianlatin]=Rad sa fajlovima arhiva
+Comment[sr@latin]=Rad sa fajlovima arhiva
+Comment[sv]=Arbeta med filarkiv
+Comment[tr]=Dosya arşivleri ile çalış
+Comment[uk]=Робота з файловими архівами
+Comment[x-test]=xxWork with file archivesxx
+Comment[zh_CN]=管理压缩包文件
+Comment[zh_TW]=檔案壓縮工具

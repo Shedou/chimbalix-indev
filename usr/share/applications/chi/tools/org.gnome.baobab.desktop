@@ -1,0 +1,35 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Baobab
+Comment=Check folder sizes and available disk space
+GenericName=Baobab
+
+Icon=org.gnome.baobab
+Exec=baobab %U
+TryExec=baobab
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=true
+
+Categories=chi-tools;
+Keywords=storage;space;cleanup;
+MimeType=inode/directory;
+
+DBusActivatable=true
+X-GNOME-UsesNotifications=true
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Baobab
+Comment[ru]=Анализ размера папок и свободного места на дисках
+Keywords[ru]=накопитель;место;чистка;

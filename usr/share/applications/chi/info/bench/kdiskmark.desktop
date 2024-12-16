@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=KDiskMark
+Comment=Benchmark
+GenericName=Benchmark - KDiskMark
+
+Icon=kdiskmark
+Exec=/portsoft/x86_64/kdiskmark/squashfs-root/AppRun
+TryExec=/portsoft/x86_64/kdiskmark/squashfs-root/AppRun
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-info-bench;
+Keywords=Benchmark;HDD;SSD;
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=KDiskMark
+GenericName[ru]=Бенчмарк - KDiskMark

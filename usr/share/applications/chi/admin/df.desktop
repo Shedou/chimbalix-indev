@@ -8,25 +8,23 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Uninstall "Example Shared Application"
+Name=File System Info - DF (CLI)
 Comment=
-GenericName=
+GenericName=DF
 
-Icon=user-trash-full
-Exec="portsoft/other/Example_Shared_App/uninstaller.sh"
+Icon=utilities-x-terminal
+Exec=bash -c "echo \"Disks info (df -h -T):\";df -h -T;echo \"Press any key to exit\";read -rn1"
 TryExec=
-Path=~
+Path=
 #StartupWMClass=
 
 Terminal=true
 StartupNotify=false
 
-Categories=Example_Shared_App
+Categories=chi-admin;
 #Keywords=
 #MimeType=
 
 # - Translations:
 # FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
-#Name[ru]=
-#Comment[ru]=
-#GenericName[ru]=
+Name[ru]=Информация о Файловой Системе - DF (CLI)
