@@ -8,14 +8,14 @@ Encoding=UTF-8
 NoDisplay=false
 Hidden=false
 
-Name=Godot Engine 3.5.3
+Name=Godot Engine 3.6
 Comment=
-GenericName=IDE - Godot Engine 3.5.3
+GenericName=
 
-Icon=/portsoft/x86_64/godot353/icon_color.png
-Exec=/portsoft/x86_64/godot353/Godot_v3.5.3-stable_x11.exec
-TryExec=/portsoft/x86_64/godot353/Godot_v3.5.3-stable_x11.exec
-Path=/portsoft/x86_64/godot353/
+Icon=/portsoft/x86_64/godot36/icon_color.png
+Exec=/portsoft/x86_64/godot36/Godot_v3.6-stable_x11.64
+TryExec=/portsoft/x86_64/godot36/Godot_v3.6-stable_x11.64
+Path=/portsoft/x86_64/godot36/
 #StartupWMClass=
 
 Terminal=false
