@@ -4,4 +4,4 @@
 Path_To_Script="$( dirname "$(readlink -f "$0")")"
 cd "$Path_To_Script" # Go to Working Directory!
 
-exec /usr/bin/godot353-shared "$Path_To_Script"
+exec /usr/bin/godot3-shared "$Path_To_Script"
