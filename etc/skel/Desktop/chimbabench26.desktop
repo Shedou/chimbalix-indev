@@ -1,0 +1,44 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=ChimbaBench 2.6 x64
+Comment=
+GenericName=
+
+Icon=/portsoft/x86_64/chimbabench26/icon.png
+Exec=/portsoft/x86_64/chimbabench26/program/ChimbaBench.exec
+TryExec=/portsoft/x86_64/chimbabench26/program/ChimbaBench.exec
+Path=/portsoft/x86_64/chimbabench26/program
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chimbabench26;chi-info-bench;Game;System
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+#Name[ru]=
+#GenericName[ru]=
+#Comment[ru]=
+
+# - ------------- - #
+# - Actions Begin - #
+
+#Actions=Act;
+
+#[Desktop Action Act]
+#Name=Acttion Template
+#Exec=thunar
+
+# -  Actions End  - #
+# - ------------- - #
