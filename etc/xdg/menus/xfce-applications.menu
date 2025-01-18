@@ -30,6 +30,7 @@
 		<Separator/>
 		<Menuname>apps</Menuname>
 		<Menuname>xdg</Menuname>
+		<Menuname>chi</Menuname><!--
 		<Menuname>chi-accessories</Menuname>
 		<Menuname>chi-admin</Menuname>
 		<Menuname>chi-ai</Menuname>
@@ -41,9 +42,9 @@
 		<Menuname>chi-dev</Menuname>
 		<Menuname>chi-tools</Menuname>
 		<Separator/>
-		<Menuname>chi-info</Menuname>
-		<Menuname>wine-wine</Menuname>
-		<Menuname>chi-other</Menuname>
+		<Menuname>chi-info</Menuname>-->
+		<Menuname>wine-wine</Menuname><!--
+		<Menuname>chi-other</Menuname>-->
 		<Separator/>
 		<Menuname>Screensavers</Menuname>
 		<Merge type="menus"/>
@@ -54,134 +55,150 @@
 		<Directory>apps.directory</Directory>
 		<Include><Category>apps</Category></Include>
 	</Menu>
-	<Menu><!-- AI -->
-		<Name>chi-ai</Name>
-		<Directory>chi/ai.directory</Directory>
-		<Include><Category>chi-ai</Category></Include>
-	</Menu>
-	<Menu><!-- ACESSORIES -->
-		<Name>chi-accessories</Name>
-		<Directory>chi/accessories.directory</Directory>
-		<Include><Category>chi-accessories</Category></Include>
-		<Menu>
-			<Name>chi_accessories_fm</Name><Directory>chi/accessories/fm.directory</Directory>
-			<Include><Category>chi-accessories-fm</Category></Include>
-		</Menu>
-		<Menu>
-			<Name>chi-view</Name>
-			<Directory>chi/view.directory</Directory>
-		<Include><Category>chi-view</Category></Include>
-	</Menu>
-	</Menu>
-	<Menu><!-- ADMINISTRARION -->
-		<Name>chi-admin</Name>
-		<Directory>chi/admin.directory</Directory>
-		<Include><Category>chi-admin</Category></Include>
-	</Menu>
-	<Menu><!-- INFO -->
-		<Name>chi-info</Name>
-		<Directory>chi/info.directory</Directory>
-		<Include><Category>chi-info</Category></Include>
-		<Menu>
-			<Name>chi_info_bench</Name><Directory>chi/info/bench.directory</Directory>
-			<Include><Category>chi-info-bench</Category></Include>
-		</Menu>
-		<Menu>
-			<Name>chi_info_help</Name><Directory>chi/info/help.directory</Directory>
-			<Include><Category>chi-info-help</Category></Include>
-		</Menu>
-	</Menu>
-	<Menu><!-- DEVELOPMENT -->
-		<Name>chi-dev</Name>
-		<Directory>chi/dev.directory</Directory>
-		<Include><Category>chi-dev</Category></Include>
-		<Menu>
-			<Name>chi-dev-other</Name><Directory>chi/dev/other.directory</Directory>
-			<Include><Category>chi-dev-other</Category></Include>
-		</Menu>
-		<Menu>
-			<Name>chi-dev-ide</Name><Directory>chi/dev/ide.directory</Directory>
-			<Include><Category>chi-dev-ide</Category></Include>
-		</Menu>
-		<Menu>
-			<Name>chi_dev_imsprog</Name><Directory>chi/dev/imsprog.directory</Directory>
-			<Include><Category>chi-dev-imsprog</Category></Include>
-		</Menu>
-	</Menu>
-	<Menu><!-- EDITORS -->
-		<Name>chi-edit</Name>
-		<Directory>chi/edit.directory</Directory>
-		<Include><Category>chi-edit</Category></Include>
-		<Menu>
-			<Name>chi_edit_audiovideo</Name><Directory>chi/edit/audiovideo.directory</Directory>
-			<Include><Category>chi-edit-audiovideo</Category></Include>
-		</Menu>
-		<Menu>
-			<Name>chi_edit_image</Name><Directory>chi/edit/image.directory</Directory>
-			<Include><Category>chi-edit-image</Category></Include>
-		</Menu>
-		<Menu>
-			<Name>chi_edit_text</Name><Directory>chi/edit/text.directory</Directory>
-			<Include><Category>chi-edit-text</Category></Include>
-		</Menu>
-	</Menu>
-	<Menu><!-- GAMES -->
-		<Name>chi-games</Name>
-		<Directory>chi/games.directory</Directory>
-		<Include>
-            <Category>chi-games</Category>
-        </Include>
-        <Menu>
-			<Name>chi_games_xdg</Name><Directory>chi/games/xdg.directory</Directory>
-			<Include><Category>Game</Category></Include>
-		</Menu>
-	</Menu>
-	<Menu><!-- NETWORK -->
-		<Name>chi-network</Name>
-		<Directory>chi/network.directory</Directory>
-		<Include><Category>chi-network</Category></Include>
-	</Menu>
-	<Menu><!-- MULTIMEDIA -->
-		<Name>chi-multimedia</Name>
-		<Directory>chi/multimedia.directory</Directory>
-		<Include><Category>chi-multimedia</Category></Include>
-		<Menu>
-			<Name>chi_multimedia_players</Name><Directory>chi/multimedia/players.directory</Directory>
-			<Include><Category>chi-multimedia-players</Category></Include>
-		</Menu>
-	</Menu>	
-	<Menu><!-- OFFICE -->
-		<Name>chi-office</Name>
-		<Directory>chi/office.directory</Directory>
-		<Include><Category>chi-office</Category></Include>
-		<Menu>
-			<Name>chi_office_libreoffice</Name><Directory>chi/office/libreoffice.directory</Directory>
-			<Include><Category>chi-office-libreoffice</Category></Include>
-		</Menu>
-	</Menu>
-	<Menu><!-- OTHER -->
-		<Name>chi-other</Name>
-		<Directory>chi/other.directory</Directory>
-		<Include><Category>chi-other</Category></Include>
-	</Menu>
-	<Menu><!-- Tools -->
-		<Name>chi-tools</Name>
-		<Directory>chi/tools.directory</Directory>
-		<Include><Category>chi-tools</Category></Include>
-		<Menu>
-			<Name>chi_tools_archivers</Name><Directory>chi/tools/archivers.directory</Directory>
-			<Include><Category>chi-tools-archivers</Category></Include>
-		</Menu>
-	</Menu>
+	
 	<Menu><!-- Wine -->
-    	<Name>wine-wine</Name>
+		<Name>wine-wine</Name>
 		<Directory>wine-wine.directory</Directory>
 		<Include>
 			<Category>chi-wine</Category>
 			<Category>Wine</Category>
-			<Category>Wine-Programs</Category>
-			<Category>Wine-Programs-Accessories</Category>
 		</Include>
+		<Menu>
+			<Name>chi_wine_extra</Name><Directory>chi/wine/wine-wine-extra.directory</Directory>
+			<Include><Category>chi-wine-extra</Category></Include>
+		</Menu>
+		<Menu>
+			<Name>chi_wine_programs</Name><Directory>chi/wine/wine-wine-programs.directory</Directory>
+			<Include>
+				<Category>chi-wine-programs</Category>
+				<Category>Wine-Programs</Category>
+				<Category>Wine-Programs-Accessories</Category>
+			</Include>
+		</Menu>
+	</Menu>
+	
+	<Menu>
+		<Name>chi</Name>
+		<Directory>chi.directory</Directory>
+		<Menu><!-- AI -->
+			<Name>chi-ai</Name>
+			<Directory>chi/ai.directory</Directory>
+			<Include><Category>chi-ai</Category></Include>
+		</Menu>
+		<Menu><!-- ACESSORIES -->
+			<Name>chi-accessories</Name>
+			<Directory>chi/accessories.directory</Directory>
+			<Include><Category>chi-accessories</Category></Include>
+			<Menu>
+				<Name>chi_accessories_fm</Name><Directory>chi/accessories/fm.directory</Directory>
+				<Include><Category>chi-accessories-fm</Category></Include>
+			</Menu>
+			<Menu>
+				<Name>chi-view</Name>
+				<Directory>chi/view.directory</Directory>
+			<Include><Category>chi-view</Category></Include>
+		</Menu>
+		</Menu>
+		<Menu><!-- ADMINISTRARION -->
+			<Name>chi-admin</Name>
+			<Directory>chi/admin.directory</Directory>
+			<Include><Category>chi-admin</Category></Include>
+		</Menu>
+		<Menu><!-- INFO -->
+			<Name>chi-info</Name>
+			<Directory>chi/info.directory</Directory>
+			<Include><Category>chi-info</Category></Include>
+			<Menu>
+				<Name>chi_info_bench</Name><Directory>chi/info/bench.directory</Directory>
+				<Include><Category>chi-info-bench</Category></Include>
+			</Menu>
+			<Menu>
+				<Name>chi_info_help</Name><Directory>chi/info/help.directory</Directory>
+				<Include><Category>chi-info-help</Category></Include>
+			</Menu>
+		</Menu>
+		<Menu><!-- DEVELOPMENT -->
+			<Name>chi-dev</Name>
+			<Directory>chi/dev.directory</Directory>
+			<Include><Category>chi-dev</Category></Include>
+			<Menu>
+				<Name>chi-dev-other</Name><Directory>chi/dev/other.directory</Directory>
+				<Include><Category>chi-dev-other</Category></Include>
+			</Menu>
+			<Menu>
+				<Name>chi-dev-ide</Name><Directory>chi/dev/ide.directory</Directory>
+				<Include><Category>chi-dev-ide</Category></Include>
+			</Menu>
+			<Menu>
+				<Name>chi_dev_imsprog</Name><Directory>chi/dev/imsprog.directory</Directory>
+				<Include><Category>chi-dev-imsprog</Category></Include>
+			</Menu>
+		</Menu>
+		<Menu><!-- EDITORS -->
+			<Name>chi-edit</Name>
+			<Directory>chi/edit.directory</Directory>
+			<Include><Category>chi-edit</Category></Include>
+			<Menu>
+				<Name>chi_edit_audiovideo</Name><Directory>chi/edit/audiovideo.directory</Directory>
+				<Include><Category>chi-edit-audiovideo</Category></Include>
+			</Menu>
+			<Menu>
+				<Name>chi_edit_image</Name><Directory>chi/edit/image.directory</Directory>
+				<Include><Category>chi-edit-image</Category></Include>
+			</Menu>
+			<Menu>
+				<Name>chi_edit_text</Name><Directory>chi/edit/text.directory</Directory>
+				<Include><Category>chi-edit-text</Category></Include>
+			</Menu>
+		</Menu>
+		<Menu><!-- GAMES -->
+			<Name>chi-games</Name>
+			<Directory>chi/games.directory</Directory>
+			<Include>
+            	<Category>chi-games</Category>
+        	</Include>
+        	<Menu>
+				<Name>chi_games_xdg</Name><Directory>chi/games/xdg.directory</Directory>
+				<Include><Category>Game</Category></Include>
+			</Menu>
+		</Menu>
+		<Menu><!-- NETWORK -->
+			<Name>chi-network</Name>
+			<Directory>chi/network.directory</Directory>
+			<Include><Category>chi-network</Category></Include>
+		</Menu>
+		<Menu><!-- MULTIMEDIA -->
+			<Name>chi-multimedia</Name>
+			<Directory>chi/multimedia.directory</Directory>
+			<Include><Category>chi-multimedia</Category></Include>
+			<Menu>
+				<Name>chi_multimedia_players</Name><Directory>chi/multimedia/players.directory</Directory>
+				<Include><Category>chi-multimedia-players</Category></Include>
+			</Menu>
+		</Menu>	
+		<Menu><!-- OFFICE -->
+			<Name>chi-office</Name>
+			<Directory>chi/office.directory</Directory>
+			<Include><Category>chi-office</Category></Include>
+			<Menu>
+				<Name>chi_office_libreoffice</Name><Directory>chi/office/libreoffice.directory</Directory>
+				<Include><Category>chi-office-libreoffice</Category></Include>
+			</Menu>
+		</Menu>
+		<Menu><!-- OTHER -->
+			<Name>chi-other</Name>
+			<Directory>chi/other.directory</Directory>
+			<Include><Category>chi-other</Category></Include>
+		</Menu>
+		<Menu><!-- Tools -->
+			<Name>chi-tools</Name>
+			<Directory>chi/tools.directory</Directory>
+			<Include><Category>chi-tools</Category></Include>
+			<Menu>
+				<Name>chi_tools_archivers</Name><Directory>chi/tools/archivers.directory</Directory>
+				<Include><Category>chi-tools-archivers</Category></Include>
+			</Menu>
+		</Menu>
 	</Menu>
 	
 	<!-- ------------------------------------ -->
