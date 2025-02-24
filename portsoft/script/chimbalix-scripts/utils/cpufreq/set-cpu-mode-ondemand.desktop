@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=CPU Governor - Ondemand (Default Mode)
+Comment=Works only if the processor supports it.
+GenericName=
+
+Icon=org.kde.plasma.systemmonitor.cpucore
+Exec=/portsoft/script/chimbalix-scripts/utils/cpufreq/set-cpu-mode.sh ondemand
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-games;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Планировщик ЦП - В зависимости от нагрузки (Стандартный Режим)
+Comment[ru]=Работает только если процессор поддерживает.

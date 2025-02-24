@@ -68,7 +68,7 @@
 			<Include><Category>chi-wine-extra</Category></Include>
 		</Menu>
 		<Menu>
-			<Name>chi_wine_programs</Name><Directory>chi/wine/wine-wine-programs.directory</Directory>
+			<Name>wine-Programs</Name><Directory>wine-Programs.directory</Directory>
 			<Include>
 				<Category>chi-wine-programs</Category>
 				<Category>Wine-Programs</Category>

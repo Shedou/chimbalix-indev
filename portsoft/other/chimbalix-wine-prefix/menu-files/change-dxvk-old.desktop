@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Wine - Switch DXVK for old GPUs (v1.10.3)
+Comment=Vulkan API 1.2 support required
+GenericName=
+
+Icon=manga
+Exec=.wine/CHANGE_DXVK-1.10.3.sh
+TryExec=
+Path=~
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-wine-extra;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Wine - Переключить DXVK для старых ГП (v1.10.3)
+Comment[ru]=Требуется поддержка API Vulkan 1.2

@@ -18,7 +18,6 @@ All_ok=true
 if [ -e "$HOME/.config/user-dirs.dirs" ]; then source "$HOME/.config/user-dirs.dirs"
 else All_ok=false; exit; fi
 
-
 Files=("$@")
 
 Template_Desktop_File="$Path_To_Script/cl-desktop-launcher-template.desktop"

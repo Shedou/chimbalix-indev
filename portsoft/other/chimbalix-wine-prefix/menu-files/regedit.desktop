@@ -1,0 +1,29 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Wine - Regedit
+Comment=
+GenericName=
+
+Icon=text-x-ms-regedit
+Exec=wine regedit
+TryExec=wine
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=chi-wine-extra;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".

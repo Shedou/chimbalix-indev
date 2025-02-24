@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=ChimbaBench v2.6 x64
+Comment=
+#GenericName=
+
+Icon=/portsoft/x86_64/chimbabench26/icon.png
+
+# - Translations:
+#Name[ru]=
+#Comment[ru]=

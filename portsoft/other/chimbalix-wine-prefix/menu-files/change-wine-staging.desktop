@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Wine - Switch to version Staging 9.0
+Comment=
+GenericName=
+
+Icon=media-playlist-shuffle
+Exec=/portsoft/other/chimbalix-wine-prefix/change-wine.sh SetWineStaging
+TryExec=/portsoft/other/chimbalix-wine-prefix/change-wine.sh
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-wine-extra;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Wine - Переключить на версию Staging 9.0
+Comment[ru]=

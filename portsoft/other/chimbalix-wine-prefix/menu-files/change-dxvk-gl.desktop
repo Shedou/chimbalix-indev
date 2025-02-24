@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Wine - Switch DXVK to default Wine DXGL (WineD3D)
+Comment=For very old GPUs, OpenGL API support required
+GenericName=
+
+Icon=manga
+Exec=.wine/CHANGE_DXGL.sh
+TryExec=
+Path=~
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-wine-extra;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Wine - Переключить DXVK на стандартный Wine DXGL (WineD3D)
+Comment[ru]=Для очень старых GPU, требуется поддержка API OpenGL

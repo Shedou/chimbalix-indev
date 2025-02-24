@@ -1,0 +1,56 @@
+Wine prefix for Chimbalix.
+
+
+The prefix is composed of the following components:
+Relevance of links: 2024-05.
+
+-== WINE (mirror) ==-
+Fonts.
+https://github.com/wine-mirror/wine
+- Folder:
+	drive_c/windows/Fonts
+
+-== PortWINE (PortProton) ==-
+Prefix (d3d_extras).
+libs_v45
+https://github.com/Castro-Fidel/PortWINE
+- Folder:
+	d3d_extras
+
+-== PROTON LG ==-
+lib32 (d3d10, d3d10_1), lib64 (d3d10, d3d10_1), Fonts.
+PROTON_LG_8-25-1
+https://github.com/Castro-Fidel/wine_builds
+- Folder:
+	ProtonLG
+	drive_c/windows/Fonts
+
+-== vkd3d-proton ==-
+vkd3d-2.14.1
+Fork of VKD3D. Development branches for Proton's Direct3D 12 implementation.
+https://github.com/lutris/vkd3d
+- Folder:
+	vkd3d
+
+-== DXVK ==-
+dxvk-1.10.3
+dxvk-2.5.3
+A Vulkan-based translation layer for Direct3D 8/9/10/11 which allows running 3D applications on Linux using Wine.
+https://github.com/doitsujin/dxvk
+- Folder:
+	dxvk
+	dxvk-1.10.3
+	dxvk-2.5.3
+
+-== D8VK ==-
+d8vk-v1.0
+https://github.com/AlpyneDreams/d8vk
+- Folder:
+	d8vk-v1.0
+
+-== DXVK-NVAPI ==-
+dxvk-nvapi-v0.7.1
+Alternative NVAPI implementation on top of DXVK.
+https://github.com/jp7677/dxvk-nvapi
+- Folder:
+	dxvk-nvapi

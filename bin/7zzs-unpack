@@ -1,0 +1,91 @@
+#!/usr/bin/env bash
+# This Script part of "Installer-SH"
+
+Mode="$1"; shift
+Files=("$@")
+ErrorFiles=""
+
+function _unpack_archives_here() {
+	echo -e "Try to extract. \n"
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		FilePathWithoutFileName="$(dirname "$CurrentFile")"
+		OutName="$FilePathWithoutFileName/"
+		
+		# Run prepared command
+		if 7zzs x -snld -aoa "$CurrentFile" -o"$OutName"; then echo -e "\n Extracted to: $OutName\n\n"
+		else ErrorFiles="${ErrorFiles}\n $CurrentFile"; fi
+	done
+}
+
+function _unpack_archives_here_sub() {
+	echo -e "Try to extract. \n"
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		
+		FileNameWithoutExtension="${CurrentFile%.*}"
+		FileNameWithoutPath="$(basename "$FileNameWithoutExtension")"
+		FilePathWithoutFileName="$(dirname "$CurrentFile")"
+		
+		OutName="$FilePathWithoutFileName/$FileNameWithoutPath"
+		
+		# check if the output exists
+		if [ -e "$OutName" ]; then echo -e "\n\n WARNING! $OutName catalog already exists!\n Press CTRL+C if you want to interrupt unpacking\n Press Enter to continue unpacking."; read pause; fi
+		
+		# Run prepared command
+		if 7zzs x -snld -aoa "$CurrentFile" -o"$OutName"; then echo -e "\n Extracted to: $OutName\n\n"
+		else ErrorFiles="${ErrorFiles}\n $CurrentFile"; fi
+	done
+}
+
+function _unpack_archives_to() {
+	echo -e "Try to extract. \n"
+	
+	OutDir=""
+	OutDir="$(zenity --file-selection --directory)/"
+	if [ "$OutDir" == "/" ]; then
+		OutDir="$(dirname "${Files[0]}")/"
+		echo -e "Output directory: $OutDir\n Press Enter to continue or CTRL+C to abort."
+		read pause
+	fi
+	
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		
+		# Run prepared command
+		if 7zzs x -snld -aoa "$CurrentFile" -o"$OutDir"; then echo -e "\n Extracted to: $OutDir\n\n"
+		else ErrorFiles="${ErrorFiles}\n $CurrentFile"; fi
+	done
+}
+
+if [ "$Mode" == "extracthere" ]; then _unpack_archives_here
+elif [ "$Mode" == "extractheresub" ]; then _unpack_archives_here_sub
+elif [ "$Mode" == "extractto" ]; then _unpack_archives_to
+fi
+
+echo -e "\n -= Complete =-"
+echo -e "$ErrorFiles"
+
+read pause
+
+# MIT License
+#
+# Copyright (c) 2024 Chimbal
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
