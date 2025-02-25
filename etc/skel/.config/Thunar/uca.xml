@@ -1569,4 +1569,70 @@
 	<patterns>*</patterns>
 	<other-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>Convert to OGG (bad-64)</name>
+	<submenu>Audio Encode</submenu>
+	<unique-id>1739379441671496-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/audio-encode/audio-encode.sh ogg bad %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to OGG (low-96)</name>
+	<submenu>Audio Encode</submenu>
+	<unique-id>1739380563590051-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/audio-encode/audio-encode.sh ogg low %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to OGG (med-128)</name>
+	<submenu>Audio Encode</submenu>
+	<unique-id>1739380571392558-3</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/audio-encode/audio-encode.sh ogg med %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to OGG (high-160)</name>
+	<submenu>Audio Encode</submenu>
+	<unique-id>1739380590719214-4</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/audio-encode/audio-encode.sh ogg hi %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to OGG (high-192)</name>
+	<submenu>Audio Encode</submenu>
+	<unique-id>1740212193346654-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/audio-encode/audio-encode.sh ogg hi192 %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert to OGG (best-256)</name>
+	<submenu>Audio Encode</submenu>
+	<unique-id>1740212316972596-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/audio-encode/audio-encode.sh ogg best %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
 </actions>
