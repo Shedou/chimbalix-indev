@@ -1635,4 +1635,58 @@
 	<patterns>*</patterns>
 	<audio-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>Convert DJVU to TIFF - (DPI 300)</name>
+	<submenu>Documents Encode</submenu>
+	<unique-id>1740587477718845-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/docs-convert/docs-encode.sh djvu 300 %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert DJVU to TIFF - (DPI 200)</name>
+	<submenu>Documents Encode</submenu>
+	<unique-id>1740590526554764-3</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/docs-convert/docs-encode.sh djvu 200 %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert PDF to JPEG - (DPI 300)</name>
+	<submenu>Documents Encode</submenu>
+	<unique-id>1740588422507780-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/docs-convert/docs-encode.sh pdf 300 %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Convert PDF to JPEG - (DPI 200)</name>
+	<submenu>Documents Encode</submenu>
+	<unique-id>1740590561416418-4</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/docs-convert/docs-encode.sh pdf 200 %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
 </actions>
