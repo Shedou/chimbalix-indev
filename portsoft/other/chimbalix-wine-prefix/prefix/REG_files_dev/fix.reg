@@ -1,5 +1,8 @@
 Windows Registry Editor Version 5.00
 
+[HKEY_CURRENT_USER\Software\Wine\X11 Driver]
+"UseTakeFocus"="N"
+
 [HKEY_CURRENT_USER\Software\Wine\DllOverrides]
 "*atl100"="native,builtin"
 "*atl110"="native,builtin"
