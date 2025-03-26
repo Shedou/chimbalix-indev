@@ -30,10 +30,10 @@ if [ "$Codec" == "png" ]; then
 		
 		if [ ! -e "$OutputFileName.png" ]; then
 			mkdir -p "$OutputFileName"
-			Out="$OutputFileName/FileNameWithoutPath-%03d.png"
+			Out="$OutputFileName/$FileNameWithoutPath-%03d.png"
 		else
 			mkdir -p "$OutputFileName-new"
-			Out="$OutputFileName-new/FileNameWithoutPath-%03d.png"
+			Out="$OutputFileName-new/$FileNameWithoutPath-%03d.png"
 		fi
 		
 		if $ffmpeg_exec -i "$CurrentFile" "$Out"; then
