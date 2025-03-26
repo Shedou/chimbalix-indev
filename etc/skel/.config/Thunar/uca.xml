@@ -1689,4 +1689,16 @@
 	<other-files/>
 	<text-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>FFMPEG - Convert to PNG</name>
+	<submenu>Video Encode</submenu>
+	<unique-id>1743000135542698-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/video-encode/anim-convert.sh png %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+	<video-files/>
+</action>
 </actions>
