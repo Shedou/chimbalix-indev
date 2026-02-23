@@ -9,10 +9,10 @@ NoDisplay=false
 Hidden=false
 
 Name=TEMPLATE_NAME
-Comment="TEMPLATE_PATH_TO_EXE"
+Comment="wine TEMPLATE_PATH_TO_EXE"
 
 Icon=TEMPLATE_ICON
-Exec="TEMPLATE_PATH_TO_EXE"
+Exec=wine "TEMPLATE_PATH_TO_EXE"
 TryExec=
 Path=TEMPLATE_WORK_DIR
 #StartupWMClass=

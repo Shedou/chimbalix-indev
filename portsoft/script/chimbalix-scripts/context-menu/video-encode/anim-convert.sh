@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 # Script version 1.0
 # LICENSE for this script is at the end of this file
-# "$@" - Add all arguments.
-# "shift;" - Move the command line arguments to one position left.
-# Example usage (Thunar Custom Actions):
-# Font styles
-# Usage: "${B}Bold Text${N}"
 B=$(tput bold)
 N=$(tput sgr0)
 
@@ -18,6 +13,13 @@ ErrorFiles=""
 GoodFiles=""
 pause="0"
 
+# CheckName function
+function CheckName {
+	local FileName="$1"; local OutFileName="$FileName"; local time="$(date +%s)"; local tx="${time:6}"
+	if [ -e "$OutFileName" ]; then OutFileName="$FileName-new"; if [ -e "$OutFileName" ]; then OutFileName="$FileName-new-$tx"; fi; fi
+	echo "$OutFileName"
+}
+
 # PNG
 if [ "$Codec" == "png" ]; then
 	
@@ -27,14 +29,14 @@ if [ "$Codec" == "png" ]; then
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
 		FileNameWithoutPath="$(basename $OutputFileName)"
+		OutName="$OutputFileName"
 		
-		if [ ! -e "$OutputFileName.png" ]; then
-			mkdir -p "$OutputFileName"
-			Out="$OutputFileName/$FileNameWithoutPath-%03d.png"
-		else
-			mkdir -p "$OutputFileName-new"
-			Out="$OutputFileName-new/$FileNameWithoutPath-%03d.png"
-		fi
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		FileNameWithoutPath="$(basename "$OutName")"
+		
+		mkdir -p "$OutName"
+		Out="$OutName/$FileNameWithoutPath-%03d.png"
 		
 		if $ffmpeg_exec -i "$CurrentFile" "$Out"; then
 			:
@@ -58,7 +60,7 @@ fi
 
 # MIT License
 #
-# Copyright (c) 2023 Chimbal
+# Copyright (c) 2025 Chimbal
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

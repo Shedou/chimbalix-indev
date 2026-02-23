@@ -7,23 +7,77 @@
 B=$(tput bold); N=$(tput sgr0)
 
 Format="$1"; shift; # arg 1
-Compression="$1"; shift; # arg 2
-Type="$1"; shift; # arg 3
+#Compression="$1"; shift; # arg 2
+#Type="$1"; shift; # arg 3
+
+Compression="90"
+Type="default"
+CustomColors="false"
 
 # Variables
 Exec=convert; ErrorFiles=""; GoodFiles=""; pause="0"; Files=("$@")
 OutQuality=""; OutType=""; OutAlpha=""; TQ=""; TT=""
 
+if [ "$Format" == "jpg" ]; then
+	Compression="$(zenity --list Custom 100 92 85 75 60 50 40 35 30 25 10 --column "Quality" --text "Image quality.\nHigher value = higher quality = larger size." --height=400)"
+	Type="TrueColor"
+	if [ "$Compression" == "Custom" ]; then
+		Type="$(zenity --list default "CustomColors" TrueColor GrayScale Palette BiLevel TrueColor-BlackBG GrayScale-BlackBG Palette-BlackBG BiLevel-BlackBG --column "Image Type" --text "TrueColor = full color image. | GrayScale = grayscale.\nPalette = indexed color palette. | BiLevel = black/white.\n*-BlackBG = Converts background to black\n(if original has alpha channel)" --height=400)"
+		if [ "$Type" == "CustomColors" ]; then
+			CustomColors="true"
+			OutAlpha="-alpha remove"
+			Type="$(zenity --list 4 8 16 32 64 128 256 --column "Number of colors" --text "Double click to edit.\nBetter to use with PNG format." --editable --height=300)"
+		fi
+		if [ "$Type" == "" ]; then exit; fi
+		Compression="$(zenity --list 100 92 85 75 60 50 40 35 30 25 10 --column "Quality" --text "Image quality.\nHigher value = higher quality = larger size." --height=400)"
+	fi
+	if [ "$Compression" == "" ]; then exit; fi
+	
+elif [ "$Format" == "png" ]; then
+	Compression="$(zenity --list Custom 90 80 70 60 50 40 30 20 10 --column "Compression" --text "Compression ratio.\nHigher value = smaller size = slower." --height=400)"
+	if [ "$Compression" == "Custom" ]; then
+		Type="$(zenity --list default CustomColors TrueColor GrayScale Palette BiLevel TrueColor-BlackBG GrayScale-BlackBG Palette-BlackBG BiLevel-BlackBG --column "Image Type" --text "All options disable the Alpha channel (except \"default\").\nTrueColor = full color image. | GrayScale = grayscale.\nPalette = indexed color palette. | BiLevel = black/white.\n*-BlackBG = Converts background to black\n(if original has alpha channel)" --height=400)"
+		if [ "$Type" == "CustomColors" ]; then
+			CustomColors="true"
+			OutAlpha="-alpha remove"
+			Type="$(zenity --list 4 8 16 32 64 128 256 --column "Number of colors" --text "Double click to edit" --editable --height=300)"
+		fi
+		if [ "$Type" == "" ]; then exit; fi
+		Compression="$(zenity --list Custom 90 80 70 60 50 40 30 20 10 --column "Compression" --text "Compression ratio.\nHigher value = smaller size = slower." --height=400)"
+	fi
+	if [ "$Compression" == "" ]; then exit; fi
+	
+elif [ "$Format" == "webp" ]; then
+	Compression="$(zenity --list Custom 100 92 85 75 60 50 40 35 30 25 10 --column "Quality" --text "Image quality.\nHigher value = higher quality = larger size." --height=400)"
+	if [ "$Compression" == "Custom" ]; then
+		Type="$(zenity --list default CustomColors TrueColor GrayScale Palette BiLevel TrueColor-BlackBG GrayScale-BlackBG Palette-BlackBG BiLevel-BlackBG --column "Image Type" --text "TrueColor = full color image. | GrayScale = grayscale.\nPalette = indexed color palette. | BiLevel = black/white.\n*-BlackBG = Converts background to black\n(if original has alpha channel)" --height=400)"
+		if [ "$Type" == "CustomColors" ]; then
+			CustomColors="true"
+			OutAlpha="-alpha remove"
+			Type="$(zenity --list 4 8 16 32 64 128 256 --column "Number of colors" --text "Double click to edit.\nBetter to use with PNG format." --editable --height=300)"
+		fi
+		if [ "$Type" == "" ]; then exit; fi
+		Compression="$(zenity --list 100 92 85 75 60 50 40 35 30 25 10 --column "Quality" --text "Image quality.\nHigher value = higher quality = larger size." --height=400)"
+	fi
+	if [ "$Compression" == "" ]; then exit; fi
+	
+else exit
+fi
+
 # Processing args
 if [ "$Compression" != "default" ]; then OutQuality="-quality $Compression"; fi
 
 if [ "$Type" != "default" ]; then
-	OutType="-type $Type"
+	if [ "$CustomColors" == "true" ]; then
+		OutType="-colors $Type"
+	else
+		OutType="-type $Type"
+	fi
 	TT="-$Type"
 	if [ "$Type" == "TrueColor" ] || [ "$Type" == "GrayScale" ] || [ "$Type" == "Palette" ] || [ "$Type" == "BiLevel" ]; then
 		OutAlpha="-alpha remove"
 	fi
-	if [ "$Type" == "TrueColor.B" ] || [ "$Type" == "GrayScale.B" ] || [ "$Type" == "Palette.B" ] || [ "$Type" == "BiLevel.B" ]; then
+	if [ "$Type" == "TrueColor-BlackBG" ] || [ "$Type" == "GrayScale-BlackBG" ] || [ "$Type" == "Palette-BlackBG" ] || [ "$Type" == "BiLevel-BlackBG" ]; then
 		OutType="-type ${Type%.*}"
 		OutAlpha="-background #000000 -alpha remove"
 	fi

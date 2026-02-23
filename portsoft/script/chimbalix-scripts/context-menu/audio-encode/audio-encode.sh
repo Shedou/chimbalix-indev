@@ -1,16 +1,11 @@
 #!/usr/bin/env bash
 # Script version 1.0
 # LICENSE for this script is at the end of this file
-# "$@" - Add all arguments.
-# "shift;" - Move the command line arguments to one position left.
-# Example usage (Thunar Custom Actions):
-# Font styles
-# Usage: "${B}Bold Text${N}"
+
 B=$(tput bold)
 N=$(tput sgr0)
 
 Codec="$1"; shift; # arg 1
-QualityAudio="$1"; shift; # arg 2
 Files=("$@")
 
 #
@@ -19,134 +14,102 @@ ErrorFiles=""
 GoodFiles=""
 pause="0"
 
-# OGG
-if [ "$Codec" == "ogg" ]; then
-	libvorbis_q="-aq 4"
-	
-	if [ "$QualityAudio" == "bad" ]; then libvorbis_q="-aq 0"  # 64
-	elif  [ "$QualityAudio" == "low" ]; then libvorbis_q="-aq 2" # 96
-	elif  [ "$QualityAudio" == "med" ]; then libvorbis_q="-aq 4" # 128
-	elif  [ "$QualityAudio" == "hi" ]; then libvorbis_q="-aq 5" # 160
-	elif  [ "$QualityAudio" == "hi192" ]; then libvorbis_q="-aq 6" # 192
-	elif  [ "$QualityAudio" == "best" ]; then libvorbis_q="-aq 8" # 256
-	fi
-	
-	echo "Audio Quality: $libvorbis_q"
+Quality_OGG="-aq 4"
+Quality_BIT="-b:a 128k"
+
+if [ "$Codec" == "ogg" ] || [ "$Codec" == "mp3" ] || [ "$Codec" == "opus" ]; then
+	Quality="$(zenity --list --column "Quality" --text "Audio Quality. Higher value = higher quality = larger size.\n 1 minute in 128 quality = ~1 MiB" --height=400 --width=400 '64' '80' '96' '112' '128' '160' '192' '224' '256' '320')"
+	if [ "$Quality" == "" ]; then exit; fi
+else
+	exit
+fi
+
+if [[ "$Quality" =~ '64' ]];  then Quality_OGG="-aq 0"; Quality_BIT="-b:a 64k"; fi
+if [[ "$Quality" =~ '80' ]];  then Quality_OGG="-aq 1"; Quality_BIT="-b:a 80k"; fi
+if [[ "$Quality" =~ '96' ]];  then Quality_OGG="-aq 2"; Quality_BIT="-b:a 96k"; fi
+if [[ "$Quality" =~ '112' ]]; then Quality_OGG="-aq 3"; Quality_BIT="-b:a 112k"; fi
+if [[ "$Quality" =~ '128' ]]; then Quality_OGG="-aq 4"; Quality_BIT="-b:a 128k"; fi
+if [[ "$Quality" =~ '160' ]]; then Quality_OGG="-aq 5"; Quality_BIT="-b:a 160k"; fi
+if [[ "$Quality" =~ '192' ]]; then Quality_OGG="-aq 6"; Quality_BIT="-b:a 192k"; fi
+if [[ "$Quality" =~ '224' ]]; then Quality_OGG="-aq 7"; Quality_BIT="-b:a 224k"; fi
+if [[ "$Quality" =~ '256' ]]; then Quality_OGG="-aq 8"; Quality_BIT="-b:a 256k"; fi
+if [[ "$Quality" =~ '320' ]]; then Quality_OGG="-aq 9"; Quality_BIT="-b:a 320k"; fi
+
+
+# CheckName function
+function CheckName {
+	local FileName="$1"; local OutFileName="$FileName.$Codec"; local time="$(date +%s)"; local tx="${time:6}"
+	if [ -e "$OutFileName" ]; then OutFileName="$FileName-new.$Codec"; if [ -e "$OutFileName" ]; then OutFileName="$FileName-new-$tx.$Codec"; fi; fi
+	echo "$OutFileName"
+}
+
+# OPUS
+if [ "$Codec" == "opus" ]; then
+	echo "Audio Quality: $Quality_BIT"
 	echo -e "Try to execute ffmpeg. \n"
 	
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
-		if [ ! -f "$OutputFileName.ogg" ]; then
-			Out="$OutputFileName.bad.ogg"
-		else
-			Out="$OutputFileName-ogg.bad.ogg"
-		fi
+		OutName="$OutputFileName-$Quality"
 		
-		if $ffmpeg_exec -i "$CurrentFile" -acodec libvorbis $libvorbis_q "$Out"; then
-			echo "Finished. Renaming file to normal."
-			if [ ! -f "$OutputFileName.ogg" ]; then
-				echo "if"
-				mv "$Out" "$OutputFileName.ogg"
-				GoodFiles="${GoodFiles}\n $OutputFileName.ogg"
-			else
-				echo "else"
-				mv "$Out" "$OutputFileName-ogg.ogg"
-				GoodFiles="${GoodFiles}\n $OutputFileName-ogg.ogg"
-			fi
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		FileNameWithoutPath="$(basename "$OutName")"
+		
+		if $ffmpeg_exec -i "$CurrentFile" -acodec libopus $Quality_BIT "$OutName"; then echo "$FileNameWithoutPath: Finished."
 		else
 			echo "-= WARNING =-"
 			echo "Something went wrong..."
-			ErrorFiles="${ErrorFiles}\n $OutputFileName.bad.ogg"
+			ErrorFiles="${ErrorFiles}\n $OutputFileName-$Quality.bad.opus"
 			pause="1";
 		fi
 	done
 fi
 
-CPU_Threads=4 # $(cat /proc/cpuinfo | grep processor | wc -l)
-CPU_Cores=1
-NUMBER=4
-
-if [ "$CPU_Threads" -le "2" ]; then CPU_Cores=1
-elif [ "$CPU_Threads" -le "4" ]; then CPU_Cores=2
-elif [ "$CPU_Threads" -le "8" ]; then CPU_Cores=4
-elif [ "$CPU_Threads" -le "12" ]; then CPU_Cores=6
-elif [ "$CPU_Threads" -le "16" ]; then CPU_Cores=8
-elif [ "$CPU_Threads" -le "32" ]; then CPU_Cores=16
-else CPU_Cores=20
-fi
-
-
-# OGG experimental
-if [ "$Codec" == "ogg-new" ]; then
-	libvorbis_q="-aq 4"
-	
-	if [ "$QualityAudio" == "bad" ]; then libvorbis_q="-aq 0"  # 64
-	elif  [ "$QualityAudio" == "low" ]; then libvorbis_q="-aq 2" # 96
-	elif  [ "$QualityAudio" == "med" ]; then libvorbis_q="-aq 4" # 128
-	elif  [ "$QualityAudio" == "hi" ]; then libvorbis_q="-aq 5" # 160
-	elif  [ "$QualityAudio" == "hi192" ]; then libvorbis_q="-aq 6" # 192
-	elif  [ "$QualityAudio" == "best" ]; then libvorbis_q="-aq 8" # 256
-	fi
-	
-	echo "Audio Quality: $libvorbis_q"
+# OGG
+if [ "$Codec" == "ogg" ]; then
+	echo "Audio Quality: $Quality_BIT"
 	echo -e "Try to execute ffmpeg. \n"
 	
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
-		if [ ! -f "$OutputFileName.ogg" ]; then
-			Out="$OutputFileName.ogg"
-		else
-			Out="$OutputFileName-ogg.ogg"
-		fi
+		OutName="$OutputFileName-$Quality"
 		
-		((ii=ii%NUMBER)); ((ii++==0)) && wait
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		FileNameWithoutPath="$(basename "$OutName")"
 		
-		$ffmpeg_exec -i "$CurrentFile" -acodec libvorbis $libvorbis_q "$Out" &
-	done
-fi
-
-
-# OGG Old Function
-if [ "$Codec" == "ogg-old" ]; then
-	libvorbis_q="-aq 4"
-	
-	if [ "$QualityAudio" == "bad" ]; then libvorbis_q="-aq 0"  # 64
-	elif  [ "$QualityAudio" == "low" ]; then libvorbis_q="-aq 2" # 96
-	elif  [ "$QualityAudio" == "med" ]; then libvorbis_q="-aq 4" # 128
-	elif  [ "$QualityAudio" == "hi" ]; then libvorbis_q="-aq 5" # 160
-	elif  [ "$QualityAudio" == "hi192" ]; then libvorbis_q="-aq 6" # 192
-	elif  [ "$QualityAudio" == "best" ]; then libvorbis_q="-aq 8" # 256
-	fi
-	
-	echo "Audio Quality: $libvorbis_q"
-	echo -e "Try to execute ffmpeg. \n"
-	
-	for i in "${!Files[@]}"; do
-		CurrentFile="${Files[$i]}"
-		OutputFileName="${CurrentFile%.*}"
-		if [ ! -f "$OutputFileName.ogg" ]; then
-			Out="$OutputFileName.bad.ogg"
-		else
-			Out="$OutputFileName-ogg.bad.ogg"
-		fi
-		
-		if $ffmpeg_exec -i "$CurrentFile" -acodec libvorbis $libvorbis_q "$Out"; then
-			echo "Finished. Renaming file to normal."
-			if [ ! -f "$OutputFileName.ogg" ]; then
-				echo "if"
-				mv "$Out" "$OutputFileName.ogg"
-				GoodFiles="${GoodFiles}\n $OutputFileName.ogg"
-			else
-				echo "else"
-				mv "$Out" "$OutputFileName-ogg.ogg"
-				GoodFiles="${GoodFiles}\n $OutputFileName-ogg.ogg"
-			fi
+		if $ffmpeg_exec -i "$CurrentFile" -acodec libvorbis $Quality_BIT "$OutName"; then echo "$FileNameWithoutPath: Finished."
 		else
 			echo "-= WARNING =-"
 			echo "Something went wrong..."
-			ErrorFiles="${ErrorFiles}\n $OutputFileName.bad.ogg"
+			ErrorFiles="${ErrorFiles}\n $OutputFileName-$Quality.bad.ogg"
+			pause="1";
+		fi
+	done
+fi
+
+# MP3
+if [ "$Codec" == "mp3" ]; then
+	echo "Audio Quality: $Quality_BIT"
+	echo -e "Try to execute ffmpeg. \n"
+	
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		OutputFileName="${CurrentFile%.*}"
+		OutName="$OutputFileName-$Quality"
+		
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		FileNameWithoutPath="$(basename "$OutName")"
+		
+		if $ffmpeg_exec -i "$CurrentFile" -acodec libmp3lame $Quality_BIT "$OutName"; then echo "$FileNameWithoutPath: Finished."
+		else
+			echo "-= WARNING =-"
+			echo "Something went wrong..."
+			ErrorFiles="${ErrorFiles}\n $OutName"
 			pause="1";
 		fi
 	done

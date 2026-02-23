@@ -1,21 +1,32 @@
 #!/usr/bin/env bash
 # Script version 1.0
 # LICENSE for this script is at the end of this file
-# "$@" - Add all arguments.
-# "shift;" - Move the command line arguments to one position left.
-# Example usage (Thunar Custom Actions):
-# Font styles
-# Usage: "${B}Bold Text${N}"
 B=$(tput bold)
 N=$(tput sgr0)
 
 Mode="$1"; shift; # arg 1
-DPI="$1"; shift; # arg 2
 Files=("$@")
 
 ErrorFiles=""
 GoodFiles=""
 pause="0"
+
+DPI="96"
+
+if [ "$Mode" == "djvu" ] || [ "$Mode" == "pdf" ]; then
+	OutSizeDPI="$(zenity --list --column "Output Size (DPI)" --text "DPI (Dots Per Inch). Higher value = larger size.\nThe size in pixels depends on the parameters of the original document." --height=400 --width=400 '72' '96' '150' '200' '300' '600' '1200')"
+	if [ "$OutSizeDPI" == "" ]; then exit; fi
+	DPI="$OutSizeDPI"
+else
+	exit
+fi
+
+# CheckName function
+function CheckName {
+	local FileName="$1"; local OutFileName="$FileName"; local time="$(date +%s)"; local tx="${time:6}"
+	if [ -e "$OutFileName" ]; then OutFileName="$FileName-new"; if [ -e "$OutFileName" ]; then OutFileName="$FileName-new-$tx"; fi; fi
+	echo "$OutFileName"
+}
 
 # DJVU
 if [ "$Mode" == "djvu" ]; then
@@ -26,17 +37,16 @@ if [ "$Mode" == "djvu" ]; then
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
 		FileNameWithoutPath="$(basename "$OutputFileName")"
+		OutName="$OutputFileName-$DPI"
 		
-		if [ ! -e "$OutputFileName" ]; then
-			Out="$OutputFileName"
-			mkdir "$OutputFileName"
-		else
-			Out="$OutputFileName-new"
-			mkdir "$OutputFileName-new"
-		fi
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
 		
+		mkdir -p "$OutName"
+		Out="$OutName/$FileNameWithoutPath-%03d.tiff"
 		
-		if ddjvu -verbose -format=tiff -scale=$DPI -eachpage -quality=95 "$CurrentFile" "$Out/$FileNameWithoutPath-%d.tiff"  ; then
+		echo "Processing: $CurrentFile"
+		if ddjvu -format=tiff -scale=$DPI -eachpage -quality=93 "$CurrentFile" "$Out"  ; then
 			:
 		else
 			echo "-= WARNING =-"
@@ -56,17 +66,15 @@ if [ "$Mode" == "pdf" ]; then
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
 		FileNameWithoutPath="$(basename "$OutputFileName")"
+		OutName="$OutputFileName-$DPI"
 		
-		if [ ! -e "$OutputFileName" ]; then
-			Out="$OutputFileName"
-			mkdir "$OutputFileName"
-		else
-			Out="$OutputFileName-new"
-			mkdir "$OutputFileName-new"
-		fi
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
 		
+		mkdir -p "$OutName"
+		Out="$OutName/$FileNameWithoutPath-%03d.jpg"
 		
-		if gs -dNOPAUSE -sDEVICE=jpeg -dJPEGQ=95 -r$DPI -sOutputFile="$Out/$FileNameWithoutPath-%03d.jpg" "$CurrentFile" -c quit ; then
+		if gs -dNOPAUSE -sDEVICE=jpeg -dJPEGQ=95 -r$DPI -sOutputFile="$Out" "$CurrentFile" -c quit ; then
 			:
 		else
 			echo "-= WARNING =-"

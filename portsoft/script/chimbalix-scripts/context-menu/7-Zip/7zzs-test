@@ -1,35 +1,53 @@
 #!/usr/bin/env bash
-# Script version 1.2
-# LICENSE at the end of this file!
-# Usage: PATH_TO_SCRIPT/screenshoot.sh Screen
-# Modes (case sensitive!): Screen, Window, Region.
 
-Mode="$1"
-UserDir=~
-OutDir="$UserDir/Pictures/Screenshoots/$Mode"
-CopyBuff=true
-Complete=false
+Mode="$1"; shift
+Files=("$@")
+ErrorFiles=""
 
-DateTime="$(date +%Y-%m-%d_-_%H-%M-%S)"
-OutName="$DateTime.png"
-if [ -e "$OutDir/$OutName" ]; then OutName="$DateTime"_$(($(date +%N)/10000000))".png"; fi
-
-if [ "$Mode" == "Screen" ]; then
-	if [ ! -d "$OutDir" ]; then mkdir -p "$OutDir"; fi
-	if xfce4-screenshooter -f -m -s "$OutDir/$OutName"; then Complete=true; fi
+if [ "$Mode" == "benchmark" ]; then
+	Param="$(zenity --list Default 1 2 4 6 8 12 16 32 64 --column "Threads" --text "Standard 7-Zip performance test.\n You can select the number of threads to use from the list." --height=400)"
+	if [ "$Param" == "" ]; then exit; fi
+	if [ "$Param" == "Default" ]; then
+		7zzs b
+	else
+		7zzs b "-mmt$Param"
+	fi
+	echo -e "\n -= Complete =-"
+	read pause
+	exit
 fi
 
-if [ "$Mode" == "Window" ]; then
-	if [ ! -d "$OutDir" ]; then mkdir -p "$OutDir"; fi
-	if xfce4-screenshooter -w -m -s "$OutDir/$OutName"; then Complete=true; fi
+function _test_archives() {
+	echo -e "Testing... \n"
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		
+		# Run prepared command
+		if 7zzs t "$CurrentFile"; then echo -e "\n $CurrentFile: Finished.\n\n"
+		else ErrorFiles="${ErrorFiles}\n $CurrentFile"; fi
+	done
+}
+
+
+function _list() {
+	echo -e "Listing... \n"
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		
+		# Run prepared command
+		if 7zzs l "$CurrentFile"; then echo -e "\n $CurrentFile: Finished.\n\n"
+		else ErrorFiles="${ErrorFiles}\n $CurrentFile"; fi
+	done
+}
+
+if [ "$Mode" == "test" ]; then _test_archives
+elif [ "$Mode" == "list" ]; then _list
 fi
 
-if [ "$Mode" == "Region" ]; then
-	if [ ! -d "$OutDir" ]; then mkdir -p "$OutDir"; fi
-	if xfce4-screenshooter -r -s "$OutDir/$OutName"; then Complete=true; fi
-fi
+echo -e "\n -= Complete =-"
+echo -e "$ErrorFiles"
 
-if [ $CopyBuff == true ] && [ $Complete == true ]; then xclip -selection clipboard -t image/png -i "$OutDir/$OutName"; fi;
+read pause
 
 # MIT License
 #

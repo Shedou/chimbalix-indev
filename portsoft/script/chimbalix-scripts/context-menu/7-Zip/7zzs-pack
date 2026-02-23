@@ -1,35 +1,29 @@
 #!/usr/bin/env bash
-# Script version 1.2
-# LICENSE at the end of this file!
-# Usage: PATH_TO_SCRIPT/screenshoot.sh Screen
-# Modes (case sensitive!): Screen, Window, Region.
 
-Mode="$1"
-UserDir=~
-OutDir="$UserDir/Pictures/Screenshoots/$Mode"
-CopyBuff=true
-Complete=false
+DictionarySize="$1"; shift
+FileName="$1"; shift
+FilesPath=("$@")
 
-DateTime="$(date +%Y-%m-%d_-_%H-%M-%S)"
-OutName="$DateTime.png"
-if [ -e "$OutDir/$OutName" ]; then OutName="$DateTime"_$(($(date +%N)/10000000))".png"; fi
+Files=""
 
-if [ "$Mode" == "Screen" ]; then
-	if [ ! -d "$OutDir" ]; then mkdir -p "$OutDir"; fi
-	if xfce4-screenshooter -f -m -s "$OutDir/$OutName"; then Complete=true; fi
+if [ "$DictionarySize" == "zenity" ]; then
+	DictionarySize="$(zenity --list 16m 32m 64m 128m 256m 512m 1024m 2048m --column "Dictionary Size" --text "Larger size = better compression, but requires more RAM.\nDo not use a dictionary larger than 256m unless necessary." --height=400)"
+	if [ "$DictionarySize" == "" ]; then exit; fi
+	FileNameFull="$FileName""_$DictionarySize.7z"
+else
+	exit
 fi
 
-if [ "$Mode" == "Window" ]; then
-	if [ ! -d "$OutDir" ]; then mkdir -p "$OutDir"; fi
-	if xfce4-screenshooter -w -m -s "$OutDir/$OutName"; then Complete=true; fi
-fi
+function _pack_archive() {
+	if [ -e "$FileNameFull" ]; then FileNameFull="$FileName""_$DictionarySize_""_$RANDOM"".7z"; fi
+	7zzs a -snl -mx9 -m0=LZMA2:d"$DictionarySize" -ms=2g -mqs=on -mmt=3 "$FileNameFull" "${FilesPath[@]}"
+}
 
-if [ "$Mode" == "Region" ]; then
-	if [ ! -d "$OutDir" ]; then mkdir -p "$OutDir"; fi
-	if xfce4-screenshooter -r -s "$OutDir/$OutName"; then Complete=true; fi
-fi
+_pack_archive
 
-if [ $CopyBuff == true ] && [ $Complete == true ]; then xclip -selection clipboard -t image/png -i "$OutDir/$OutName"; fi;
+echo -e "\n -= Complete =-"
+
+read pause
 
 # MIT License
 #

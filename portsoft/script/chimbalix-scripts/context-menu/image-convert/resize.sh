@@ -7,15 +7,35 @@
 B=$(tput bold); N=$(tput sgr0)
 
 Format="$1"; shift; # arg 1
-Filter="$1"; shift; # arg 2
-Resize="$1"; shift; # arg 3
+Mode="$1"; shift; # arg 2
+Filter="Lanczos"
+Resize=""
+
+if [ "$Mode" == "upto" ]; then
+	Resize="$(zenity --list Custom 1920x1080 1600x1200 1280x720 1024x768 '25%' '50%' '75%' '150%' '200%' --column "New Size" --text "Scale the image to the new size.\nProportions are preserved." --height=400)"
+	if [ "$Resize" == "Custom" ]; then
+		Resize="$(zenity --forms --add-entry="New Size" --text="Enter new image size.\nFormat: \"800x600\" or \"50%\"")"
+	fi
+	if [ "$Resize" == "" ]; then exit; fi
+elif [ "$Mode" == "fixed" ]; then
+	Resize="$(zenity --list Custom 1920x1080! 1600x1200! 1280x720! 1024x768! --column "New Size" --text "Scale the image to the new size.\nProportions are not preserved.\nThe image will be stretched to the new size." --height=400)"
+	if [ "$Resize" == "Custom" ]; then
+		Resize="$(zenity --forms --add-entry="New Size" --text="Enter new image size.\nFormat: \"800x600!\"")"
+	fi
+	if [ "$Resize" == "" ]; then exit; fi
+else exit
+fi
 
 OutQualityJ="-quality 97"; OutQualityP="-quality 60"
 OutFilter="-filter $Filter"; TFilter=""
 OutSize="-resize $Resize"; TSize="-s"
 
-if [ "$Filter" == "point" ] || [ "$Filter" == "Point" ]; then TFilter="-f"; fi
-if [[ "$Resize" == *p ]]; then OutSize="-resize ${Resize::-1}%"; TSize="-sp"; fi
+
+if [ "$Filter" == "point" ] || [ "$Filter" == "Point" ]; then TFilter="-p"; fi
+if [[ "$Resize" == *'%' ]]; then
+	#OutSize="-resize ${Resize::-1}%"
+	TSize="-sp"
+fi
 
 Exec=convert; ErrorFiles=""; GoodFiles=""; pause="0"; Files=("$@")
 
