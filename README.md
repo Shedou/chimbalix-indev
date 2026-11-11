@@ -1,4 +1,4 @@
-# chimbalix-indev
+# chimbalix-indev [![Github Releases](https://img.shields.io/github/downloads/Shedou/chimbalix-indev/total.svg)](https://github.com/Shedou/chimbalix-indev/releases)
 
 Main distro page: [https://github.com/Shedou/Chimbalix](https://github.com/Shedou/Chimbalix)
 
